@@ -1,1 +1,16 @@
 @use "couleurs";
+
+.button-v1 {
+    background-color: var(--vert-menthe);
+    color: var(--white);
+}
+
+.button-v2 {
+    background-color: var(--pomme-verte);
+    color: var(--noire);
+}
+
+.button-v3 {
+    background-color: var(--gris-souris);
+    color: var(--bleu-calypso);
+}
