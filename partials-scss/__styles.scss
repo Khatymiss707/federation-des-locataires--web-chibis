@@ -5,29 +5,49 @@
 @use "footer";
 @use "maison";
 @use "texte";
-
+@use "couleurs";
 .body {
 
 }
 
 .section-hero {
+    color:var(--white);
+}
 
+.donation {
+    background-color: var(--blue-calypso); 
 }
 
 .section-services {
-
+    background-color: var(--white);
 }
 
 .section-actualites {
-
+    background-color: var(--white);
 }
 
 .section-temoignages {
-    
+    background-color: var(--blue-calypso); 
 }
 
 .section-infolettre {
-
+    background-color: var(--blue-calypso);
 }
 
+.footer {
+    background-color: var(--blue-calypso);
+}
 
+.button {
+    background-color: var(--vert-menthe);
+    color: var(--white);
+}
+
+.texte {
+    color:var(--white);
+}
+
+h1{
+    color:var(--white);
+    text-shadow: 2%;
+}
