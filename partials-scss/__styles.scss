@@ -5,7 +5,7 @@
 @use "footer";
 @use "maison";
 @use "texte";
-
+@use "couleurs";
 .body {
 
 }
@@ -14,22 +14,29 @@
 
 }
 
-.section-services {
+.donation {
+    background-color: var(--blue-calypso); 
+}
 
+.section-services {
+    background-color: var(--white);
 }
 
 .section-actualites {
-
+    background-color: var(--white);
 }
 
 .section-temoignages {
-    
+    background-color: var(--blue-calypso); 
 }
 
 .section-infolettre {
-
+    background-color: var(--blue-calypso);
 }
 
+.footer {
+    background-color: var(--blue-calypso);
+}
 
 .button {
     background-color: var(--vert-menthe);
