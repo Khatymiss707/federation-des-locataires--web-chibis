@@ -1,16 +1,26 @@
 @use "couleurs";
 
-.button-v1 {
+.button-voir_plus {
     background-color: var(--vert-menthe);
     color: var(--white);
 }
 
-.button-v2 {
+.button-membre {
     background-color: var(--pomme-verte);
     color: var(--noire);
 }
 
-.button-v3 {
+.button-pagination {
     background-color: var(--gris-souris);
     color: var(--bleu-calypso);
+}
+
+.button-fermer{
+    background-color: var(--gris-souris);
+    color: var(--white);
+}
+
+.button-visiter{
+    background-color: var(--bleu-calypso);
+    color: var(--white);
 }
