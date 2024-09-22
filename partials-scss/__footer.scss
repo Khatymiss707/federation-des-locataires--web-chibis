@@ -1,1 +1,11 @@
 @use "couleurs";
+
+.footer {
+    background-color: var(--bleu-calypso);
+    color: var(--whitte);
+    display: grid;
+}
+
+.footer--links:hover {
+ color: var(--pomme-verte);
+}
