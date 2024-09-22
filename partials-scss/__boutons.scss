@@ -1,30 +1,27 @@
 @use "couleurs";
 
-.button--voir_plus {
-    background-color: var(--vert-menthe);
-    color: var(--white);
-}
-
-.button--membre {
-    background-color: var(--pomme-verte);
-    color: var(--noire);
-}
-
-.button--pagination {
-    background-color: var(--gris-souris);
-    color: var(--bleu-calypso);
-}
-
-.button--fermer{
-    background-color: var(--gris-souris);
-    color: var(--white);
-}
-
-.button--visiter{
-    background-color: var(--bleu-calypso);
-    color: var(--white);
-}
-
-.bouton--footer {
-    background-color: var(--pomme-verte);
+.button{
+    &--voir_plus {
+        background-color: var(--vert-menthe);
+        color: var(--white);
+    }
+    &--membre {
+        background-color: var(--pomme-verte);
+        color: var(--noire);
+    }
+    &--pagination {
+        background-color: var(--gris-souris);
+        color: var(--bleu-calypso);
+    }
+    &--fermer{
+        background-color: var(--gris-souris);
+        color: var(--white);
+    }
+    &--visiter{
+        background-color: var(--bleu-calypso);
+        color: var(--white);
+    }
+    &--footer {
+        background-color: var(--pomme-verte);
+    }
 }

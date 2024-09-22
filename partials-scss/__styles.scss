@@ -6,11 +6,11 @@
 @use "maison";
 @use "texte";
 @use "couleurs";
-.body {
-
+body {
+    background-color: var(--white);
 }
 
-.section-hero {
+.hero {
     color:var(--white);
 }
 
@@ -18,7 +18,7 @@
     background-color: var(--bleu-calypso); 
 }
 
-.section-services {
+.services {
     background-color: var(--white);
 }
 
@@ -26,11 +26,11 @@
     background-color: var(--white);
 }
 
-.section-temoignages {
+.temoignages {
     background-color: var(--bleu-calypso); 
 }
 
-.section-infolettre {
+.infolettre {
     background-color: var(--bleu-calypso);
 }
 
