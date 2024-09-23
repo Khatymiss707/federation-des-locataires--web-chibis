@@ -6,16 +6,19 @@
 @use "maison";
 @use "texte";
 @use "couleurs";
-body {
-    background-color: var(--white);
-}
 
-.hero {
-    color:var(--white);
-}
+/*MOBILE*/
+@media (max-width: 375px) {
 
-.donation {
-    background-color: var(--bleu-calypso); 
+    body {
+        background-color: var(--white);
+    }
+
+    footer {
+        
+    }
+    
+    
 }
 
 .services {
@@ -33,11 +36,6 @@ body {
 .infolettre {
     background-color: var(--bleu-calypso);
 }
-
-.footer {
-    background-color: var(--bleu-calypso);
-}
-
 
 .texte {
     color:var(--white);
