@@ -1,1 +1,1 @@
-import "/partials-scss/styles.scss";
+import "../federation-des-locataires--web-chibis/styles.scss";
