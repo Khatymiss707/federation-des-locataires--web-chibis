@@ -1,0 +1,101 @@
+:root {
+  --gris-souris: #a7a7a7;
+  --pomme-verte: #8AE190;
+  --bleu-calypso: #0F4E66;
+  --bleu-paisible: #59B1D3;
+  --vert-menthe: #C1F9C5;
+  --white: #ffffff;
+  --noire: #000000;
+}
+
+.button--voir_plus {
+  background-color: var(--vert-menthe);
+  color: var(--white);
+}
+.button--membre {
+  background-color: var(--pomme-verte);
+  color: var(--noire);
+}
+.button--pagination {
+  background-color: var(--gris-souris);
+  color: var(--bleu-calypso);
+}
+.button--fermer {
+  background-color: var(--gris-souris);
+  color: var(--white);
+}
+.button--visiter {
+  background-color: var(--bleu-calypso);
+  color: var(--white);
+}
+.button--footer {
+  background-color: var(--pomme-verte);
+}
+
+.footer {
+  background-color: var(--bleu-calypso);
+  color: var(--whitte);
+  display: grid;
+}
+.footer--links:hover {
+  color: var(--pomme-verte);
+}
+
+.foot--text {
+  font-size: 20px;
+}
+.foot--text--soustitre {
+  font-size: 18px;
+}
+.foot--text--credit {
+  font-size: 14px;
+}
+
+@font-face {
+  src: url("/sources/medias/font/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-family: "montserrat";
+}
+@font-face {
+  src: url("/sources/medias/font/Merriweather_Sans/MerriweatherSans-VariableFont_wght.ttf") format("truetype");
+  font-family: "merriweather";
+}
+h1 {
+  font-family: "merriweather";
+  font-weight: bold;
+}
+
+p {
+  font-family: "montserrat";
+  font-weight: 400;
+}
+
+/*MOBILE*/
+@media (max-width: 375px) {
+  body {
+    background-color: var(--white);
+  }
+}
+.services {
+  background-color: var(--white);
+}
+
+.section-actualites {
+  background-color: var(--white);
+}
+
+.temoignages {
+  background-color: var(--bleu-calypso);
+}
+
+.infolettre {
+  background-color: var(--bleu-calypso);
+}
+
+.texte {
+  color: var(--white);
+}
+
+h1 {
+  color: var(--white);
+  text-shadow: 2%;
+}/*# sourceMappingURL=styles.css.map */

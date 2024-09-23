@@ -1,11 +1,11 @@
-@use "banniere_ecole";
-@use "bannieres_services";
-@use "boutons";
-@use "cartes";
-@use "footer";
-@use "maison";
-@use "texte";
-@use "couleurs";
+@use "partials-scss/banniere-ecole";
+@use "partials-scss/bannieres-services";
+@use "partials-scss/boutons";
+@use "partials-scss/cartes";
+@use "partials-scss/footer";
+@use "partials-scss/maison";
+@use "partials-scss/texte";
+@use "partials-scss/couleurs";
 
 /*MOBILE*/
 @media (max-width: 375px) {
@@ -14,8 +14,6 @@
         background-color: var(--white);
     }
 
-    
-    
 }
 
 .services {
