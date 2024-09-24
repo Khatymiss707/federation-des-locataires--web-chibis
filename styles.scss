@@ -1,0 +1,42 @@
+@use "partials-scss/banniere-ecole";
+@use "partials-scss/bannieres-services";
+@use "partials-scss/boutons";
+@use "partials-scss/cartes";
+@use "partials-scss/footer";
+@use "partials-scss/maison";
+@use "partials-scss/texte";
+@use "partials-scss/couleurs";
+
+/*MOBILE*/
+@media (max-width: 375px) {
+
+    body {
+        background-color: var(--white);
+    }
+
+}
+
+.services {
+    background-color: var(--white);
+}
+
+.section-actualites {
+    background-color: var(--white);
+}
+
+.temoignages {
+    background-color: var(--bleu-calypso); 
+}
+
+.infolettre {
+    background-color: var(--bleu-calypso);
+}
+
+.texte {
+    color:var(--white);
+}
+
+h1{
+    color:var(--white);
+    text-shadow: 2%;
+}
