@@ -67,6 +67,7 @@ h1 {
 p {
   font-family: "montserrat";
   font-weight: 400;
+  color: var(--white);
 }
 
 /*MOBILE*/
