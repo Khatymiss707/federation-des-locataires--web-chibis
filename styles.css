@@ -70,6 +70,12 @@ p {
   color: var(--white);
 }
 
+.credit {
+  font-family: "montserrat";
+  font-weight: 300;
+  color: var(--white);
+}
+
 /*MOBILE*/
 @media (max-width: 375px) {
   body {
