@@ -190,14 +190,19 @@ button.footer {
     grid-column-end: 3;
   }
   .footer .credit {
+    margin-top: 10px;
     text-align: center;
     font-size: 10px;
     grid-column-start: 1;
     grid-column-end: 2;
     margin-bottom: 1em;
   }
-  .footer button {
-    grid-column-start: 2;
+  .footer .partenaires {
+    margin-top: 15px;
+  }
+  .footer .membership {
+    text-align: center;
+    grid-column-start: 1;
     grid-column-end: 3;
   }
   .footer button .membre {
