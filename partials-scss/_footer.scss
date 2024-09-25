@@ -5,12 +5,11 @@
 @media screen and (max-width: 375px) {
 
     .footer {
-        background-color: var(--bleu-calypso);
+        background-color: color.adjust(#1C7293, $blackness: 15%);
         color: var(--blanc);
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(auto-fit);
         gap: 10px;
+        wi
 
         & .lien:hover {
             color: var(--pomme-verte);
@@ -58,7 +57,8 @@
 
         & .logo {
             margin-top: 10px;
-            text-align:center;
+            text-align: center;
+
             & img {
                 width: 100%;
             }
@@ -83,63 +83,64 @@
             font-size: 10px;
             grid-column-start: 1;
             grid-column-end: 2;
-            margin-bottom: 1em;
+            padding-bottom: 1em;
+        }
+
+        .joindre {
+            margin-top: 20px;
+            margin-bottom: 0px;
         }
 
         .partenaires {
-            margin-top: 15px;
+            font-size: 16px;
+            margin-top: 20px;
         }
 
         .membership {
             text-align: center;
             grid-column-start: 1;
-            grid-column-end: 3; 
+            grid-column-end: 3;
         }
 
         button {
             & .membre {
-                color: var(--white);
                 padding: 0.5em;
-                width: 40vw;
+                width: 20vw;
                 font-size: 3vw;
             }
         }
     }
-
 }
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
 
     .logo {
-        transform: scale(0.7);
+        transform: scale(0.9);
     }
-/*
+
     .footer {
-        background-color: var(--bleu-calypso);
+        width: 100vw;
+        background-color: color.adjust(#1C7293, $blackness: 15%);
         color: var(--blanc);
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(auto-fit);
+        gap: 5px;
 
-        &--links:hover {
+        & .lien:hover {
             color: var(--pomme-verte);
         }
 
         & .titre_footer {
-            padding-left: 10px;
-            ;
             grid-column-start: 1;
             grid-column-end: 2;
-            display: grid;
-            grid-template-columns: repeat(auto-fit);
-            grid-template-rows: auto;
         }
 
         & .icones_reseaux {
-            padding-left: 10px;
-            ;
+            position: relative;
+            text-align: center;
             grid-column-start: 1;
             grid-column-end: 2;
             display: grid;
@@ -148,64 +149,242 @@
 
         }
 
+        & .address {
+            position: relative;
+            padding-left: 10px;
+        }
+
         & .quebec {
+            position: relative;
+            transform: scale(0.7);
             text-align: center;
             grid-column-start: 1;
-            grid-column-end: 3;
+            grid-column-end: 2;
         }
 
         & .cnl {
+            position: relative;
+            transform: scale(0.7);
             text-align: center;
-            grid-column-start: 1;
-            grid-column-end: 3;
+            grid-column-start: 1; 
+            grid-column-end: 2;
         }
 
         & .rohq {
-            text-align: center;
-            grid-column-start: 1;
+            position: relative;
+            text-align: left;
+            transform: scale(0.7);
+            grid-column-start: 2;
             grid-column-end: 3;
 
         }
 
         & .frapru {
-            text-align: center;
-            grid-column-start: 1;
+            position: relative;
+            transform: scale(0.7);
+            grid-column-start: 2;
             grid-column-end: 3;
         }
 
-        p {
+        & .logo {
+            position: relative;
+            margin-top: 10px;
+            text-align: center;
 
+            & img {
+                position: relative;
+                width: 100%;
+            }
+        }
+
+        p {
             font-size: 10px;
             grid-column-start: 1;
-            grid-column-end: 3;
+            grid-column-end: 2;
             text-align: center;
         }
 
         & .lien {
+            position: relative;
+            text-align: center;
             grid-column-start: 1;
             grid-column-end: 2;
         }
 
-        .fed {
-            grid-column-start: 1;
-            grid-column-end: 1;
-        }
-
         & .credit {
+            position: relative;
+            margin-top: 10px;
             text-align: center;
             font-size: 10px;
             grid-column-start: 1;
             grid-column-end: 2;
+            padding-bottom: 1em;
         }
-    }*/
 
+        .joindre {
+            position: relative;
+            font-size: 16px;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
 
+        .partenaires {
+            position: relative;
+            font-size: 16px;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .membership {
+            position: relative;
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+            button {
+                & .membre {
+                    position: relative;
+                    padding: 0.1em;
+                    width: 40vw;
+                    font-size: 3vw;
+                }
+            }
+    }
 }
 
+@media screen and (min-width: 768px) {
 
-@media screen and (max-width: 1400px) {
+    .logo {
+        transform: scale(0.9);
+    }
 
     .footer {
-        background-color: var(--bleu-calypso);
+        width: 100vw;
+        background-color: color.adjust(#1C7293, $blackness: 15%);
+        color: var(--blanc);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto-fit);
+        gap: 5px;
+
+        & .lien:hover {
+            color: var(--pomme-verte);
+        }
+
+        & .titre_footer {
+            position: relative; 
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        & .icones_reseaux {
+            position: relative; 
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+
+        }
+
+        & .address {
+            position: relative; 
+            padding-left: 10px;
+        }
+
+        & .quebec {
+            position: relative; 
+            transform: scale(0.7);
+            text-align: center;
+
+        }
+
+        & .cnl {
+            position: relative; 
+            transform: scale(0.7);
+            text-align: center;
+
+        }
+
+        & .rohq {
+            position: relative; 
+            text-align: left;
+            transform: scale(0.7);
+
+
+        }
+
+        & .frapru {
+            position: relative; 
+            transform: scale(0.7);
+
+        }
+
+        & .logo {
+            margin-top: 10px;
+            text-align: center;
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        p {
+            position: relative; 
+            font-size: 10px;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            text-align: center;
+        }
+
+        & .lien {
+            position: relative; 
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        & .credit {
+            position: relative; 
+            margin-top: 10px;
+            text-align: center;
+            font-size: 10px;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            padding-bottom: 1em;
+        }
+
+        .joindre {
+            position: relative; 
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        .partenaires {
+            position: relative; 
+            font-size: 16px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .membership {
+            position: relative; 
+            text-align: center;
+        }
+
+            button {
+                & .membre {
+                    padding: 0.1em;
+                    width: 40vw;
+                    font-size: 3vw;
+                }
+            }
     }
 }

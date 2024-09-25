@@ -33,7 +33,7 @@
     margin-bottom: 0px;
   }
 }
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .banniere {
     background-color: var(--bleu-calypso);
     padding: 2%;
@@ -41,13 +41,20 @@
     grid-template-columns: auto auto auto;
     gap: 7px;
   }
-  .banniere button.fermer {
+  .banniere .banniere_btn {
+    display: flex;
+    align-items: center;
+    display: grid;
+    gap: 7px;
+    grid-template-columns: auto auto;
+  }
+  .banniere .banniere_btn button.fermer {
     padding: 1em;
     width: 12vw;
     border-radius: 0.8em;
     font-size: 1.4vw;
   }
-  .banniere button.visiter {
+  .banniere .banniere_btn button.visiter {
     padding: 1em;
     width: 12vw;
     border-radius: 0.8em;
@@ -85,7 +92,7 @@
 }
 button {
   padding: 1em;
-  width: 33vw;
+  width: 20vw;
   border-radius: 0.8em;
   font-family: "montserrat";
   font-weight: bold;
@@ -129,14 +136,12 @@ button.footer {
 
 @media screen and (max-width: 375px) {
   .footer {
-    background-color: var(--bleu-calypso);
+    background-color: #1c566d;
     color: var(--blanc);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(auto-fit);
     gap: 10px;
   }
-  .footer .lien:hover {
+  wi .footer .lien:hover {
     color: var(--pomme-verte);
   }
   .footer .titre_footer {
@@ -195,10 +200,15 @@ button.footer {
     font-size: 10px;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin-bottom: 1em;
+    padding-bottom: 1em;
+  }
+  .footer .joindre {
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
   .footer .partenaires {
-    margin-top: 15px;
+    font-size: 16px;
+    margin-top: 20px;
   }
   .footer .membership {
     text-align: center;
@@ -206,103 +216,232 @@ button.footer {
     grid-column-end: 3;
   }
   .footer button .membre {
-    color: var(--white);
     padding: 0.5em;
+    width: 20vw;
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .logo {
+    transform: scale(0.9);
+  }
+  .footer {
+    width: 100vw;
+    background-color: #1c566d;
+    color: var(--blanc);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit);
+    gap: 5px;
+  }
+  .footer .lien:hover {
+    color: var(--pomme-verte);
+  }
+  .footer .titre_footer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .footer .icones_reseaux {
+    position: relative;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .footer .address {
+    position: relative;
+    padding-left: 10px;
+  }
+  .footer .quebec {
+    position: relative;
+    transform: scale(0.7);
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .footer .cnl {
+    position: relative;
+    transform: scale(0.7);
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .footer .rohq {
+    position: relative;
+    text-align: left;
+    transform: scale(0.7);
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .footer .frapru {
+    position: relative;
+    transform: scale(0.7);
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .footer .logo {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .footer .logo img {
+    position: relative;
+    width: 100%;
+  }
+  .footer p {
+    font-size: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center;
+  }
+  .footer .lien {
+    position: relative;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .footer .credit {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-bottom: 1em;
+  }
+  .footer .joindre {
+    position: relative;
+    font-size: 16px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .footer .partenaires {
+    position: relative;
+    font-size: 16px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .footer .membership {
+    position: relative;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .footer button .membre {
+    position: relative;
+    padding: 0.1em;
     width: 40vw;
     font-size: 3vw;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .logo {
+    transform: scale(0.9);
+  }
+  .footer {
+    width: 100vw;
+    background-color: #1c566d;
+    color: var(--blanc);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit);
+    gap: 5px;
+  }
+  .footer .lien:hover {
+    color: var(--pomme-verte);
+  }
+  .footer .titre_footer {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .footer .icones_reseaux {
+    position: relative;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .footer .address {
+    position: relative;
+    padding-left: 10px;
+  }
+  .footer .quebec {
+    position: relative;
+    transform: scale(0.7);
+    text-align: center;
+  }
+  .footer .cnl {
+    position: relative;
+    transform: scale(0.7);
+    text-align: center;
+  }
+  .footer .rohq {
+    position: relative;
+    text-align: left;
     transform: scale(0.7);
   }
-  /*
-      .footer {
-          background-color: var(--bleu-calypso);
-          color: var(--blanc);
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: repeat(auto-fit);
-
-          &--links:hover {
-              color: var(--pomme-verte);
-          }
-
-          & .titre_footer {
-              padding-left: 10px;
-              ;
-              grid-column-start: 1;
-              grid-column-end: 2;
-              display: grid;
-              grid-template-columns: repeat(auto-fit);
-              grid-template-rows: auto;
-          }
-
-          & .icones_reseaux {
-              padding-left: 10px;
-              ;
-              grid-column-start: 1;
-              grid-column-end: 2;
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              grid-template-rows: auto;
-
-          }
-
-          & .quebec {
-              text-align: center;
-              grid-column-start: 1;
-              grid-column-end: 3;
-          }
-
-          & .cnl {
-              text-align: center;
-              grid-column-start: 1;
-              grid-column-end: 3;
-          }
-
-          & .rohq {
-              text-align: center;
-              grid-column-start: 1;
-              grid-column-end: 3;
-
-          }
-
-          & .frapru {
-              text-align: center;
-              grid-column-start: 1;
-              grid-column-end: 3;
-          }
-
-          p {
-
-              font-size: 10px;
-              grid-column-start: 1;
-              grid-column-end: 3;
-              text-align: center;
-          }
-
-          & .lien {
-              grid-column-start: 1;
-              grid-column-end: 2;
-          }
-
-          .fed {
-              grid-column-start: 1;
-              grid-column-end: 1;
-          }
-
-          & .credit {
-              text-align: center;
-              font-size: 10px;
-              grid-column-start: 1;
-              grid-column-end: 2;
-          }
-      }*/
-}
-@media screen and (max-width: 1400px) {
-  .footer {
-    background-color: var(--bleu-calypso);
+  .footer .frapru {
+    position: relative;
+    transform: scale(0.7);
+  }
+  .footer .logo {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .footer .logo img {
+    width: 100%;
+  }
+  .footer p {
+    position: relative;
+    font-size: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center;
+  }
+  .footer .lien {
+    position: relative;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .footer .credit {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-bottom: 1em;
+  }
+  .footer .joindre {
+    position: relative;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .footer .partenaires {
+    position: relative;
+    font-size: 16px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .footer .membership {
+    position: relative;
+    text-align: center;
+  }
+  .footer button .membre {
+    padding: 0.1em;
+    width: 40vw;
+    font-size: 3vw;
   }
 }
 @font-face {

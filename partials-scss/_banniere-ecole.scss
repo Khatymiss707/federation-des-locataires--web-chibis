@@ -31,7 +31,8 @@
     }
 }
 
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
+
     .banniere {
         background-color: var(--bleu-calypso);
         padding: 2%;
@@ -39,22 +40,31 @@
         grid-template-columns: auto auto auto;
         gap: 7px;
 
-        button {
+        .banniere_btn {
+            display: flex;
+            align-items: center;
+            display: grid;
+            gap: 7px;
+            grid-template-columns: auto auto;
 
-            &.fermer {
-                padding: 1em;
-                width: 12vw;
-                border-radius: 0.8em;
-                font-size: 1.4vw;
-            }
+            button {
 
-            &.visiter {
-                padding: 1em;
-                width: 12vw;
-                border-radius: 0.8em;
-                font-size: 1.4vw;
+                &.fermer {
+                    padding: 1em;
+                    width: 12vw;
+                    border-radius: 0.8em;
+                    font-size: 1.4vw;
+                }
+    
+                &.visiter {
+                    padding: 1em;
+                    width: 12vw;
+                    border-radius: 0.8em;
+                    font-size: 1.4vw;
+                }
             }
         }
+
 
         p {
             margin: auto 0;
@@ -64,6 +74,7 @@
 }
 
 @media screen and (min-width: 769px) {
+
     .banniere {
         background-color: var(--bleu-calypso);
         padding: 2%;
@@ -71,22 +82,21 @@
         grid-template-columns: auto auto auto;
         gap: 7px;
 
-        button {
-
-            &.fermer {
-                padding: 1em;
-                width: 12vw;
-                border-radius: 0.8em;
-                font-size: 1.4vw;
+            button {
+                &.fermer {
+                    padding: 1em;
+                    width: 12vw;
+                    border-radius: 0.8em;
+                    font-size: 1.4vw;
+                }
+    
+                &.visiter {
+                    padding: 1em;
+                    width: 12vw;
+                    border-radius: 0.8em;
+                    font-size: 1.4vw;
+                }
             }
-
-            &.visiter {
-                padding: 1em;
-                width: 12vw;
-                border-radius: 0.8em;
-                font-size: 1.4vw;
-            }
-        }
 
         p {
             margin: auto 0;
