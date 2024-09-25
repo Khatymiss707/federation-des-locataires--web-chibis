@@ -24,6 +24,13 @@ button.voir_plus {
 button.membre {
   background-color: var(--pomme-verte);
   color: var(--white);
+  padding: 1em;
+  width: 33vw;
+  border-radius: 0.8em;
+  font-size: 2.5vw;
+  font-family: "montserrat";
+  font-weight: bold;
+  border: none;
 }
 button.pagination {
   background-color: var(--gris-souris);
@@ -36,6 +43,13 @@ button.fermer {
 button.visiter {
   background-color: var(--bleu-calypso);
   color: var(--white);
+  padding: 1em;
+  width: 33vw;
+  border-radius: 0.8em;
+  font-size: 2.5vw;
+  font-family: "montserrat";
+  font-weight: bold;
+  border: none;
 }
 button.footer {
   background-color: var(--pomme-verte);
