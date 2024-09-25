@@ -8,27 +8,27 @@
   --noire: #000000;
 }
 
-.button--voir_plus {
+button.voir_plus {
   background-color: var(--vert-menthe);
   color: var(--white);
 }
-.button--membre {
+button.membre {
   background-color: var(--pomme-verte);
   color: var(--noire);
 }
-.button--pagination {
+button.pagination {
   background-color: var(--gris-souris);
   color: var(--bleu-calypso);
 }
-.button--fermer {
+button.fermer {
   background-color: var(--gris-souris);
   color: var(--white);
 }
-.button--visiter {
+button.visiter {
   background-color: var(--bleu-calypso);
   color: var(--white);
 }
-.button--footer {
+button.footer {
   background-color: var(--pomme-verte);
 }
 

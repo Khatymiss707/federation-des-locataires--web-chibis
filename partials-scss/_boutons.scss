@@ -1,27 +1,27 @@
 @use "couleurs";
 
-.button{
-    &--voir_plus {
+button{
+    &.voir_plus {
         background-color: var(--vert-menthe);
         color: var(--white);
     }
-    &--membre {
+    &.membre {
         background-color: var(--pomme-verte);
         color: var(--noire);
     }
-    &--pagination {
+    &.pagination {
         background-color: var(--gris-souris);
         color: var(--bleu-calypso);
     }
-    &--fermer{
+    &.fermer{
         background-color: var(--gris-souris);
         color: var(--white);
     }
-    &--visiter{
+    &.visiter{
         background-color: var(--bleu-calypso);
         color: var(--white);
     }
-    &--footer {
+    &.footer {
         background-color: var(--pomme-verte);
     }
 }
