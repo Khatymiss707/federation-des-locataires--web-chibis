@@ -1,13 +1,22 @@
 @use "couleurs";
 
 button{
+    padding: 1em;
+    width: 33vw;
+    border-radius: 1em;
+    font-size: 2.5vw;
+    font-family: "montserrat";
+    font-weight: bold;
+    border: none;
+
+
     &.voir_plus {
         background-color: var(--vert-menthe);
         color: var(--white);
     }
     &.membre {
         background-color: var(--pomme-verte);
-        color: var(--noire);
+        color: var(--white);
     }
     &.pagination {
         background-color: var(--gris-souris);
