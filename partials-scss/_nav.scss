@@ -1,1 +1,11 @@
 @use "couleurs";
+
+.navbar {
+
+    color: var(--white); 
+
+    &:hover {
+         color:grey; 
+    }
+
+}
