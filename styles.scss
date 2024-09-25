@@ -7,7 +7,7 @@
 @use "partials-scss/texte";
 @use "partials-scss/couleurs";
 
-/*MOBILE*/
+/*MOBILE responsive*/
 @media (max-width: 375px) {
 
     body {
@@ -16,6 +16,7 @@
 
 }
 
+/* background color des sections*/
 .services {
     background-color: var(--white);
 }

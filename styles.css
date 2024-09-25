@@ -2,6 +2,7 @@
   --gris-souris: #a7a7a7;
   --pomme-verte: #8AE190;
   --bleu-calypso: #0F4E66;
+  --bleu-hero: #0E769E;
   --bleu-paisible: #59B1D3;
   --vert-menthe: #C1F9C5;
   --white: #ffffff;
@@ -11,7 +12,7 @@
 button {
   padding: 1em;
   width: 33vw;
-  border-radius: 1em;
+  border-radius: 0.8em;
   font-size: 2.5vw;
   font-family: "montserrat";
   font-weight: bold;
@@ -85,12 +86,13 @@ p {
   color: var(--white);
 }
 
-/*MOBILE*/
+/*MOBILE responsive*/
 @media (max-width: 375px) {
   body {
     background-color: var(--white);
   }
 }
+/* background color des sections*/
 .services {
   background-color: var(--white);
 }
