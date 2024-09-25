@@ -1,7 +1,7 @@
 :root {
   --gris-souris: #a7a7a7;
   --pomme-verte: #8AE190;
-  --bleu-calypso: #0F4E66;
+  --bleu-calypso: #1C7293;
   --bleu-paisible: #59B1D3;
   --vert-menthe: #C1F9C5;
   --white: #ffffff;
@@ -12,7 +12,6 @@ button {
   padding: 1em;
   width: 33vw;
   border-radius: 0.8em;
-  font-size: 2.5vw;
   font-family: "montserrat";
   font-weight: bold;
   border: none;
@@ -26,11 +25,7 @@ button.membre {
   color: var(--white);
   padding: 1em;
   width: 33vw;
-  border-radius: 0.8em;
   font-size: 2.5vw;
-  font-family: "montserrat";
-  font-weight: bold;
-  border: none;
 }
 button.pagination {
   background-color: var(--gris-souris);
@@ -43,9 +38,6 @@ button.fermer {
   width: 12vw;
   border-radius: 0.8em;
   font-size: 1vw;
-  font-family: "montserrat";
-  font-weight: bold;
-  border: none;
 }
 button.visiter {
   background-color: var(--bleu-calypso);
@@ -54,9 +46,6 @@ button.visiter {
   width: 12vw;
   border-radius: 0.8em;
   font-size: 1vw;
-  font-family: "montserrat";
-  font-weight: bold;
-  border: none;
 }
 button.footer {
   background-color: var(--pomme-verte);
@@ -72,7 +61,7 @@ button.footer {
 }
 
 .foot--text {
-  font-size: 20px;
+  font-size: 16px;
 }
 .foot--text--soustitre {
   font-size: 18px;
@@ -96,7 +85,7 @@ h1 {
 
 p {
   font-family: "montserrat";
-  font-weight: 700;
+  font-weight: 400;
   color: var(--white);
 }
 
