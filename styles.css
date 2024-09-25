@@ -4,10 +4,85 @@
   --bleu-calypso: #1C7293;
   --bleu-paisible: #59B1D3;
   --vert-menthe: #C1F9C5;
-  --white: #ffffff;
-  --noire: #000000;
+  --blanc: #ffffff;
+  --noir: #000000;
 }
 
+@media screen and (max-width: 375px) {
+  .banniere {
+    background-color: var(--bleu-calypso);
+    padding: 4%;
+    display: grid;
+    text-align: center;
+    gap: 10px;
+  }
+  .banniere button.fermer {
+    padding: 1em;
+    width: 90vw;
+    border-radius: 0.8em;
+    font-size: 3vw;
+  }
+  .banniere button.visiter {
+    padding: 1em;
+    width: 90vw;
+    border-radius: 0.8em;
+    font-size: 3vw;
+  }
+  .banniere p {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .banniere {
+    background-color: var(--bleu-calypso);
+    padding: 2%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 7px;
+  }
+  .banniere button.fermer {
+    padding: 1em;
+    width: 12vw;
+    border-radius: 0.8em;
+    font-size: 1.4vw;
+  }
+  .banniere button.visiter {
+    padding: 1em;
+    width: 12vw;
+    border-radius: 0.8em;
+    font-size: 1.4vw;
+  }
+  .banniere p {
+    margin: auto 0;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .banniere {
+    background-color: var(--bleu-calypso);
+    padding: 2%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 7px;
+  }
+  .banniere button.fermer {
+    padding: 1em;
+    width: 12vw;
+    border-radius: 0.8em;
+    font-size: 1.4vw;
+  }
+  .banniere button.visiter {
+    padding: 1em;
+    width: 12vw;
+    border-radius: 0.8em;
+    font-size: 1.4vw;
+  }
+  .banniere p {
+    margin: auto 0;
+    font-size: 10px;
+  }
+}
 button {
   padding: 1em;
   width: 33vw;
@@ -15,14 +90,15 @@ button {
   font-family: "montserrat";
   font-weight: bold;
   border: none;
+  box-shadow: 5px 5px 5px #1c566d;
 }
 button.voir_plus {
   background-color: var(--vert-menthe);
-  color: var(--white);
+  color: var(--blanc);
 }
 button.membre {
   background-color: var(--pomme-verte);
-  color: var(--white);
+  color: var(--blanc);
   padding: 1em;
   width: 33vw;
   font-size: 2.5vw;
@@ -33,15 +109,15 @@ button.pagination {
 }
 button.fermer {
   background-color: var(--gris-souris);
-  color: var(--white);
+  color: var(--blanc);
   padding: 1em;
   width: 12vw;
   border-radius: 0.8em;
   font-size: 1vw;
 }
 button.visiter {
-  background-color: var(--bleu-calypso);
-  color: var(--white);
+  background-color: #1c566d;
+  color: var(--blanc);
   padding: 1em;
   width: 12vw;
   border-radius: 0.8em;
@@ -51,25 +127,179 @@ button.footer {
   background-color: var(--pomme-verte);
 }
 
-.footer {
-  background-color: var(--bleu-calypso);
-  color: var(--whitte);
-  display: grid;
+@media screen and (max-width: 375px) {
+  .footer {
+    background-color: var(--bleu-calypso);
+    color: var(--blanc);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit);
+    gap: 10px;
+  }
+  .footer .lien:hover {
+    color: var(--pomme-verte);
+  }
+  .footer .titre_footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .footer .icones_reseaux {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .footer .quebec {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .footer .cnl {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .footer .rohq {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .footer .frapru {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .footer .logo {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .footer .logo img {
+    width: 100%;
+  }
+  .footer p {
+    font-size: 14px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+  }
+  .footer .lien {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .footer .credit {
+    text-align: center;
+    font-size: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-bottom: 1em;
+  }
+  .footer button {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .footer button .membre {
+    color: var(--white);
+    padding: 0.5em;
+    width: 40vw;
+    font-size: 3vw;
+  }
 }
-.footer--links:hover {
-  color: var(--pomme-verte);
-}
+@media screen and (max-width: 768px) {
+  .logo {
+    transform: scale(0.7);
+  }
+  /*
+      .footer {
+          background-color: var(--bleu-calypso);
+          color: var(--blanc);
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: repeat(auto-fit);
 
-.foot--text {
-  font-size: 16px;
-}
-.foot--text--soustitre {
-  font-size: 18px;
-}
-.foot--text--credit {
-  font-size: 14px;
-}
+          &--links:hover {
+              color: var(--pomme-verte);
+          }
 
+          & .titre_footer {
+              padding-left: 10px;
+              ;
+              grid-column-start: 1;
+              grid-column-end: 2;
+              display: grid;
+              grid-template-columns: repeat(auto-fit);
+              grid-template-rows: auto;
+          }
+
+          & .icones_reseaux {
+              padding-left: 10px;
+              ;
+              grid-column-start: 1;
+              grid-column-end: 2;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: auto;
+
+          }
+
+          & .quebec {
+              text-align: center;
+              grid-column-start: 1;
+              grid-column-end: 3;
+          }
+
+          & .cnl {
+              text-align: center;
+              grid-column-start: 1;
+              grid-column-end: 3;
+          }
+
+          & .rohq {
+              text-align: center;
+              grid-column-start: 1;
+              grid-column-end: 3;
+
+          }
+
+          & .frapru {
+              text-align: center;
+              grid-column-start: 1;
+              grid-column-end: 3;
+          }
+
+          p {
+
+              font-size: 10px;
+              grid-column-start: 1;
+              grid-column-end: 3;
+              text-align: center;
+          }
+
+          & .lien {
+              grid-column-start: 1;
+              grid-column-end: 2;
+          }
+
+          .fed {
+              grid-column-start: 1;
+              grid-column-end: 1;
+          }
+
+          & .credit {
+              text-align: center;
+              font-size: 10px;
+              grid-column-start: 1;
+              grid-column-end: 2;
+          }
+      }*/
+}
+@media screen and (max-width: 1400px) {
+  .footer {
+    background-color: var(--bleu-calypso);
+  }
+}
 @font-face {
   src: url("/sources/medias/font/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
   font-family: "montserrat";
@@ -81,31 +311,33 @@ button.footer {
 h1 {
   font-family: "merriweather";
   font-weight: bold;
-  color: var(--white);
+  color: var(--blanc);
+  text-shadow: 2%;
+}
+
+h2 {
+  font-family: "merriweather";
+  font-weight: bold;
+  color: var(--blanc);
   text-shadow: 2%;
 }
 
 p {
+  margin-top: 0px;
   font-family: "montserrat";
   font-weight: 600;
-  color: var(--white);
+  color: var(--blanc);
 }
 
 .credit {
   font-family: "montserrat";
   font-weight: 300;
-  color: var(--white);
+  color: var(--blanc);
 }
 
-/*MOBILE responsive*/
-@media (max-width: 375px) {
-  body {
-    background-color: var(--white);
-  }
-}
 /* background color des sections*/
-header {
-  background-color: var(--bleu-calypso);
+body {
+  margin: 0px;
 }
 
 .services {

@@ -7,18 +7,10 @@
 @use "partials-scss/texte";
 @use "partials-scss/couleurs";
 
-/*MOBILE responsive*/
-@media (max-width: 375px) {
-
-    body {
-        background-color: var(--white);
-    }
-
-}
-
 /* background color des sections*/
-header {
-    background-color: var(--bleu-calypso);
+
+body {
+        margin: 0px; 
 }
 
 .services {

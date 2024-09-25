@@ -11,18 +11,26 @@
 h1 {
     font-family: "merriweather";
     font-weight: bold;
-    color:var(--white);
+    color: var(--blanc);
+    text-shadow: 2%; 
+}
+
+h2 {
+    font-family: "merriweather";
+    font-weight: bold;
+    color: var(--blanc);
     text-shadow: 2%; 
 }
 
 p {
+    margin-top: 0px;
     font-family: "montserrat";
     font-weight: 600;
-    color: var(--white);
+    color: var(--blanc);
 }
 
 .credit {
     font-family: "montserrat";
     font-weight: 300;
-    color: var(--white);
+    color: var(--blanc);
 }

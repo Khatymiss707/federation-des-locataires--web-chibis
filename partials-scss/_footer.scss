@@ -1,23 +1,205 @@
 @use "couleurs";
+@use "boutons";
+@use "sass:color";
 
-.footer {
-    background-color: var(--bleu-calypso);
-    color: var(--whitte);
-    display: grid;
-    &--links:hover {
-        color: var(--pomme-verte);
+@media screen and (max-width: 375px) {
+
+    .footer {
+        background-color: var(--bleu-calypso);
+        color: var(--blanc);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto-fit);
+        gap: 10px;
+
+        & .lien:hover {
+            color: var(--pomme-verte);
+        }
+
+        & .titre_footer {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        & .icones_reseaux {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+
+        }
+
+        & .quebec {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        & .cnl {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        & .rohq {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        & .frapru {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        & .logo {
+            margin-top: 10px;
+            text-align:center;
+            & img {
+                width: 100%;
+            }
+        }
+
+        p {
+
+            font-size: 14px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            text-align: center;
+        }
+
+        & .lien {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        & .credit {
+            text-align: center;
+            font-size: 10px;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            margin-bottom: 1em;
+        }
+
+        button {
+
+            grid-column-start: 2;
+            grid-column-end: 3;
+
+            & .membre {
+                color: var(--white);
+                padding: 0.5em;
+                width: 40vw;
+                font-size: 3vw;
+            }
+        }
     }
+
 }
 
-.foot--text {
-    font-size: 16px;
-    &--soustitre {
-        font-size: 18px;
+
+
+@media screen and (max-width: 768px) {
+
+    .logo {
+        transform: scale(0.7);
     }
-    &--credit {
-        font-size: 14px; 
-    }
+/*
+    .footer {
+        background-color: var(--bleu-calypso);
+        color: var(--blanc);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto-fit);
+
+        &--links:hover {
+            color: var(--pomme-verte);
+        }
+
+        & .titre_footer {
+            padding-left: 10px;
+            ;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            display: grid;
+            grid-template-columns: repeat(auto-fit);
+            grid-template-rows: auto;
+        }
+
+        & .icones_reseaux {
+            padding-left: 10px;
+            ;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+
+        }
+
+        & .quebec {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        & .cnl {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        & .rohq {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        & .frapru {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        p {
+
+            font-size: 10px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            text-align: center;
+        }
+
+        & .lien {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .fed {
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+        & .credit {
+            text-align: center;
+            font-size: 10px;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }*/
+
+
 }
 
 
+@media screen and (max-width: 1400px) {
 
+    .footer {
+        background-color: var(--bleu-calypso);
+    }
+}

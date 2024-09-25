@@ -1,4 +1,5 @@
 @use "couleurs";
+@use "sass:color";
 
 button{
     padding: 1em;
@@ -7,14 +8,15 @@ button{
     font-family: "montserrat";
     font-weight: bold;
     border: none;
+    box-shadow: 5px 5px 5px color.adjust(#1C7293, $blackness: 15%);
 
     &.voir_plus {
         background-color: var(--vert-menthe);
-        color: var(--white);
+        color: var(--blanc);
     }
     &.membre {
         background-color: var(--pomme-verte);
-        color: var(--white);
+        color: var(--blanc);
         padding: 1em;
         width: 33vw;
         font-size: 2.5vw;
@@ -25,15 +27,15 @@ button{
     }
     &.fermer{
         background-color: var(--gris-souris);
-        color: var(--white);
+        color: var(--blanc);
         padding: 1em;
         width: 12vw;
         border-radius: 0.8em;
         font-size: 1vw;
     }
     &.visiter{
-        background-color: var(--bleu-calypso);
-        color: var(--white);
+        background-color: color.adjust(#1C7293, $blackness: 15%);
+        color: var(--blanc);
         padding: 1em;
         width: 12vw;
         border-radius: 0.8em;
