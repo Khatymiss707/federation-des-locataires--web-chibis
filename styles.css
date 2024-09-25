@@ -75,6 +75,13 @@ h1 {
 
 p {
   font-family: "montserrat";
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+  font-weight: 500;
+  color: #fff;
+=======
+>>>>>>> Stashed changes
   font-weight: 700;
   color: var(--white);
 }
@@ -83,6 +90,10 @@ p {
   font-family: "montserrat";
   font-weight: 300;
   color: var(--white);
+<<<<<<< Updated upstream
+=======
+>>>>>>> fa7d35218eaccf7bb8d6e0de9007c071138bc3ae
+>>>>>>> Stashed changes
 }
 
 /*MOBILE*/
@@ -107,7 +118,7 @@ p {
   background-color: var(--bleu-calypso);
 }
 
-.texte {
+p {
   color: var(--white);
 }
 
