@@ -498,4 +498,26 @@ body {
 
 .infolettre {
   background-color: var(--bleu-calypso);
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*bootstrap*/
+.navbar{
+  background-color: var(--bleu-paisible);
+  
+}
+
+a.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--blanc);
+}
+
+form button{
+  width: 40vw;
+}
+
+.boite_loupe{
+  width: 40vw;
+  border: 2px solid var(--blanc);
+}
+/*# sourceMappingURL=styles.css.map */
