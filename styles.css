@@ -81,6 +81,8 @@ button.footer {
 h1 {
   font-family: "merriweather";
   font-weight: bold;
+  color: var(--white);
+  text-shadow: 2%;
 }
 
 p {
@@ -120,9 +122,4 @@ header {
 
 .infolettre {
   background-color: var(--bleu-calypso);
-}
-
-h1 {
-  color: var(--white);
-  text-shadow: 2%;
 }/*# sourceMappingURL=styles.css.map */
