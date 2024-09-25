@@ -39,14 +39,21 @@ button.pagination {
 button.fermer {
   background-color: var(--gris-souris);
   color: var(--white);
+  padding: 1em;
+  width: 12vw;
+  border-radius: 0.8em;
+  font-size: 1vw;
+  font-family: "montserrat";
+  font-weight: bold;
+  border: none;
 }
 button.visiter {
   background-color: var(--bleu-calypso);
   color: var(--white);
   padding: 1em;
-  width: 33vw;
+  width: 12vw;
   border-radius: 0.8em;
-  font-size: 2.5vw;
+  font-size: 1vw;
   font-family: "montserrat";
   font-weight: bold;
   border: none;
