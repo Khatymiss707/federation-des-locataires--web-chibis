@@ -85,7 +85,7 @@ h1 {
 
 p {
   font-family: "montserrat";
-  font-weight: 400;
+  font-weight: 600;
   color: var(--white);
 }
 
@@ -120,10 +120,6 @@ header {
 
 .infolettre {
   background-color: var(--bleu-calypso);
-}
-
-p {
-  color: var(--white);
 }
 
 h1 {
