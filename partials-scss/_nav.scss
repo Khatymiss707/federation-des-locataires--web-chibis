@@ -16,7 +16,7 @@ ul {
   
 .nav {
     
-    background-color: color.adjust(tranparent, $blackness: 10%);;
+    background-color: color.adjust(var(transparent), $blackness: 10%);
     padding: 1%;
     font-family: merriweather;
     text-transform: uppercase;
