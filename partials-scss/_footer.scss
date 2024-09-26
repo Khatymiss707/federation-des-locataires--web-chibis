@@ -9,13 +9,10 @@
         color: var(--blanc);
         display: grid;
         gap: 10px;
+        wi
 
-        .lien {
-            a {
-                &:hover {
-                    color: var(--pomme-verte);
-                }
-            }
+        & .lien:hover {
+            color: var(--pomme-verte);
         }
 
         & .titre_footer {
@@ -106,10 +103,10 @@
         }
 
         button {
-            &.membre {
-                padding: 1em;
-                width: 55vw;
-                font-size: 4.5vw;
+            & .membre {
+                padding: 0.5em;
+                width: 20vw;
+                font-size: 3vw;
             }
         }
     }
@@ -132,12 +129,8 @@
         grid-template-rows: repeat(auto-fit);
         gap: 5px;
 
-        .lien {
-            a {
-                &:hover {
-                    color: var(--pomme-verte);
-                }
-            }
+        & .lien:hover {
+            color: var(--pomme-verte);
         }
 
         & .titre_footer {
@@ -173,7 +166,7 @@
             position: relative;
             transform: scale(0.7);
             text-align: center;
-            grid-column-start: 1;
+            grid-column-start: 1; 
             grid-column-end: 2;
         }
 
@@ -253,22 +246,21 @@
             grid-column-end: 2;
         }
 
-        button {
-            &.membre {
-                position: relative;
-                margin-top: 10px;
-                padding: 0.8em;
-                width: 40vw;
-                font-size: 3vw;
+            button {
+                & .membre {
+                    position: relative;
+                    padding: 0.1em;
+                    width: 40vw;
+                    font-size: 3vw;
+                }
             }
-        }
     }
 }
 
 @media screen and (min-width: 768px) {
 
     .logo {
-        transform: scale(0.6);
+        transform: scale(0.9);
     }
 
     .footer {
@@ -280,23 +272,18 @@
         grid-template-rows: repeat(auto-fit);
         gap: 5px;
 
-        .lien {
-            a {
-                font-size: 1em;
-                &:hover {
-                    color: var(--pomme-verte);
-                }
-            }
+        & .lien:hover {
+            color: var(--pomme-verte);
         }
 
         & .titre_footer {
-            position: relative;
+            position: relative; 
             grid-column-start: 1;
             grid-column-end: 2;
         }
 
         & .icones_reseaux {
-            position: relative;
+            position: relative; 
             text-align: center;
             grid-column-start: 1;
             grid-column-end: 2;
@@ -307,51 +294,35 @@
         }
 
         & .address {
-            position: relative;
+            position: relative; 
             padding-left: 10px;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            font-size: 0.8em;
         }
 
         & .quebec {
-            position: relative;
+            position: relative; 
             transform: scale(0.7);
             text-align: center;
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 2;
 
         }
 
         & .cnl {
-            position: relative;
+            position: relative; 
             transform: scale(0.7);
             text-align: center;
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 3;
 
         }
 
         & .rohq {
-            position: relative;
-            text-align: center;
+            position: relative; 
+            text-align: left;
             transform: scale(0.7);
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 5;
 
 
         }
 
         & .frapru {
-            text-align: center;
-            position: relative;
+            position: relative; 
             transform: scale(0.7);
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 4;
 
         }
 
@@ -365,69 +336,55 @@
         }
 
         p {
-            position: relative;
-            font-size: 0.8em;
+            position: relative; 
+            font-size: 10px;
             grid-column-start: 1;
             grid-column-end: 2;
             text-align: center;
         }
 
         & .lien {
-            position: relative;
+            position: relative; 
             text-align: center;
             grid-column-start: 1;
             grid-column-end: 2;
         }
 
         & .credit {
-            position: relative;
+            position: relative; 
             margin-top: 10px;
             text-align: center;
             font-size: 10px;
             grid-column-start: 1;
             grid-column-end: 2;
             padding-bottom: 1em;
-            margin-top: 5vh;
         }
 
         .joindre {
-            position: relative;
+            position: relative; 
             font-size: 16px;
             margin-top: 20px;
             margin-bottom: 0px;
-            grid-column-start: 1;
-            grid-column-end: 3;
-            margin-top: 5vh;
-            margin-bottom: 2vh;
         }
 
         .partenaires {
-            position: relative;
+            position: relative; 
             font-size: 16px;
-            margin-top: 6%;
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 1;
+            font-size: 16px;
+            margin-top: 20px;
         }
 
         .membership {
-            position: relative;
+            position: relative; 
             text-align: center;
-            grid-column-start: 1;
-            grid-column-end: 3;
-
         }
 
-        button {
-            &.membre {
-                padding: 1%;
-                width: 20vw;
-                font-size: 1vw;
-
-                &:hover {
-                    transform: scale(1.5);
+            button {
+                & .membre {
+                    padding: 0.1em;
+                    width: 40vw;
+                    font-size: 3vw;
                 }
             }
-        }
     }
 }

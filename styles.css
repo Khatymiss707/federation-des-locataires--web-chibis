@@ -107,8 +107,8 @@ button.membre {
   background-color: var(--pomme-verte);
   color: var(--blanc);
   padding: 1em;
-  width: 20vw;
-  font-size: 1.5vw;
+  width: 33vw;
+  font-size: 2.5vw;
 }
 button.pagination {
   background-color: var(--gris-souris);
@@ -141,7 +141,7 @@ button.footer {
     display: grid;
     gap: 10px;
   }
-  .footer .lien a:hover {
+  wi .footer .lien:hover {
     color: var(--pomme-verte);
   }
   .footer .titre_footer {
@@ -486,18 +486,4 @@ body {
 
 .services {
   background-color: var(--white);
-}
-
-.section-actualites {
-  background-color: var(--white);
-}
-
-.temoignages {
-  background-color: var(--bleu-calypso);
-}
-
-.infolettre {
-  background-color: var(--bleu-calypso);
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

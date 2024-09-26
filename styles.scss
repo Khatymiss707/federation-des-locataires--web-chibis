@@ -6,18 +6,11 @@
 @use "partials-scss/maison";
 @use "partials-scss/texte";
 @use "partials-scss/couleurs";
-@use "partials-scss/nav";
+
 /* background color des sections*/
 
-body {  
-    background-color: var(--vert-menthe);
+body {
         margin: 0px; 
-}
-
-.page_blanche {
-    width: 80vw; 
-    height: 80vh; 
-    background-color: red;
 }
 
 .services {

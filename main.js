@@ -1,6 +1,5 @@
 import "../federation-des-locataires--web-chibis/styles.scss";
 
-// element positionnement footer 
 let minwidth = querySelector(".footer").style.width; 
 let footer = document.querySelector(".footer"); 
 let queb = document.querySelector(".quebec");
@@ -17,10 +16,10 @@ let iconesReseaux = document.querySelector("icones_reseaux");
 let logo = document.querySelector(".logo");
 
 let column1 = document.createElement("div");
-
+column1.setAttribute(".column1");
 
 let column2 = document.createElement("div");
-
+column1.setAttribute(".column2");
 
 if(minwidth >= 768) {
     footer.appendChild("column1");
@@ -31,15 +30,14 @@ if(minwidth >= 768) {
     column1.appendChild("lien");
     column1.appendChild("iconesReseaux");
     column1.appendChild("logo");
-    column1.setAttribute(".column1");
-    
+
     footer.appendChild("column2");
     column2.appendChild("partenaire");
     column2.appendChild("queb");
     column2.appendChild("rohq");
     column2.appendChild("frappu");
     column2.appendChild("cnl");
-    column2.setAttribute(".column2");
+     
 } else {
 
     footer.removeChild("column1");
