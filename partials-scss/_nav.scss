@@ -87,6 +87,10 @@ ul {
 
   .nav {
 
+    a{
+      font-size: 18px;
+      font-weight: 500;
+    }
     background-color: color.adjust(black, $blackness: 10%);
     
     padding: 1%;
