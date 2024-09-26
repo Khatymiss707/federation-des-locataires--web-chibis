@@ -367,6 +367,18 @@ a {
     grid-row: 3/4;
     text-align: center;
   }
+  .footer .column2 .joindre {
+    text-align: center;
+    grid-column: 3/3;
+    grid-row: 3/4;
+    text-align: center;
+  }
+  .footer .column2 .membership {
+    text-align: center;
+    grid-column: 3/3;
+    grid-row: 3/4;
+    text-align: center;
+  }
 }
 .bloc-li-services {
   background-color: var(--blue-calypso);
