@@ -266,108 +266,39 @@ a {
   .footer .lien a:hover {
     color: var(--pomme-verte);
   }
-  .footer .titre_footer {
-    grid-column-start: 1;
-    grid-column-end: 2;
+  .footer .columns2 {
+    width: 100vw;
   }
-  .footer .icones_reseaux {
-    position: relative;
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 2;
+  .footer .columns2 .partners {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
   }
-  .footer .address {
-    position: relative;
-    padding-left: 10px;
-  }
-  .footer .quebec {
+  .footer .columns2 .partners .quebec {
     position: relative;
     transform: scale(0.7);
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  .footer .cnl {
+  .footer .columns2 .partners .frapru {
+    position: relative;
+    transform: scale(0.7);
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .footer .columns2 .partners .cnl {
     position: relative;
     transform: scale(0.7);
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  .footer .rohq {
+  .footer .columns2 .partners .rohq {
     position: relative;
     text-align: left;
     transform: scale(0.7);
     grid-column-start: 2;
     grid-column-end: 3;
-  }
-  .footer .frapru {
-    position: relative;
-    transform: scale(0.7);
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-  .footer .logo {
-    position: relative;
-    margin-top: 10px;
-    text-align: center;
-  }
-  .footer .logo img {
-    position: relative;
-    width: 100%;
-  }
-  .footer p {
-    font-size: 10px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    text-align: center;
-  }
-  .footer .lien {
-    position: relative;
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-  .footer .credit {
-    position: relative;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 10px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    padding-bottom: 1em;
-  }
-  .footer .joindre {
-    position: relative;
-    font-size: 16px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    margin-top: 20px;
-    margin-bottom: 0px;
-  }
-  .footer .partenaires {
-    position: relative;
-    font-size: 16px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    font-size: 16px;
-    margin-top: 20px;
-  }
-  .footer .membership {
-    position: relative;
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-  .footer button.membre {
-    position: relative;
-    margin-top: 10px;
-    padding: 0.8em;
-    width: 40vw;
-    font-size: 3vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -377,7 +308,6 @@ a {
   .footer {
     width: 100vw;
     background-color: #1c566d;
-    padding: 3%;
     color: var(--blanc);
     display: grid;
     grid-template-columns: repeat(auto-fit);
@@ -386,8 +316,8 @@ a {
   }
   .footer .column1 {
     grid-column: 1/2;
-    padding-left: 5%;
-    padding-top: 5%;
+    padding-left: 5vw;
+    padding-top: 5vw;
   }
   .footer .column1 .logo {
     transform: scale(1);
@@ -405,8 +335,8 @@ a {
   }
   .footer .column2 {
     grid-column: 2/3;
-    padding-right: 5%;
-    padding-top: 5%;
+    padding-right: 5vw;
+    padding-top: 5vw;
   }
   .footer .column2 .partners {
     display: grid;
@@ -611,6 +541,18 @@ ul {
     width: 100vw;
     height: 90%;
   }
+  .hero {
+    width: 100%;
+    height: 90vh;
+  }
+  .hero .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .hero .swiper img {
+    width: 20%;
+    height: 1vh;
+  }
 }
 @media screen and (min-width: 768px) {
   body {
@@ -629,7 +571,13 @@ ul {
   .hero {
     width: 100%;
     height: 90vh;
-    background-image: url("./sources/medias/images/accueil/heros/kyles_collins.jpg");
-    background-size: cover;
+  }
+  .hero .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .hero .swiper img {
+    width: 100%;
+    height: 90vh;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -132,6 +132,7 @@
         grid-template-rows: repeat(auto-fit);
         gap: 5px;
 
+
         .lien {
             a {
                 &:hover {
@@ -139,129 +140,47 @@
                 }
             }
         }
-
-        & .titre_footer {
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
-
-        & .icones_reseaux {
-            position: relative;
-            text-align: center;
-            grid-column-start: 1;
-            grid-column-end: 2;
+        .columns2 {
+            width: 100vw;
+            .partners {
             display: grid;
+
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto;
-
-        }
-
-        & .address {
-            position: relative;
-            padding-left: 10px;
-        }
-
-        & .quebec {
-            position: relative;
-            transform: scale(0.7);
-            text-align: center;
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
-
-        & .cnl {
-            position: relative;
-            transform: scale(0.7);
-            text-align: center;
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
-
-        & .rohq {
-            position: relative;
-            text-align: left;
-            transform: scale(0.7);
-            grid-column-start: 2;
-            grid-column-end: 3;
-
-        }
-
-        & .frapru {
-            position: relative;
-            transform: scale(0.7);
-            grid-column-start: 2;
-            grid-column-end: 3;
-        }
-
-        & .logo {
-            position: relative;
-            margin-top: 10px;
-            text-align: center;
-
-            & img {
+            & .quebec {
                 position: relative;
-                width: 100%;
+                transform: scale(0.7);
+                text-align: center;
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            & .frapru {
+                position: relative;
+                transform: scale(0.7);
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+            & .cnl {
+                position: relative;
+                transform: scale(0.7);
+                text-align: center;
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+    
+            & .rohq {
+                position: relative;
+                text-align: left;
+                transform: scale(0.7);
+                grid-column-start: 2;
+                grid-column-end: 3;
+    
+            }
+
             }
         }
+        
+        
 
-        p {
-            font-size: 10px;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            text-align: center;
-        }
-
-        & .lien {
-            position: relative;
-            text-align: center;
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
-
-        & .credit {
-            position: relative;
-            margin-top: 10px;
-            text-align: center;
-            font-size: 10px;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            padding-bottom: 1em;
-        }
-
-        .joindre {
-            position: relative;
-            font-size: 16px;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            margin-top: 20px;
-            margin-bottom: 0px;
-        }
-
-        .partenaires {
-            position: relative;
-            font-size: 16px;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            font-size: 16px;
-            margin-top: 20px;
-        }
-
-        .membership {
-            position: relative;
-            text-align: center;
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
-
-        button {
-            &.membre {
-                position: relative;
-                margin-top: 10px;
-                padding: 0.8em;
-                width: 40vw;
-                font-size: 3vw;
-            }
-        }
     }
 }
 
@@ -274,7 +193,7 @@
     .footer {
         width: 100vw;
         background-color: color.adjust(#1C7293, $blackness: 15%);
-        padding: 3%;
+
         color: var(--blanc);
         display: grid;
         grid-template-columns: repeat(auto-fit);
@@ -283,11 +202,12 @@
 
         .column1 {
             grid-column: 1/2;
-            padding-left: 5%;
-            padding-top: 5%;
-            .logo {
+            padding-left: 5vw;
+            padding-top: 5vw;
+            & .logo {
                 transform: scale(1);
             }
+
             .icones_reseaux {
                 display: grid;
                 grid-template-columns: 60px 60px;
@@ -303,8 +223,8 @@
 
         .column2 {
             grid-column: 2/3;
-            padding-right: 5%;
-            padding-top: 5%;
+            padding-right: 5vw;
+            padding-top: 5vw;
             .partners {
                 display: grid;
                 grid-template-columns: auto auto;
