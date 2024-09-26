@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "web chibis",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "swiper": "^11.1.14"
+  }
 }
