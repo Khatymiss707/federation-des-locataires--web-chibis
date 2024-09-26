@@ -488,21 +488,18 @@ ul {
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
   a {
-    color: var(--blanc);
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 0;
   }
   .nav {
-    background-color: #1c566d;
     padding: 1%;
     font-family: merriweather;
     text-transform: uppercase;
     display: grid;
     grid-template-columns: auto;
   }
-  .nav img {
-    position: hidden;
+  .navimg {
+    display: none;
   }
   .nav__list {
     display: flex;
@@ -550,19 +547,24 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .nav {
-    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
     padding: 1%;
     font-family: merriweather;
     text-transform: uppercase;
-    display: grid;
     grid-template-columns: auto;
+  }
+  .nav a {
+    font-size: 18px;
+    font-weight: 500;
   }
   .nav__list {
     display: hidden;
   }
   .nav__list .nav__list {
     position: absolute;
-    display: block;
     top: 100%;
     height: 0;
     background-color: #ff8585;
@@ -573,16 +575,13 @@ ul {
     border: 0;
     padding: 5px 12px;
   }
-  .nav__list .nav__list .nav__item:not(:last-child) {
-    border-bottom: 2px solid #b1ede8;
-  }
-  .nav__item {
+  .nav__list__item {
     position: relative;
   }
-  .nav__item:hover .nav__list {
+  .nav__list__item:hover .nav__list {
     height: 10.5vh;
   }
-  .nav__link {
+  .nav__list__link {
     padding: 5px 10px;
     margin: 1px;
     /*
@@ -590,19 +589,15 @@ ul {
     border-radius: 2px;
     display: block;
   }
-  .nav__link:hover {
+  .nav__list__link:hover {
     border-bottom: solid var(--blanc) 2px;
     /*background: rgba(255, 255, 255, 0.2);*/
   }
-  .nav__link--dark {
-    /*background: rgba(53, 45, 57, 0.7);*/
+  .nav__list__link--dark {
     cursor: default;
   }
-  .nav__link--dark:hover {
+  .nav__list__link--dark:hover {
     border-bottom: solid var(--blanc) 2px;
-  }
-  .nav__list .nav__list {
-    background-color: var(--bleu-calypso);
   }
 }
 @media screen and (max-width: 375px) {
