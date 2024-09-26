@@ -1,32 +1,65 @@
+@use "partials-scss/articles-similaires"; 
 @use "partials-scss/banniere-ecole";
 @use "partials-scss/bannieres-services";
 @use "partials-scss/boutons";
 @use "partials-scss/cartes";
+@use "partials-scss/couleurs"; 
+@use "partials-scss/description-articles"; 
+@use "partials-scss//description-services"; 
 @use "partials-scss/footer";
+@use "partials-scss/liste-service"; 
 @use "partials-scss/maison";
-@use "partials-scss/texte";
-@use "partials-scss/couleurs";
 @use "partials-scss/nav";
-/* background color des sections*/
+@use "partials-scss/texte";
 
-body {  
-    background-color: var(--vert-menthe);
-        margin: 0px; 
+@media screen and (max-width: 375px) {
+    .pageblanche {
+        width: 100vw;
+        height: 90%; 
+    }
 }
 
-.services {
-    background-color: var(--white);
+@media screen and (min-width: 375px) and (max-width: 768px){
+    .pageblanche {
+        width: 100vw;
+        height: 90%; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: var(--vert-menthe);
+        background-image: url(./sources/medias/images/background_element/decoration_logo.svg);
+        background-size: cover;
+        background-repeat: repeat-y;
+        margin: 0px;
+    }
+
+    .pageblanche {
+        background-color: white;
+        margin: 0 auto;
+        width: 90vw;
+        height: 90%;
+    }
+
+    .hero {
+
+    }
+
+    .services {
+        background-color: var(--white);
+    }
+
 }
 
 .section-actualites {
-    background-color: var(--white);
+
 }
 
 .temoignages {
-    background-color: var(--bleu-calypso); 
+
 }
 
 .infolettre {
-    background-color: var(--bleu-calypso);
-}
 
+}
