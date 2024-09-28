@@ -481,7 +481,22 @@ ul {
     width: 90vw;
     height: 90%;
   }
+  .pageblanche .item {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+  }
+  .pageblanche .item1 {
+    background: blue;
+  }
+  .pageblanche .item2 {
+    top: 20px;
+    left: 40px;
+    position: absolute;
+    background: red;
+  }
   .hero {
+    position: relative;
     width: 100%;
     height: 90vh;
   }
@@ -491,6 +506,13 @@ ul {
   }
   .hero .swiper img {
     width: 100%;
-    height: 90vh;
+    height: 100%;
+  }
+  .hero h1 {
+    width: auto;
+    height: auto;
+    border: 2px solid red;
+    position: absolute;
+    margin-top: 0px;
   }
 }/*# sourceMappingURL=styles.css.map */
