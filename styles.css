@@ -519,12 +519,17 @@ a {
 }
 
 .hero {
+  position: relative;
   width: 100%;
   height: 100%;
 }
 .hero .swiper {
+  position: relative;
   width: 100%;
   height: 100%;
+}
+.hero .swiper .swiper-slide {
+  height: 90vh;
 }
 .hero .swiper img {
   width: 100%;
@@ -532,11 +537,35 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.hero .swiper-pagination-bullet-active {
+  background: var(--bleu-calypso);
+}
 
 .donation {
   background-color: #1c566d;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+}
+
+.services {
+  width: 100%;
+  height: 100vh;
+}
+
+.actualites {
+  width: 100%;
+  height: 100vh;
+}
+
+.temoignages {
+  background-color: #1c566d;
+  width: 100%;
+  height: 100vh;
+}
+
+.infolettre {
+  width: 100%;
+  height: 100vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -569,11 +598,42 @@ a {
       background: red;
     }*/
   }
-  h1 {
-    width: auto;
-    height: auto;
-    border: 2px solid red;
+  /*.vecteur_batiment {
+    background-color: red;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    margin-top: -40%;
+
+    img {
+      position: absolute;
+      width: 60%;
+    }
+
+    .building.front {
+      margin-bottom: 0px;
+      right: 0px;
+      width: 30%;
+    }
+  } */
+  .swiper-pagination {
     position: absolute;
-    margin-top: 0px;
+    z-index: 2;
+  }
+  .case_transparente {
+    width: 100%;
+    height: 7%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    margin-top: -192px;
+    padding: 2%;
+  }
+  .case_transparente .titre {
+    text-transform: uppercase;
+  }
+  .case_transparente .swiper02 {
+    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */

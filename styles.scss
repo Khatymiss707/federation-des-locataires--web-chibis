@@ -14,54 +14,83 @@
 @use "sass:color";
 
 .pageblanche {
-  width: 100vw;
-  height: 100%;
+    width: 100vw;
+    height: 100%;
 }
 
 .hero {
-  width: 100%;
-  height: 100%;
-
-  .swiper {
+    position: relative;
     width: 100%;
     height: 100%;
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .swiper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+            height: 90vh;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
-  }
+
+    .swiper-pagination-bullet-active {
+        background: var(--bleu-calypso);
+    }
 }
 
 .donation {
-    background-color: color.adjust(#1C7293, $blackness: 15%);
+    background-color: color.adjust(#1c7293, $blackness: 15%);
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 
-@media screen and (max-width: 375px) {
+.services {
+    width: 100%;
+    height: 100vh;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+.actualites {
+    width: 100%;
+    height: 100vh;
 }
+
+.temoignages {
+    background-color: color.adjust(#1c7293, $blackness: 15%);
+    width: 100%;
+    height: 100vh;
+}
+
+.infolettre {
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {}
 
 @media screen and (min-width: 768px) {
-  body {
-    background-color: var(--vert-menthe);
-    background-image: url(./sources/medias/images/page_accueil/section_hero/decoration_logo.svg);
-    background-size: cover;
-    background-repeat: repeat-y;
-    margin: 0px;
-  }
+    body {
+        background-color: var(--vert-menthe);
+        background-image: url(./sources/medias/images/page_accueil/section_hero/decoration_logo.svg);
+        background-size: cover;
+        background-repeat: repeat-y;
+        margin: 0px;
+    }
 
-  .pageblanche {
-    background-color: white;
-    margin: 0 auto;
-    width: 90vw;
-    height: 100%;
+    .pageblanche {
+        background-color: white;
+        margin: 0 auto;
+        width: 90vw;
+        height: 100%;
 
-    /*.item { ????????????????????
+        /*.item { ????????????????????
       width: 150px;
       height: 150px;
       border: 1px solid black;
@@ -77,13 +106,49 @@
       position: absolute;
       background: red;
     }*/
-  }
+    }
 
-  h1 {
-    width: auto;
-    height: auto;
-    border: 2px solid red;
-    position: absolute;
-    margin-top: 0px;
-  }
+    /*.vecteur_batiment {
+    background-color: red;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    margin-top: -40%;
+
+    img {
+      position: absolute;
+      width: 60%;
+    }
+
+    .building.front {
+      margin-bottom: 0px;
+      right: 0px;
+      width: 30%;
+    }
+  } */
+
+    .swiper-pagination {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .case_transparente {
+        width: 100%;
+        height: 7%;
+        z-index: 1;
+        background-color: rgba($color: black, $alpha: 0.3);
+        position: absolute;
+        margin-top: -192px;
+        padding: 2%;
+
+        .titre {
+            text-transform: uppercase;
+        }
+
+        .swiper02 {
+            width: 100%; 
+        }
+    }
+
 }

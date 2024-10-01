@@ -1,20 +1,23 @@
-import "../federation-des-locataires--web-chibis/styles.scss";
-
-const swiper = new Swiper(".swiper", {
-  direction: 'vertical',
+const swiper = new Swiper('.swiper', {
   loop: true,
-
+  centeredSlides: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
+});
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
+const swiper02 = new Swiper('.swiper02', {
+  loop: true,
+  centeredSlides: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
 });
 
   //burger toggle
