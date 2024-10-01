@@ -15,7 +15,7 @@ const swiper = new Swiper('.swiper', {
 
   hamburger.addEventListener("click", () =>{
     hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+    navMenu.classList.toggle(".active");
   })
 
   document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {

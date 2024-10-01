@@ -482,7 +482,7 @@ a {
   background-color: white;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .hamburger {
     display: block;
   }
@@ -585,5 +585,4 @@ a {
     position: absolute;
     margin-top: 0px;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
