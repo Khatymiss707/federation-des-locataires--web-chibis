@@ -9,7 +9,7 @@
 @use "partials-scss/footer";
 @use "partials-scss/liste-service"; 
 @use "partials-scss/maison";
-@use "/partials-scss/nav";
+@use "partials-scss/nav";
 @use "partials-scss/texte";
 
 @media screen and (max-width: 375px) {
@@ -101,3 +101,4 @@
     }
 
 }
+
