@@ -67,10 +67,223 @@
 
 @media screen and (max-width: 375px) {
 
+    .swiper {
+        z-index: 0;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .case_transparente {
+        width: 100%;
+        height: 30%;
+        z-index: 3;
+        background-color: rgba($color: black, $alpha: 0.3);
+        position: absolute;
+        margin-top: -200px;
+        padding: 2%;
+        padding-top: 1%;
+        padding-bottom: 0;
+
+        .titre {
+            font-size: 160%;
+            text-transform: uppercase;
+        }
+
+        .swiper02 {
+            width: 100%;
+
+            .article_hero {
+                padding-top: 1%;
+                text-align: left;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .building {
+        position: absolute;
+        transform: translateY(20vh);
+        width: 90vw;
+    }
+
+    .vecteur_batiment {
+        margin-top: -230px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    /*section donation*/
+
+    .donation {
+        background-color: color.adjust(#1c7293, $blackness: 15%);
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        display: grid;
+        grid-template-rows: 3fr 1fr;
+        z-index: 4;
+
+
+        .titre_joindre {
+            display: none;
+        }
+
+        .descriptif_equipe {
+            position: relative;
+            text-align: center;
+            font-size: 16px;
+            padding: 4%;
+            margin-top: -300px;
+            z-index: 5;
+
+        }
+
+        .titre_mobile {
+            position: relative;
+            font-size: 28px;
+            text-align: center;
+            margin-top: -500px;
+            z-index: 5;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            grid-row: 1/4;
+            object-fit: cover;
+            filter: brightness(0.45);
+
+        }
+
+        button.membre {
+            width: 100%;
+            font-size: 20px;
+            background-color: var(--pomme-verte);
+            color: var(--blanc);
+            border-radius: 35px;
+            transform: scale(0.9, 1);
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+    }
+
 }
 
+
 @media screen and (min-width: 375px) and (max-width: 768px) {
-    
+
+
+    .swiper {
+        z-index: 0;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .case_transparente {
+        width: 100%;
+        height: 30%;
+        z-index: 3;
+        background-color: rgba($color: black, $alpha: 0.3);
+        position: absolute;
+        margin-top: -200px;
+        padding: 2%;
+        padding-top: 1%;
+        padding-bottom: 0;
+
+        .titre {
+            font-size: 160%;
+            text-transform: uppercase;
+        }
+
+        .swiper02 {
+            width: 100%;
+
+            .article_hero {
+                padding-top: 1%;
+                text-align: left;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .building {
+        position: absolute;
+        transform: translateY(20vh);
+        width: 90vw;
+    }
+
+    .vecteur_batiment {
+        margin-top: -230px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+
+    .donation {
+        background-color: color.adjust(#1c7293, $blackness: 15%);
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        display: grid;
+        grid-template-rows: 3fr 1fr;
+        z-index: 4;
+
+
+        .titre_joindre {
+            display: none;
+        }
+
+        .descriptif_equipe {
+            position: relative;
+            text-align: center;
+            font-size: 20px;
+            padding: 4%;
+            margin-top: -300px;
+            z-index: 5;
+
+        }
+
+        .titre_mobile {
+            position: relative;
+            font-size: 64px;
+            text-align: center;
+            margin-top: -500px;
+            z-index: 5;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            grid-row: 1/4;
+            object-fit: cover;
+            filter: brightness(0.45);
+
+        }
+
+        button.membre {
+            width: 100%;
+            font-size: 32px;
+            background-color: var(--pomme-verte);
+            color: var(--blanc);
+            border-radius: 35px;
+            transform: scale(0.9, 1);
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+    }
+
 }
 
 
@@ -92,6 +305,45 @@
 
     .swiper {
         z-index: 0;
+
+        .vecteur_batiment {
+            margin-top: -714px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+            .building {
+                position: absolute;
+                transform: translateY(20vh);
+                width: 100%;
+        
+                &01 {
+                    position: absolute;
+                    transform: translateY(20vh);
+                    width: 100%;
+                }
+        
+                &02 {
+                    position: absolute;
+                    transform: translateY(20vh);
+                    width: 100%;
+                }
+        
+                &03 {
+                    position: absolute;
+                    transform: translateY(60vh);
+                    width: 100%;
+                }
+        
+                &04 {
+                    position: absolute;
+                    transform: translateY(40vh);
+                    width: 100%;
+                }
+            }
+        }
+
     }
 
     .swiper-pagination {
@@ -124,117 +376,148 @@
                 font-size: 14px;
             }
         }
-    }
-    
-    .building {
-        position: absolute;
-        transform: translateY(20vh);
-        width: 90vw; 
+
+
     }
 
-    .vecteur_batiment {
-        margin-top: -714px;
-        position: absolute;
-        width: 100%; 
-        height: 100%; 
-        z-index: 1;
-    }
+    .donation {
+        background-color: color.adjust(#1c7293, $blackness: 15%);
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        display: grid;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "image titre titre titre"
+            "image texte texte texte"
+            "image texte texte texte"
+            "image btn btn btn";
+        z-index: 4;
 
-  .donation {
-    background-color: color.adjust(#1c7293, $blackness: 15%);
-    width: 100%;
-    height: 80vh; 
-    position: relative;
-    display: grid;
-    grid-template-rows: 1fr 1fr 2fr 1fr;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "image titre titre titre"
-    "image texte texte texte"
-    "image texte texte texte"
-    "image btn btn btn";
-     z-index: 4;
+        .titre_joindre {
+            grid-area: titre;
+            margin: 2%;
+            padding-bottom: 18%;
+            grid-row: 1/4;
+            grid-column: 2/4;
+            transform: scale(2);
 
-     .titre_joindre {
-        grid-area: titre; 
-        margin: 2%;
-        padding-bottom: 18%;
-        grid-row: 1/4;
-        grid-column: 2/4;
-        transform: scale(2);
+            img {
+                width: 70%;
+                object-fit: contain;
+            }
+        }
+
+        .descriptif_equipe {
+            grid-area: texte;
+            text-align: center;
+            font-size: 16px;
+            padding: 4%;
+            margin-top: 10%;
+            grid-row: 3/4;
+            grid-column: 2/5;
+        }
 
         img {
-            width: 70%; 
-            object-fit: contain;
+            grid-area: image;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-    }
 
-    .descriptif_equipe {
-        grid-area: texte; 
-        text-align: center;
-        font-size: 16px;
-        padding: 4%;
-        margin-top: 10%; 
-        grid-row: 3/4;
-        grid-column: 2/5;
-     }
+        .titre_mobile {
+            display: none;
+        }
 
-     img {
-        grid-area: image; 
-        width: 100%; 
-        height: 100%; 
-        object-fit: cover;
+        button.membre {
+            width: 100%;
+            font-size: 32px;
+            background-color: var(--pomme-verte);
+            color: var(--blanc);
+            border-radius: 35px;
+            transform: scale(0.6, 0.5);
+            grid-column: 2/5;
+            grid-row: 4/4;
+        }
+
     }
 
 }
 
 //section temoignage
-.temoignages{
-    padding: 3vh;
-    
-    h1{
-        margin-left: 2vw;
-        font-size: 7vh;
+.temoignages {
+    padding: 5vh;
+
+    .entete {
+        transform: translateX(5vw);
+
+        h1 {
+            position: relative;
+            margin-left: 4vw;
+            font-size: 7vh;
+            z-index: 1;
+        }
+
+        .rectangle {
+            position: absolute;
+            transform: translateX(10vw) translateY(-3vw);
+            background: #194657;
+            width: 60vw;
+            height: 4vh;
+        }
     }
 
-    .rectangle{
-        margin-left: 9vw;
-        margin-top: -4vw;
-        background: blue;
-        width: 70vw;
-        height: 3.7vh;
-    }
-    
+
     img {
-      transform: scale(0.7) translateY(-10vh) translateX(80vw);  
+        transform: scale(0.9) translateY(-10vh) translateX(70vw);
+
+        &.coeur {
+            position: absolute;
+            display: block;
+            z-index: 2;
+            transform: translateY(-9vh) translateX(64vw);
+
+        }
+
+        &.up {
+            position: absolute;
+            display: block;
+            transform: translateY(-5vh) translateX(68vw);
+            z-index: 1;
+        }
+
+        &.down{
+            position: absolute;
+            display: block;
+            transform: translateY(2.7vh) translateX(68vw);
+            z-index: 2;
+        }
     }
-    
-    .box{
+
+    .box {
         margin-left: auto;
         margin-right: auto;
+        margin-top: 2.5vh;
         max-width: 90%;
         background-color: var(--blanc);
-        padding: 2vh 5vh;
+        padding: 4vh 8vh;
 
-        .utilisateur{
+        .utilisateur {
             padding: 0.5vh;
         }
 
-        h3{
+        h3 {
             color: var(--noir);
             margin-bottom: 0.3vh;
         }
 
-        .description{
+        .description {
             background-color: var(--gris-souris);
             padding: 2vh;
             text-align: left;
         }
     }
 
-
 }
 
-
-
-}

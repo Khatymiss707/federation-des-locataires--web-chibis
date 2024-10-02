@@ -118,16 +118,6 @@ button.voir_plus {
   background-color: var(--vert-menthe);
   color: var(--blanc);
 }
-button.membre {
-  width: 100%;
-  font-size: 32px;
-  background-color: var(--pomme-verte);
-  color: var(--blanc);
-  border-radius: 35px;
-  transform: scale(0.6, 0.5);
-  grid-column: 2/5;
-  grid-row: 4/4;
-}
 button.membre_footer {
   width: 100%;
   background-color: var(--pomme-verte);
@@ -592,6 +582,185 @@ a {
   height: 100vh;
 }
 
+@media screen and (max-width: 375px) {
+  .swiper {
+    z-index: 0;
+  }
+  .swiper-pagination {
+    position: absolute;
+    z-index: 2;
+  }
+  .case_transparente {
+    width: 100%;
+    height: 30%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    margin-top: -200px;
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 0;
+  }
+  .case_transparente .titre {
+    font-size: 160%;
+    text-transform: uppercase;
+  }
+  .case_transparente .swiper02 {
+    width: 100%;
+  }
+  .case_transparente .swiper02 .article_hero {
+    padding-top: 1%;
+    text-align: left;
+    font-size: 14px;
+  }
+  .building {
+    position: absolute;
+    transform: translateY(20vh);
+    width: 90vw;
+  }
+  .vecteur_batiment {
+    margin-top: -230px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  /*section donation*/
+  .donation {
+    background-color: #1c566d;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    z-index: 4;
+  }
+  .donation .titre_joindre {
+    display: none;
+  }
+  .donation .descriptif_equipe {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    padding: 4%;
+    margin-top: -300px;
+    z-index: 5;
+  }
+  .donation .titre_mobile {
+    position: relative;
+    font-size: 28px;
+    text-align: center;
+    margin-top: -500px;
+    z-index: 5;
+  }
+  .donation img {
+    width: 100%;
+    height: 100%;
+    grid-row: 1/4;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: brightness(0.45);
+  }
+  .donation button.membre {
+    width: 100%;
+    font-size: 20px;
+    background-color: var(--pomme-verte);
+    color: var(--blanc);
+    border-radius: 35px;
+    transform: scale(0.9, 1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .swiper {
+    z-index: 0;
+  }
+  .swiper-pagination {
+    position: absolute;
+    z-index: 2;
+  }
+  .case_transparente {
+    width: 100%;
+    height: 30%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    margin-top: -200px;
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 0;
+  }
+  .case_transparente .titre {
+    font-size: 160%;
+    text-transform: uppercase;
+  }
+  .case_transparente .swiper02 {
+    width: 100%;
+  }
+  .case_transparente .swiper02 .article_hero {
+    padding-top: 1%;
+    text-align: left;
+    font-size: 14px;
+  }
+  .building {
+    position: absolute;
+    transform: translateY(20vh);
+    width: 90vw;
+  }
+  .vecteur_batiment {
+    margin-top: -230px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .donation {
+    background-color: #1c566d;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    z-index: 4;
+  }
+  .donation .titre_joindre {
+    display: none;
+  }
+  .donation .descriptif_equipe {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    padding: 4%;
+    margin-top: -300px;
+    z-index: 5;
+  }
+  .donation .titre_mobile {
+    position: relative;
+    font-size: 64px;
+    text-align: center;
+    margin-top: -500px;
+    z-index: 5;
+  }
+  .donation img {
+    width: 100%;
+    height: 100%;
+    grid-row: 1/4;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: brightness(0.45);
+  }
+  .donation button.membre {
+    width: 100%;
+    font-size: 32px;
+    background-color: var(--pomme-verte);
+    color: var(--blanc);
+    border-radius: 35px;
+    transform: scale(0.9, 1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
 @media screen and (min-width: 768px) {
   body {
     background-color: var(--vert-menthe);
@@ -608,6 +777,38 @@ a {
   }
   .swiper {
     z-index: 0;
+  }
+  .swiper .vecteur_batiment {
+    margin-top: -714px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .swiper .vecteur_batiment .building {
+    position: absolute;
+    transform: translateY(20vh);
+    width: 100%;
+  }
+  .swiper .vecteur_batiment .building01 {
+    position: absolute;
+    transform: translateY(20vh);
+    width: 100%;
+  }
+  .swiper .vecteur_batiment .building02 {
+    position: absolute;
+    transform: translateY(20vh);
+    width: 100%;
+  }
+  .swiper .vecteur_batiment .building03 {
+    position: absolute;
+    transform: translateY(60vh);
+    width: 100%;
+  }
+  .swiper .vecteur_batiment .building04 {
+    position: absolute;
+    transform: translateY(40vh);
+    width: 100%;
   }
   .swiper-pagination {
     position: absolute;
@@ -635,18 +836,6 @@ a {
     padding-top: 1%;
     text-align: left;
     font-size: 14px;
-  }
-  .building {
-    position: absolute;
-    transform: translateY(20vh);
-    width: 90vw;
-  }
-  .vecteur_batiment {
-    margin-top: -714px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
   }
   .donation {
     background-color: #1c566d;
@@ -688,40 +877,77 @@ a {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .temoignages {
-    padding: 3vh;
+  .donation .titre_mobile {
+    display: none;
   }
-  .temoignages h1 {
-    margin-left: 2vw;
-    font-size: 7vh;
+  .donation button.membre {
+    width: 100%;
+    font-size: 32px;
+    background-color: var(--pomme-verte);
+    color: var(--blanc);
+    border-radius: 35px;
+    transform: scale(0.6, 0.5);
+    grid-column: 2/5;
+    grid-row: 4/4;
   }
-  .temoignages .rectangle {
-    margin-left: 9vw;
-    margin-top: -4vw;
-    background: blue;
-    width: 70vw;
-    height: 3.7vh;
-  }
-  .temoignages img {
-    transform: scale(0.7) translateY(-10vh) translateX(80vw);
-  }
-  .temoignages .box {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90%;
-    background-color: var(--blanc);
-    padding: 2vh 5vh;
-  }
-  .temoignages .box .utilisateur {
-    padding: 0.5vh;
-  }
-  .temoignages .box h3 {
-    color: var(--noir);
-    margin-bottom: 0.3vh;
-  }
-  .temoignages .box .description {
-    background-color: var(--gris-souris);
-    padding: 2vh;
-    text-align: left;
-  }
+}
+.temoignages {
+  padding: 5vh;
+}
+.temoignages .entete {
+  transform: translateX(5vw);
+}
+.temoignages .entete h1 {
+  position: relative;
+  margin-left: 4vw;
+  font-size: 7vh;
+  z-index: 1;
+}
+.temoignages .entete .rectangle {
+  position: absolute;
+  transform: translateX(10vw) translateY(-3vw);
+  background: #194657;
+  width: 60vw;
+  height: 4vh;
+}
+.temoignages img {
+  transform: scale(0.9) translateY(-10vh) translateX(70vw);
+}
+.temoignages img.coeur {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  transform: translateY(-9vh) translateX(64vw);
+}
+.temoignages img.up {
+  position: absolute;
+  display: block;
+  transform: translateY(-5vh) translateX(68vw);
+  z-index: 1;
+}
+.temoignages img.down {
+  position: absolute;
+  display: block;
+  transform: translateY(2.7vh) translateX(68vw);
+  z-index: 2;
+}
+.temoignages .box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5vh;
+  max-width: 90%;
+  background-color: var(--blanc);
+  padding: 4vh 8vh;
+}
+.temoignages .box .utilisateur {
+  padding: 0.5vh;
+}
+.temoignages .box h3 {
+  color: var(--noir);
+  margin-bottom: 0.3vh;
+}
+.temoignages .box .description {
+  background-color: var(--gris-souris);
+  padding: 2vh;
+  text-align: left;
 }/*# sourceMappingURL=styles.css.map */
