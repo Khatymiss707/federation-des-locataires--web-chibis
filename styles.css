@@ -580,10 +580,13 @@ a {
   .swiper {
     z-index: 0;
   }
+  .swiper .swiper-slide {
+    height: 70vh;
+  }
   .swiper .vecteur_batiment {
     margin-top: -714px;
     position: absolute;
-    width: 100%;
+    width: 190%;
     height: 100%;
     z-index: 1;
     display: grid;
@@ -602,7 +605,7 @@ a {
     position: absolute;
     -o-object-fit: contain;
        object-fit: contain;
-    transform: scale(1.2);
+    transform: scale(1.5);
     grid-row: 2/3;
   }
   .swiper .vecteur_batiment .building03 {
@@ -616,7 +619,7 @@ a {
     position: relative;
     -o-object-fit: contain;
        object-fit: contain;
-    transform: scale(1.6);
+    transform: scale(1.8);
     grid-row: 2/3;
   }
   .swiper-pagination {
@@ -650,10 +653,10 @@ a {
   .donation {
     background-color: #1c566d;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     position: relative;
     display: grid;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     z-index: 4;
   }
   .donation .titre_joindre {
@@ -662,21 +665,21 @@ a {
   .donation .descriptif_equipe {
     position: relative;
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     padding: 4%;
-    margin-top: -300px;
+    margin-top: -240px;
     z-index: 5;
   }
   .donation .titre_mobile {
     position: relative;
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
-    margin-top: -500px;
+    margin-top: -330px;
     z-index: 5;
   }
   .donation img {
     width: 100%;
-    height: 100%;
+    height: 90%;
     grid-row: 1/4;
     -o-object-fit: cover;
        object-fit: cover;
@@ -689,7 +692,6 @@ a {
     color: var(--blanc);
     border-radius: 35px;
     transform: scale(0.9, 1);
-    margin-top: 50px;
     margin-bottom: 50px;
   }
 }
@@ -700,11 +702,11 @@ a {
   .swiper .vecteur_batiment {
     margin-top: -714px;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 120%;
+    height: 120%;
     z-index: 1;
     display: grid;
-    grid-template-rows: 2fr 2fr;
+    grid-template-rows: 2fr 5fr;
   }
   .swiper .vecteur_batiment .building {
     position: absolute;
@@ -714,26 +716,27 @@ a {
     -o-object-fit: contain;
        object-fit: contain;
     grid-row: 2/3;
+    transform: scale(1.9);
   }
   .swiper .vecteur_batiment .building02 {
     position: absolute;
     -o-object-fit: contain;
        object-fit: contain;
-    transform: scale(1.2);
+    transform: scale(1.7);
     grid-row: 2/3;
   }
   .swiper .vecteur_batiment .building03 {
     position: absolute;
     -o-object-fit: contain;
        object-fit: contain;
-    transform: scale(1.5);
+    transform: scale(2);
     grid-row: 2/3;
   }
   .swiper .vecteur_batiment .building04 {
     position: relative;
     -o-object-fit: contain;
        object-fit: contain;
-    transform: scale(1.6);
+    transform: scale(2.3);
     grid-row: 2/3;
   }
   .swiper-pagination {
@@ -746,9 +749,9 @@ a {
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
-    margin-top: -200px;
+    margin-top: -210px;
     padding: 2%;
-    padding-top: 1%;
+    padding-top: 2%;
     padding-bottom: 0;
   }
   .case_transparente .titre {
@@ -761,7 +764,7 @@ a {
   .case_transparente .swiper02 .article_hero {
     padding-top: 1%;
     text-align: left;
-    font-size: 14px;
+    font-size: 13px;
   }
   .donation {
     background-color: #1c566d;
@@ -778,16 +781,16 @@ a {
   .donation .descriptif_equipe {
     position: relative;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     padding: 4%;
-    margin-top: -300px;
+    margin-top: -210px;
     z-index: 5;
   }
   .donation .titre_mobile {
     position: relative;
-    font-size: 64px;
+    font-size: 40px;
     text-align: center;
-    margin-top: -500px;
+    margin-top: -300px;
     z-index: 5;
   }
   .donation img {
@@ -800,7 +803,8 @@ a {
   }
   .donation button.membre {
     width: 100%;
-    font-size: 32px;
+    font-size: 24px;
+    text-transform: uppercase;
     background-color: var(--pomme-verte);
     color: var(--blanc);
     border-radius: 35px;
@@ -1002,6 +1006,7 @@ a {
   .donation button.membre {
     width: 100%;
     font-size: 32px;
+    text-transform: uppercase;
     background-color: var(--pomme-verte);
     color: var(--blanc);
     border-radius: 35px;
