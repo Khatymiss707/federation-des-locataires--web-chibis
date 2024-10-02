@@ -54,11 +54,6 @@
     height: 100vh;
 }
 
-.temoignages {
-    background-color: color.adjust(#1c7293, $blackness: 15%);
-    width: 100%;
-    height: 120vh;
-}
 
 .infolettre {
     width: 100%;
@@ -69,6 +64,48 @@
 
     .swiper {
         z-index: 0;
+
+        .vecteur_batiment {
+            margin-top: -714px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: grid;
+            grid-template-rows: 2fr 2fr;
+
+            .building {
+                position: absolute;
+
+                &01 {
+                    position: absolute;
+                    object-fit: contain;
+                    grid-row: 2/3;
+                }
+
+                &02 {
+                    position: absolute;
+                    object-fit: contain;
+                    transform: scale(1.2);
+                    grid-row: 2/3;
+                }
+
+                &03 {
+                    position: absolute;
+                    object-fit: contain;
+                    transform: scale(1.5);
+                    grid-row: 2/3;
+                }
+
+                &04 {
+                    position: relative;
+                    object-fit: contain;
+                    transform: scale(1.6);
+                    grid-row: 2/3;
+                }
+            }
+        }
+
     }
 
     .swiper-pagination {
@@ -101,20 +138,6 @@
                 font-size: 14px;
             }
         }
-    }
-
-    .building {
-        position: absolute;
-        transform: translateY(20vh);
-        width: 90vw;
-    }
-
-    .vecteur_batiment {
-        margin-top: -230px;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
     }
 
     /*section donation*/
@@ -150,7 +173,7 @@
             margin-top: -500px;
             z-index: 5;
         }
-        
+
         img {
             width: 100%;
             height: 100%;
@@ -173,14 +196,57 @@
 
     }
 
+
+
 }
 
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
 
-
     .swiper {
         z-index: 0;
+
+        .vecteur_batiment {
+            margin-top: -714px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: grid;
+            grid-template-rows: 2fr 2fr;
+
+            .building {
+                position: absolute;
+
+                &01 {
+                    position: absolute;
+                    object-fit: contain;
+                    grid-row: 2/3;
+                }
+
+                &02 {
+                    position: absolute;
+                    object-fit: contain;
+                    transform: scale(1.2);
+                    grid-row: 2/3;
+                }
+
+                &03 {
+                    position: absolute;
+                    object-fit: contain;
+                    transform: scale(1.5);
+                    grid-row: 2/3;
+                }
+
+                &04 {
+                    position: relative;
+                    object-fit: contain;
+                    transform: scale(1.6);
+                    grid-row: 2/3;
+                }
+            }
+        }
+
     }
 
     .swiper-pagination {
@@ -213,20 +279,6 @@
                 font-size: 14px;
             }
         }
-    }
-
-    .building {
-        position: absolute;
-        transform: translateY(20vh);
-        width: 90vw;
-    }
-
-    .vecteur_batiment {
-        margin-top: -230px;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
     }
 
 
@@ -284,6 +336,86 @@
 
     }
 
+    .temoignages {
+        background-color: beige;
+
+        padding: 5vh;
+
+        .entete {
+            transform: translateX(5vw);
+
+            h1 {
+                position: relative;
+                margin-left: 4vw;
+                font-size: 7vh;
+                z-index: 1;
+            }
+
+            .rectangle {
+                position: absolute;
+                transform: translateX(10vw) translateY(-3vw);
+                background: #194657;
+                width: 60vw;
+                height: 4vh;
+            }
+        }
+
+
+        img {
+            transform: scale(0.9) translateY(-10vh) translateX(70vw);
+
+            &.coeur {
+                position: absolute;
+                display: block;
+                z-index: 2;
+                transform: translateY(-9vh) translateX(64vw);
+
+            }
+
+            &.up {
+                position: absolute;
+                display: block;
+                transform: translateY(-5vh) translateX(68vw);
+                z-index: 1;
+            }
+
+            &.down {
+                position: absolute;
+                display: block;
+                transform: translateY(2.7vh) translateX(68vw);
+                z-index: 2;
+            }
+        }
+
+        .box {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2.5vh;
+            max-width: 90%;
+            background-color: var(--blanc);
+            padding: 4vh 8vh;
+
+            .utilisateur {
+                padding: 0.5vh;
+            }
+
+            h3 {
+                color: var(--noir);
+                margin-bottom: 0.3vh;
+            }
+
+            .description {
+                background-color: var(--gris-souris);
+                padding: 2vh;
+                text-align: left;
+            }
+        }
+    }
+
+    .infolettre {
+        background-color: #1c7293;
+    }
+
 }
 
 
@@ -312,34 +444,37 @@
             width: 100%;
             height: 100%;
             z-index: 1;
+            display: grid;
+            grid-template-rows: 2fr 2fr;
 
             .building {
                 position: absolute;
-                transform: translateY(20vh);
-                width: 100%;
-        
+
                 &01 {
                     position: absolute;
-                    transform: translateY(20vh);
-                    width: 100%;
+                    object-fit: contain;
+                    grid-row: 2/3;
                 }
-        
+
                 &02 {
                     position: absolute;
-                    transform: translateY(20vh);
-                    width: 100%;
+                    object-fit: contain;
+                    transform: scale(1.2);
+                    grid-row: 2/3;
                 }
-        
+
                 &03 {
                     position: absolute;
-                    transform: translateY(60vh);
-                    width: 100%;
+                    object-fit: contain;
+                    transform: scale(1.5);
+                    grid-row: 2/3;
                 }
-        
+
                 &04 {
-                    position: absolute;
-                    transform: translateY(40vh);
-                    width: 100%;
+                    position: relative;
+                    object-fit: contain;
+                    transform: scale(1.6);
+                    grid-row: 2/3;
                 }
             }
         }
@@ -443,11 +578,17 @@
 
     }
 
+
+
+
+
+
 }
 
 //section temoignage
 .temoignages {
     padding: 5vh;
+    background-color: color.adjust(#1c7293, $blackness: 15%);
 
     .entete {
         transform: translateX(5vw);
@@ -487,7 +628,7 @@
             z-index: 1;
         }
 
-        &.down{
+        &.down {
             position: absolute;
             display: block;
             transform: translateY(2.7vh) translateX(68vw);
@@ -520,4 +661,3 @@
     }
 
 }
-
