@@ -65,9 +65,14 @@
     height: 100vh;
 }
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
 
-@media screen and (min-width: 375px) and (max-width: 768px) {}
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    
+}
+
 
 @media screen and (min-width: 768px) {
     body {
@@ -83,23 +88,10 @@
         margin: 0 auto;
         width: 90vw;
         height: 100%;
-
-        /*.item { ????????????????????
-      width: 150px;
-      height: 150px;
-      border: 1px solid black;
     }
 
-    .item1 {
-      background: blue;
-    }
-
-    .item2 {
-      top: 20px;
-      left: 40px;
-      position: absolute;
-      background: red;
-    }*/
+    .swiper {
+        z-index: 0;
     }
 
     .swiper-pagination {
@@ -109,13 +101,14 @@
 
     .case_transparente {
         width: 100%;
-        height: 26%;
-        z-index: 1;
+        height: 27.9%;
+        z-index: 3;
         background-color: rgba($color: black, $alpha: 0.3);
         position: absolute;
-        margin-top: -187px;
+        margin-top: -200px;
         padding: 2%;
         padding-top: 1%;
+        padding-bottom: 0;
 
         .titre {
             font-size: xx-large;
@@ -124,44 +117,60 @@
 
         .swiper02 {
             width: 100%;
+
+            .article_hero {
+                padding-top: 1%;
+                text-align: left;
+                font-size: 16px;
+            }
         }
     }
 
     .building {
         position: absolute;
-        z-index: 0;
+        transform: scale(0.9) translateY(54vh);
+    }
+
+    .vecteur_batiment {
+        margin-top: -817px;
+        position: absolute;
+        width: 100%; 
+        height: 100%; 
+        z-index: 1;
     }
 
     /*.vecteur_batiment {
-    background-color: red;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    margin-top: -40%;
-
-    img {
-      position: absolute;
-      width: 60%;
-    }
-
-    .building.front {
-      margin-bottom: 0px;
-      right: 0px;
-      width: 30%;
-    }
-  } */
+        background-color: red;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        margin-top: -40%;
+    
+        img {
+          position: absolute;
+          width: 60%;
+        }
+    
+        .building.front {
+          margin-bottom: 0px;
+          right: 0px;
+          width: 30%;
+        }
+      } */
 
   .donation {
     background-color: color.adjust(#1c7293, $blackness: 15%);
     width: 100%;
-    height: 80vh;
+    height: 80vh; 
+    position: relative;
     display: grid;
     grid-template-areas:
     "image titre titre"
     "image texte texte"
     "image btn btn";
     gap: 10px;
+    z-index: 4;
 
     h1 {
         grid-area: titre; 
@@ -175,7 +184,7 @@
         object-fit: cover;
     }
 
-    .descriptif_equipe {
+    .descriptif_equipe{
         grid-area: texte; 
     }
 

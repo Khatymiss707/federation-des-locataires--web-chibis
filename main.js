@@ -13,16 +13,16 @@ const swiper = new Swiper('.swiper', {
 
 const swiper02 = new Swiper('.swiper02', {
   loop: true,
-  centeredSlides: true,
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
+  spaceBetween: 100,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
 });
 
   //burger toggle
   const hamburger = document.querySelector(".hamburger");
-  const navMenu = document.querySelector(".nav-menu");
+  const navMenu = document.querySelector(".nav_menu");
 
   hamburger.addEventListener("click", () =>{
     hamburger.classList.toggle("active");
