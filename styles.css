@@ -895,150 +895,191 @@ a {
     z-index: 10;
     background-color: var(--blanc);
   }
+  .temoignages .entete {
+    background-color: #1c566d;
+    padding: 2vh 0 2vh 0;
+  }
   .temoignages .entete h1 {
     position: relative;
     text-align: center;
     font-size: 2.5vh;
     z-index: 1;
-    background-color: #1c566d;
     width: 100vw;
-    padding: 2vh 0 7vh 0;
   }
   .temoignages .entete .rectangle {
     display: none;
   }
-  .temoignages img.coeur {
-    text-align: left;
-    position: absolute;
-    display: block;
+  .temoignages .entete .icone_box {
     z-index: 2;
-    transform: scale(0.35) translateY(-25vh);
+    max-width: 40%;
+    margin-top: 2vh;
+    margin-left: 30vw;
   }
-  .temoignages img.up {
-    text-align: center;
-    position: absolute;
-    display: block;
-    transform: scale(0.33) translateY(-30vh) translateX(90vw);
-    z-index: 1;
-  }
-  .temoignages img.down {
-    position: absolute;
-    display: block;
-    transform: scale(0.7) translateY(-9vh) translateX(105vw);
-    z-index: 2;
-  }
-  .temoignages .box {
+  .box {
     min-width: 100vw;
     background-color: var(--blanc);
     padding: 1vh 3vh;
   }
-  .temoignages .box .utilisateur {
+  .box .utilisateur {
     padding: 0.5vh;
   }
-  .temoignages .box h3 {
+  .box h3 {
     font-size: 1vh;
     color: var(--noir);
     margin-bottom: 0.3vh;
   }
-  .temoignages .box .description {
+  .box .description {
     font-size: 0.5vh;
     background-color: var(--gris-souris);
     padding: 0.5vh;
     text-align: left;
   }
-  .actualites {
-    background-color: var(--pomme-verte);
-    height: 140vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 25px;
-    row-gap: 15px;
-  }
-  .actualites .titre_actualites {
-    width: 70%;
-    grid-row-start: 1;
-    margin: auto auto;
-  }
-  .actualites .maison {
+  .title {
     display: none;
-    width: 100%;
-    height: 60%;
   }
-  .services {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    height: 100%;
-    width: 100%;
-    grid-row-gap: 30px;
-    margin-bottom: 50px;
-  }
-  .services .titre_services {
-    width: 100%;
-    margin: auto auto;
-    transform: scale(0.6);
-  }
-  .services .s_congres {
-    text-align: center;
-    padding: 5%;
-    grid-row: 2/3;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-  }
-  .services .s_congres .titre {
-    grid-row: 1/2;
-    font-size: 24px;
-  }
-  .services .s_congres .info {
-    grid-row: 2/3;
-    font-size: 16px;
-  }
-  .services .s_infolettre {
-    text-align: center;
-    padding: 5%;
-    grid-row: 3/4;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-  }
-  .services .s_infolettre .titre {
-    grid-row: 1/2;
-    font-size: 24px;
-  }
-  .services .s_infolettre .info {
-    grid-row: 2/3;
-    font-size: 16px;
-  }
-  .services .s_environnement {
-    text-align: center;
-    padding: 5%;
-    grid-row: 4/5;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-  }
-  .services .s_environnement .titre {
-    grid-row: 1/2;
-    font-size: 24px;
-  }
-  .services .s_environnement .info {
-    grid-row: 2/3;
-    font-size: 16px;
-  }
-  .services .s_comite {
-    text-align: center;
-    padding: 5%;
-    grid-row: 5/6;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-    padding-bottom: 20px;
-  }
-  .services .s_comite .titre {
-    grid-row: 1/2;
-    font-size: 24px;
-  }
-  .services .s_comite .info {
-    grid-row: 2/3;
-    font-size: 16px;
+  .destop_icon {
+    display: none;
   }
 }
+.actualites {
+  background-color: var(--pomme-verte);
+  height: 140vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 25px;
+  row-gap: 15px;
+}
+.actualites .titre_actualites {
+  width: 70%;
+  grid-row-start: 1;
+  margin: auto auto;
+}
+.actualites .maison {
+  display: none;
+  width: 100%;
+  height: 60%;
+}
+
+.services {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  height: 100%;
+  width: 100%;
+  grid-row-gap: 30px;
+  margin-bottom: 50px;
+}
+.services .titre_services {
+  width: 100%;
+  margin: auto auto;
+  transform: scale(0.6);
+}
+.services .s_congres {
+  text-align: center;
+  padding: 5%;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+.services .s_congres .titre {
+  grid-row: 1/2;
+  font-size: 24px;
+}
+.services .s_congres .info {
+  grid-row: 2/3;
+  font-size: 16px;
+}
+.services .s_infolettre {
+  text-align: center;
+  padding: 5%;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+.services .s_infolettre .titre {
+  grid-row: 1/2;
+  font-size: 24px;
+}
+.services .s_infolettre .info {
+  grid-row: 2/3;
+  font-size: 16px;
+}
+.services .s_environnement {
+  text-align: center;
+  padding: 5%;
+  grid-row: 4/5;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+.services .s_environnement .titre {
+  grid-row: 1/2;
+  font-size: 24px;
+}
+.services .s_environnement .info {
+  grid-row: 2/3;
+  font-size: 16px;
+}
+.services .s_comite {
+  text-align: center;
+  padding: 5%;
+  grid-row: 5/6;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  padding-bottom: 20px;
+}
+.services .s_comite .titre {
+  grid-row: 1/2;
+  font-size: 24px;
+}
+.services .s_comite .info {
+  grid-row: 2/3;
+  font-size: 16px;
+}
+
+.infolettre {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80vw;
+  background-color: var(--blanc);
+}
+.infolettre .title {
+  margin-left: -20%;
+  padding: 3% 0;
+  width: 70%;
+}
+.infolettre .boite_question {
+  background-color: #1c566d;
+  display: grid;
+  text-align: left;
+  grid-template-areas: "question" "answer" "question" "answer" "question" "answer";
+}
+.infolettre .join {
+  margin-right: -20%;
+  margin-top: 5%;
+  width: 80%;
+}
+.infolettre .question {
+  padding: 1vh;
+}
+.infolettre .answer {
+  grid-area: description;
+  background-color: #0E769E;
+  padding: 1vh;
+}
+.infolettre .input {
+  margin-top: 5vh;
+  background-color: #E6E6E6;
+  border: var(--bleu-calypso) 0.3vh solid;
+  width: 80vw;
+  padding: 1vh;
+}
+.infolettre .souris_icone {
+  width: 3vw;
+  position: absolute;
+  transform: translateY(-45%);
+  right: 10%;
+}
+
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .swiper {
     z-index: 0;
@@ -1161,35 +1202,23 @@ a {
     padding: 4vh 7vh 9vh 7vh;
   }
   .temoignages .entete h1 {
-    text-align: center;
-    font-size: 3vh;
-    z-index: 1;
+    font-size: 2.5vh;
+    margin-left: 5%;
   }
-  .temoignages .entete .rectangle {
+  .temoignages .icone_box {
     display: none;
   }
-  .temoignages img.coeur {
-    position: absolute;
-    display: block;
-    z-index: 2;
-    transform: scale(0.3) translateY(44vh) translateX(177vw);
+  .temoignages .title {
+    display: none;
   }
-  .temoignages img.up {
-    position: absolute;
-    display: block;
-    transform: scale(0.3) translateY(48vh) translateX(185vw);
-    z-index: 1;
-  }
-  .temoignages img.down {
-    position: absolute;
-    display: block;
-    transform: scale(0.3) translateY(70vh) translateX(200vw);
-    z-index: 2;
+  .temoignages .destop_icon {
+    width: 20%;
+    transform: translateY(17vh) translateX(55vw);
   }
   .temoignages .box {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2.5vh;
+    margin-top: -19%;
     max-width: 90%;
     background-color: var(--blanc);
     padding: 1vh 3vh;
@@ -1309,6 +1338,50 @@ a {
     display: none;
     width: 100%;
     height: 60%;
+  }
+  .infolettre {
+    background-color: var(--blanc);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80vw;
+  }
+  .infolettre .title {
+    margin-left: -20%;
+    padding: 3% 0;
+    width: 70%;
+  }
+  .infolettre .boite_question {
+    background-color: #1c566d;
+    display: grid;
+    text-align: left;
+    grid-template-areas: "question" "answer" "question" "answer" "question" "answer";
+  }
+  .infolettre .join {
+    margin-right: -20%;
+    margin-top: 5%;
+    width: 80%;
+  }
+  .infolettre .question {
+    padding: 1vh;
+  }
+  .infolettre .answer {
+    grid-area: description;
+    background-color: #0E769E;
+    padding: 1vh;
+  }
+  .infolettre .input {
+    margin-top: 5vh;
+    background-color: #E6E6E6;
+    border: var(--bleu-calypso) 0.3vh solid;
+    width: 80vw;
+    padding: 1vh;
+  }
+  .infolettre .souris_icone {
+    width: 3vw;
+    position: absolute;
+    transform: translateY(-45%);
+    right: 10%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1453,60 +1526,39 @@ a {
     background-color: #1c566d;
   }
   .temoignages .entete {
-    transform: translateX(5vw);
+    display: none;
   }
-  .temoignages .entete h1 {
-    position: relative;
-    margin-left: 4vw;
-    font-size: 7vh;
-    z-index: 1;
+  .temoignages .title {
+    width: 70%;
+    margin-left: 5%;
+    margin-right: auto;
   }
-  .temoignages .entete .rectangle {
-    position: absolute;
-    transform: translateX(10vw) translateY(-3vw);
-    background: #194657;
-    width: 65%;
-    height: 5vh;
+  .temoignages .icone_box {
+    display: none;
   }
-  .temoignages img {
-    transform: scale(0.5);
-  }
-  .temoignages img.coeur {
-    position: absolute;
-    display: block;
-    z-index: 2;
-    transform: translateY(-18vh) translateX(58vw);
-  }
-  .temoignages img.up {
-    position: absolute;
-    display: block;
-    transform: translateY(-10vh) translateX(61vw);
-    z-index: 1;
-  }
-  .temoignages img.down {
-    position: absolute;
-    display: block;
-    transform: translateY(2vh) translateX(60vw);
-    z-index: 2;
+  .temoignages .destop_icon {
+    display: none;
   }
   .temoignages .box {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 7vh;
+    margin-top: -3%;
     max-width: 90%;
     background-color: var(--blanc);
-    padding: 4vh 8vh;
+    padding: 1vh 3vh;
   }
   .temoignages .box .utilisateur {
     padding: 0.5vh;
   }
   .temoignages .box h3 {
+    font-size: 2vh;
     color: var(--noir);
     margin-bottom: 0.3vh;
   }
   .temoignages .box .description {
+    font-size: 85%;
     background-color: var(--gris-souris);
-    padding: 2vh;
+    padding: 0.5vh;
     text-align: left;
   }
   .services {
