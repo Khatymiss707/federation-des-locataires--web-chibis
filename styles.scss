@@ -62,13 +62,231 @@
 
 @media screen and (max-width: 375px) {
 
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 100%; 
+
     .swiper {
+        position: relative;
+        width: 100%;
+        height: 100%;
         z-index: 0;
 
         .swiper-slide {
-            height: 70vh;
+            height: 75vh;
         }
 
+        .vecteur_batiment {
+            margin-top: -560px;
+            position: absolute;
+            width: 200%;
+            height: 100%;
+            z-index: 1;
+            display: grid;
+            grid-template-rows: 2fr 2fr;
+
+            .building {
+                position: absolute;
+                
+                &01 {
+                    position: absolute;
+                    object-fit: contain;
+                    grid-row: 2/3;
+                }
+
+                &02 {
+                    position: absolute;
+                    object-fit: contain;
+                    transform: scale(1.5);
+                    grid-row: 2/3;
+                }
+
+                &03 {
+                    position: absolute;
+                    object-fit: contain;
+                    transform: scale(1.5);
+                    grid-row: 2/3;
+                }
+
+                &04 {
+                    position: relative;
+                    object-fit: contain;
+                    transform: scale(1.8);
+                    grid-row: 2/3;
+                }
+            }
+        }
+
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .case_transparente {
+        width: 100%;
+        height: 50%;
+        z-index: 3;
+        background-color: rgba($color: black, $alpha: 0.5);
+        position: absolute;
+        margin-top: -260px;
+        padding: 2%;
+        padding-top: 4%;
+        padding-bottom: 0;
+
+        .titre {
+            font-size: 130%;
+            text-transform: uppercase;
+        }
+
+        .swiper02 {
+            width: 100%;
+            .article_hero {
+                padding-top: 3%;
+                text-align: left;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+    /*section donation*/
+
+    .donation {
+        background-color: color.adjust(#1c7293, $blackness: 15%);
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        z-index: 4;
+
+
+        .titre_joindre {
+            display: none;
+        }
+
+        .descriptif_equipe {
+            position: relative;
+            text-align: center;
+            font-size: 12px;
+            padding: 4%;
+            margin-top: -240px;
+            z-index: 5;
+        }
+
+        .titre_mobile {
+            position: relative;
+            font-size: 24px;
+            text-align: center;
+            margin-top: -330px;
+            z-index: 5;
+        }
+
+        img {
+            width: 100%;
+            height: 90%;
+            grid-row: 1/4;
+            object-fit: cover;
+            filter: brightness(0.45);
+
+        }
+
+        button.membre {
+            width: 100%;
+            font-size: 20px;
+            background-color: var(--pomme-verte);
+            color: var(--blanc);
+            border-radius: 35px;
+            transform: scale(0.9, 1);
+            margin-bottom: 50px;
+        }
+
+    }
+
+    .temoignages {
+        width: 100vw;
+        background-color: color.adjust(#1c7293, $blackness: 15%);
+        padding: 5vh;
+
+        .entete {
+            transform: translateX(5vw);
+
+            h1 {
+                position: relative;
+                margin-left: 4vw;
+                font-size: 2.5vh;
+                z-index: 1;
+            }
+
+            .rectangle {
+                display: none;
+            }
+        }
+
+        img {
+
+            &.coeur {
+                position: absolute;
+                display: block;
+                z-index: 2;
+                transform:  scale(0.2) translateY(-34vh) translateX(139vw);
+
+            }
+
+            &.up {
+                position: absolute;
+                display: block;
+                transform: scale(0.2) translateY(-29vh) translateX(150vw);
+                z-index: 1;
+            }
+
+            &.down {
+                position: absolute;
+                display: block;
+                transform: scale(0.2) translateY(-4vh) translateX(173vw);
+                z-index: 2;
+            }
+        }
+
+        .box {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2.5vh;
+            max-width: 90%;
+            background-color: var(--blanc);
+            padding: 1vh 3vh;
+            
+
+            .utilisateur {
+                padding: 0.5vh;
+            }
+
+            h3 {
+                font-size: 1vh;
+                color: var(--noir);
+                margin-bottom: 0.3vh;
+            }
+
+            .description {
+                font-size: 0.5vh;
+                background-color: var(--gris-souris);
+                padding: 0.5vh;
+                text-align: left;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+
+    .swiper {
+        z-index: 0;
+        
         .vecteur_batiment {
             margin-top: -714px;
             position: absolute;
@@ -121,146 +339,7 @@
         width: 100%;
         height: 30%;
         z-index: 3;
-        background-color: rgba($color: black, $alpha: 0.3);
-        position: absolute;
-        margin-top: -200px;
-        padding: 2%;
-        padding-top: 1%;
-        padding-bottom: 0;
-
-        .titre {
-            font-size: 160%;
-            text-transform: uppercase;
-        }
-
-        .swiper02 {
-            width: 100%;
-
-            .article_hero {
-                padding-top: 1%;
-                text-align: left;
-                font-size: 14px;
-            }
-        }
-    }
-
-    /*section donation*/
-
-    .donation {
-        background-color: color.adjust(#1c7293, $blackness: 15%);
-        width: 100%;
-        height: 70vh;
-        position: relative;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        z-index: 4;
-
-
-        .titre_joindre {
-            display: none;
-        }
-
-        .descriptif_equipe {
-            position: relative;
-            text-align: center;
-            font-size: 12px;
-            padding: 4%;
-            margin-top: -240px;
-            z-index: 5;
-
-        }
-
-        .titre_mobile {
-            position: relative;
-            font-size: 24px;
-            text-align: center;
-            margin-top: -330px;
-            z-index: 5;
-        }
-
-        img {
-            width: 100%;
-            height: 90%;
-            grid-row: 1/4;
-            object-fit: cover;
-            filter: brightness(0.45);
-
-        }
-
-        button.membre {
-            width: 100%;
-            font-size: 20px;
-            background-color: var(--pomme-verte);
-            color: var(--blanc);
-            border-radius: 35px;
-            transform: scale(0.9, 1);
-            margin-bottom: 50px;
-        }
-
-    }
-
-}
-
-
-@media screen and (min-width: 375px) and (max-width: 768px) {
-
-    .swiper {
-        z-index: 0;
-
-        .vecteur_batiment {
-            margin-top: -714px;
-            position: absolute;
-            width: 120%;
-            height: 120%;
-            z-index: 1;
-            display: grid;
-            grid-template-rows: 2fr 5fr;
-
-            .building {
-                position: absolute;
-
-                &01 {
-                    position: absolute;
-                    object-fit: contain;
-                    grid-row: 2/3;
-                    transform: scale(1.9);
-                }
-
-                &02 {
-                    position: absolute;
-                    object-fit: contain;
-                    transform: scale(1.7);
-                    grid-row: 2/3;
-                }
-
-                &03 {
-                    position: absolute;
-                    object-fit: contain;
-                    transform: scale(2);
-                    grid-row: 2/3;
-                }
-
-                &04 {
-                    position: relative;
-                    object-fit: contain;
-                    transform: scale(2.3);
-                    grid-row: 2/3;
-                }
-            }
-        }
-
-    }
-
-    .swiper-pagination {
-        position: absolute;
-        z-index: 2;
-    }
-
-    .case_transparente {
-        width: 100%;
-        height: 30%;
-        z-index: 3;
-        background-color: rgba($color: black, $alpha: 0.3);
+        background-color: rgba($color: black, $alpha: 0.5);
         position: absolute;
         margin-top: -210px;
         padding: 2%;
@@ -340,52 +419,45 @@
     }
 
     .temoignages {
-        background-color: beige;
-
-        padding: 5vh;
+        width: 100vw;
+        background-color: color.adjust(#1c7293, $blackness: 15%);
+        padding: 4vh 7vh 9vh 7vh;
 
         .entete {
-            transform: translateX(5vw);
+            
 
             h1 {
-                position: relative;
-                margin-left: 4vw;
-                font-size: 7vh;
+                text-align: center;
+                font-size: 3vh;
                 z-index: 1;
             }
 
             .rectangle {
-                position: absolute;
-                transform: translateX(10vw) translateY(-3vw);
-                background: #194657;
-                width: 60vw;
-                height: 4vh;
+                display: none;
             }
         }
 
-
         img {
-            transform: scale(0.9) translateY(-10vh) translateX(70vw);
 
             &.coeur {
                 position: absolute;
                 display: block;
                 z-index: 2;
-                transform: translateY(-9vh) translateX(64vw);
+                transform:  scale(0.3) translateY(44vh) translateX(177vw);
 
             }
 
             &.up {
                 position: absolute;
                 display: block;
-                transform: translateY(-5vh) translateX(68vw);
+                transform: scale(0.3) translateY(48vh) translateX(185vw);
                 z-index: 1;
             }
 
             &.down {
                 position: absolute;
                 display: block;
-                transform: translateY(2.7vh) translateX(68vw);
+                transform: scale(0.3) translateY(70vh) translateX(200vw);
                 z-index: 2;
             }
         }
@@ -396,20 +468,23 @@
             margin-top: 2.5vh;
             max-width: 90%;
             background-color: var(--blanc);
-            padding: 4vh 8vh;
+            padding: 1vh 3vh;
+            
 
             .utilisateur {
                 padding: 0.5vh;
             }
 
             h3 {
+                font-size: 1vh;
                 color: var(--noir);
                 margin-bottom: 0.3vh;
             }
 
             .description {
+                font-size: 0.5vh;
                 background-color: var(--gris-souris);
-                padding: 2vh;
+                padding: 0.5vh;
                 text-align: left;
             }
         }
@@ -493,7 +568,7 @@
         width: 100%;
         height: 30%;
         z-index: 3;
-        background-color: rgba($color: black, $alpha: 0.3);
+        background-color: rgba($color: black, $alpha: 0.5);
         position: absolute;
         margin-top: -200px;
         padding: 2%;
@@ -581,86 +656,107 @@
         }
 
     }
+// section-accueil temoignage
+    .temoignages {
+        padding: 10vh;
+        background-color: color.adjust(#1c7293, $blackness: 15%);
+    
+        .entete {
+            transform: translateX(5vw);
+    
+            h1 {
+                position: relative;
+                margin-left: 4vw;
+                font-size: 7vh;
+                z-index: 1;
+            }
+    
+            .rectangle {
+                position: absolute;
+                transform: translateX(10vw) translateY(-3vw);
+                background: #194657;
+                width: 65%;
+                height: 5vh;
+            }
+        }
+    
+    
+        img {
+            transform: scale(0.5);
+    
+            &.coeur {
+                position: absolute;
+                display: block;
+                z-index: 2;
+                transform: translateY(-18vh) translateX(58vw);
+    
+            }
+    
+            &.up {
+                position: absolute;
+                display: block;
+                transform: translateY(-10vh) translateX(61vw);
+                z-index: 1;
+            }
+    
+            &.down {
+                position: absolute;
+                display: block;
+                transform: translateY(2vh) translateX(60vw);
+                z-index: 2;
+            }
+        }
+    
+        .box {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 7vh;
+            max-width: 90%;
+            background-color: var(--blanc);
+            padding: 4vh 8vh;
+    
+            .utilisateur {
+                padding: 0.5vh;
+            }
+    
+            h3 {
+                color: var(--noir);
+                margin-bottom: 0.3vh;
+            }
+    
+            .description {
+                background-color: var(--gris-souris);
+                padding: 2vh;
+                text-align: left;
+            }
+        }
+    
+    }
+
+    //section services
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(8, auto-fit);
+        grid-template-rows: repeat(4, 1fr);
+
+        .titre_services {
+            grid-column: span 8; 
+        }
+        
+        .s_congres{
+        }
+        
+
+        /*.infolettre {
+            
+        }*/
+    }
+
+    //section actualite
+
+    
 
 }
 
-//section services
 
-
-
-//section temoignage
-.temoignages {
-    padding: 5vh;
-    background-color: color.adjust(#1c7293, $blackness: 15%);
-
-    .entete {
-        transform: translateX(5vw);
-
-        h1 {
-            position: relative;
-            margin-left: 4vw;
-            font-size: 7vh;
-            z-index: 1;
-        }
-
-        .rectangle {
-            position: absolute;
-            transform: translateX(10vw) translateY(-3vw);
-            background: #194657;
-            width: 60vw;
-            height: 4vh;
-        }
-    }
-
-
-    img {
-        transform: scale(0.9) translateY(-10vh) translateX(70vw);
-
-        &.coeur {
-            position: absolute;
-            display: block;
-            z-index: 2;
-            transform: translateY(-9vh) translateX(64vw);
-
-        }
-
-        &.up {
-            position: absolute;
-            display: block;
-            transform: translateY(-5vh) translateX(68vw);
-            z-index: 1;
-        }
-
-        &.down {
-            position: absolute;
-            display: block;
-            transform: translateY(2.7vh) translateX(68vw);
-            z-index: 2;
-        }
-    }
-
-    .box {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2.5vh;
-        max-width: 90%;
-        background-color: var(--blanc);
-        padding: 4vh 8vh;
-
-        .utilisateur {
-            padding: 0.5vh;
-        }
-
-        h3 {
-            color: var(--noir);
-            margin-bottom: 0.3vh;
-        }
-
-        .description {
-            background-color: var(--gris-souris);
-            padding: 2vh;
-            text-align: left;
-        }
-    }
-
-}
