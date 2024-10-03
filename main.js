@@ -34,3 +34,13 @@ const swiper02 = new Swiper('.swiper02', {
     navMenu.classList.remove(".active");
   })); 
 
+  //accordeon
+let title = document.querySelector(".accordion__item__title"); 
+let contenu = document.querySelector(".accordion__item__content--open"); 
+
+title.click(function () {
+  $(this).next(content).slideToggle();
+  $(this).parent().siblings().children().next().slideUp();
+  return false;
+});
+
