@@ -16,6 +16,7 @@
 .pageblanche {
     width: 100vw;
     height: 100%;
+    overflow: hidden;
 }
 
 .hero {
@@ -51,7 +52,7 @@
 
 .actualites {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 
@@ -277,7 +278,6 @@
 }
 
 .actualites {
-    background-color: var(--pomme-verte);
     height: 140vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -291,7 +291,6 @@
     }
 
     .maison {
-        display: none;
         width: 100%;
         height: 60%;
     }
@@ -1150,25 +1149,30 @@
 
     //section actualite
     .actualites {
-        background-color: var(--pomme-verte);
-        height: 120vh;
+        background-image: url("./sources/medias/images/page_accueil/section_actualite/maison_desktop.svg"); 
+        background-position: center 5px;
+        background-repeat: no-repeat;
+        min-width: 100%; 
+        background-size: cover;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 25px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 25px;
         row-gap: 15px;
 
-        .titre_actualites {
-            width: 80%;
-            grid-column: 2/3;
+        .empty {
+            height: 330px;
+            width: 100%;
             grid-row-start: 1;
+        }
+
+        .titre_actualites {
+            padding-top: 200px; 
+            width: 90%;
+            grid-column: 2/3;
+            grid-row-start: 2;
             margin: auto auto;
         }
 
-        .maison {
-            display: none;
-            width: 100%;
-            height: 60%;
-        }
     }
 
 
