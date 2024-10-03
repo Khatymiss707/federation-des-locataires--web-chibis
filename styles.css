@@ -168,7 +168,7 @@ button.footer {
 
 .card01 {
   display: grid;
-  grid-row-start: 2;
+  grid-row-start: 3;
   grid-column: span 3;
   background-color: var(--bleu-calypso);
   grid-template-columns: 1fr 4fr;
@@ -192,7 +192,7 @@ button.footer {
 }
 .card02 {
   display: grid;
-  grid-row-start: 3;
+  grid-row-start: 4;
   grid-column: span 3;
   background-color: var(--bleu-calypso);
   grid-template-columns: 1fr 4fr;
@@ -216,7 +216,7 @@ button.footer {
 }
 .card03 {
   display: grid;
-  grid-row-start: 4;
+  grid-row-start: 5;
   grid-column: span 3;
   background-color: var(--bleu-calypso);
   grid-template-columns: 1fr 4fr;
@@ -711,6 +711,7 @@ a {
 .pageblanche {
   width: 100vw;
   height: 100%;
+  overflow: hidden;
 }
 
 .hero {
@@ -743,7 +744,7 @@ a {
 
 .actualites {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .infolettre {
@@ -928,7 +929,6 @@ a {
   }
 }
 .actualites {
-  background-color: var(--pomme-verte);
   height: 140vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -941,7 +941,6 @@ a {
   margin: auto auto;
 }
 .actualites .maison {
-  display: none;
   width: 100%;
   height: 60%;
 }
@@ -1641,23 +1640,27 @@ a {
     font-size: 18px;
   }
   .actualites {
-    background-color: var(--pomme-verte);
-    height: 120vh;
+    background-image: url("./sources/medias/images/page_accueil/section_actualite/maison_desktop.svg");
+    background-position: center 5px;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 25px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 25px;
     row-gap: 15px;
   }
-  .actualites .titre_actualites {
-    width: 80%;
-    grid-column: 2/3;
-    grid-row-start: 1;
-    margin: auto auto;
-  }
-  .actualites .maison {
-    display: none;
+  .actualites .empty {
+    height: 330px;
     width: 100%;
-    height: 60%;
+    grid-row-start: 1;
+  }
+  .actualites .titre_actualites {
+    padding-top: 200px;
+    width: 90%;
+    grid-column: 2/3;
+    grid-row-start: 2;
+    margin: auto auto;
   }
   .infolettre {
     text-align: center;
