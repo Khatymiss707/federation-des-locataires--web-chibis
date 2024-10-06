@@ -2,11 +2,9 @@
 @use "texte";
 @use "sass:color";
 
-.nav{
-
-  .navbar{
-
-    ul{
+.nav {
+  .navbar {
+    ul {
       padding: 0;
       margin: 0;
     }
@@ -15,109 +13,62 @@
     padding: 20px 0;
   }
 
-  .nav_menu{
+  .nav_menu {
+
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-  
-  li{
-    list-style: none;
-    
-    a{
-      text-decoration: none;
-      
-      color: white;
-      text-transform: uppercase;
-      font-size: 2vh;
-      font-weight: 500;
+    //justify-content: flex-start;
 
-     //margin: 2vw;
 
-      &.nav-link{
-        padding-bottom: 1vh;
+    .autre {
+      margin-right: 0;
+
+
+
+      .loupe {
+        width: 35px;
+        margin-right: 5px;
       }
 
-      &:hover {
-        border-bottom: solid 3px white;
+      select {
+        width: 75px;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 5px;
+        color: var(--blanc);
+        border: 2px var(--blanc) solid;
+        background-color: transparent;
       }
-
-      
     }
 
-}
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 5px;
-  margin: 5px auto;
-  transition: all 1s ease;
-  background-color: white;
-}
-
-}
-
-@media screen and (min-width: 375px) and (max-width: 768px){
-  .nav{
-
-    .navbar{
-  
-      ul{
-        padding: 0;
-        margin: 0;
-      }
-  
-      background-color: var(--bleu-paisible);
-      padding: 20px 0;
-    }
-  
-    .nav_menu{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-    
-    li{
+    li {
       list-style: none;
-      
-      a{
+
+      a {
         text-decoration: none;
-        
         color: white;
         text-transform: uppercase;
-        font-size: 2vh;
+        font-size: 20px;
         font-weight: 500;
-  
-       //margin: 2vw;
-  
-        &.nav-link{
+        margin: 0 20px;
+
+        &.nav-link {
           padding-bottom: 1vh;
         }
-  
+
         &:hover {
           border-bottom: solid 3px white;
         }
-  
-        
       }
-  
+    }
   }
-  }
-  
+
   .hamburger {
     display: none;
     cursor: pointer;
   }
-  
+
   .bar {
     display: block;
     width: 25px;
@@ -126,18 +77,81 @@
     transition: all 1s ease;
     background-color: white;
   }
-  
-  }
-  
 }
 
 
-//nav version mobile
-@media screen and (max-width: 375px) {
-
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .nav {
     .navbar {
-      
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+
+      background-color: var(--bleu-paisible);
+      padding: 20px 0;
+    }
+
+    .nav_menu {
+      display: flex;
+      //flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+
+      .autre {
+        .loupe {
+          width: 20px;
+          margin-left: 12vw;
+        }
+
+        select {
+          width: 55px;
+          font-size: 10px;
+          font-weight: 500;
+          padding: 3px;
+          margin-right: 2vw;
+        }
+      }
+
+      li {
+        list-style: none;
+
+        a {
+          font-size: 10px;
+
+          //margin: 2vw;
+          &.nav-link {
+            padding-bottom: 1vh;
+          }
+
+          &:hover {
+            border-bottom: solid 3px white;
+          }
+        }
+      }
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+    }
+
+    .bar {
+      display: block;
+      width: 25px;
+      height: 5px;
+      margin: 5px auto;
+      transition: all 0.1s ease;
+      background-color: white;
+    }
+  }
+}
+
+//nav version mobile
+@media screen and (max-width: 375px) {
+  .nav {
+    .navbar {
 
       .hamburger {
         display: block;
@@ -153,21 +167,21 @@
         &.active .bar:nth-child(3) {
           transform: translateY(-12px) rotate(-45deg);
         }
-
       }
 
       .nav_menu {
         display: none;
         opacity: 0;
-        transition: opacity 0.3s ease;
+        transition: opacity 0.1s ease;
 
         &.active {
           display: flex;
           flex-direction: column;
           opacity: 1;
         }
+
       }
+
     }
   }
-
 }

@@ -135,13 +135,13 @@ button.voir_plus {
   color: var(--blanc);
 }
 button.membre_footer {
-  width: 100%;
+  width: 50%;
+  height: 30%;
   background-color: var(--pomme-verte);
   color: var(--blanc);
   border-radius: 35px;
-  transform: scale(0.6, 0.8);
   font-size: 1.5vw;
-  grid-column: 2/5;
+  grid-column: 3/5;
   grid-row: 4/4;
 }
 button.pagination {
@@ -168,7 +168,6 @@ button.footer {
 
 .card01 {
   display: grid;
-  grid-row-start: 3;
   grid-column: span 3;
   background-color: var(--bleu-calypso);
   grid-template-columns: 1fr 4fr;
@@ -192,7 +191,6 @@ button.footer {
 }
 .card02 {
   display: grid;
-  grid-row-start: 4;
   grid-column: span 3;
   background-color: var(--bleu-calypso);
   grid-template-columns: 1fr 4fr;
@@ -216,7 +214,6 @@ button.footer {
 }
 .card03 {
   display: grid;
-  grid-row-start: 5;
   grid-column: span 3;
   background-color: var(--bleu-calypso);
   grid-template-columns: 1fr 4fr;
@@ -439,8 +436,11 @@ a {
   }
   .footer button.membre_footer {
     padding: 10px;
+    margin-top: 20px;
     width: 55%;
-    font-size: 4%;
+    height: 60px;
+    font-size: 12px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -478,12 +478,13 @@ a {
     transform: scale(0.7);
     text-align: center;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
   }
   .footer .columns2 .partners .frapru {
     position: relative;
     transform: scale(0.7);
-    grid-column-start: 2;
+    text-align: center;
+    grid-column-start: 1;
     grid-column-end: 3;
   }
   .footer .columns2 .partners .cnl {
@@ -491,14 +492,25 @@ a {
     transform: scale(0.7);
     text-align: center;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
   }
   .footer .columns2 .partners .rohq {
     position: relative;
     text-align: left;
+    text-align: center;
     transform: scale(0.7);
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 3;
+  }
+  .footer .columns2 .membership {
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: 50px;
+    grid-column: 3/3;
+    grid-row: 3/4;
+    text-transform: uppercase;
+    font-size: 32px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -603,21 +615,18 @@ h1 {
   font-family: "merriweather";
   font-weight: bold;
   color: var(--blanc);
-  text-shadow: 2%;
 }
 
 h2 {
   font-family: "merriweather";
   font-weight: bold;
   color: var(--blanc);
-  text-shadow: 2%;
 }
 
 h3 {
   font-family: "montserrat";
   font-weight: medium;
   color: var(--blanc);
-  text-shadow: 2%;
   font-size: 24px;
 }
 
@@ -649,10 +658,24 @@ a {
 }
 .nav .nav_menu {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+}
+.nav .nav_menu .autre {
+  margin-right: 0;
+}
+.nav .nav_menu .autre .loupe {
+  width: 35px;
+  margin-right: 5px;
+}
+.nav .nav_menu .autre select {
+  width: 75px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px;
+  color: var(--blanc);
+  border: 2px var(--blanc) solid;
+  background-color: transparent;
 }
 .nav .nav_menu li {
   list-style: none;
@@ -661,8 +684,9 @@ a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-size: 2vh;
+  font-size: 20px;
   font-weight: 500;
+  margin: 0 20px;
 }
 .nav .nav_menu li a.nav-link {
   padding-bottom: 1vh;
@@ -694,20 +718,26 @@ a {
   }
   .nav .nav_menu {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+  }
+  .nav .nav_menu .autre .loupe {
+    width: 20px;
+    margin-left: 12vw;
+  }
+  .nav .nav_menu .autre select {
+    width: 55px;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px;
+    margin-right: 2vw;
   }
   .nav .nav_menu li {
     list-style: none;
   }
   .nav .nav_menu li a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 2vh;
-    font-weight: 500;
+    font-size: 10px;
   }
   .nav .nav_menu li a.nav-link {
     padding-bottom: 1vh;
@@ -724,7 +754,7 @@ a {
     width: 25px;
     height: 5px;
     margin: 5px auto;
-    transition: all 1s ease;
+    transition: all 0.1s ease;
     background-color: white;
   }
 }
@@ -744,7 +774,7 @@ a {
   .nav .navbar .nav_menu {
     display: none;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.1s ease;
   }
   .nav .navbar .nav_menu.active {
     display: flex;
@@ -782,6 +812,12 @@ a {
   background: var(--bleu-calypso);
 }
 
+.donation {
+  background-color: #1c566d;
+  width: 100%;
+  height: 100%;
+}
+
 .services {
   width: 100%;
   height: 100vh;
@@ -794,89 +830,51 @@ a {
 
 .infolettre {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 375px) {
   body {
     margin: 0;
   }
-  .hero {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  .swiper .swiper-slide {
+    height: 80vh;
   }
-  .hero .swiper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-  }
-  .hero .swiper .swiper-slide {
-    height: 75vh;
-  }
-  .hero .swiper .vecteur_batiment {
-    margin-top: -560px;
+  .swiper .vecteur_batiment {
+    bottom: 0;
     position: absolute;
-    width: 200%;
-    height: 100%;
+    width: 100%;
+    height: 70%;
     z-index: 1;
-    display: grid;
-    grid-template-rows: 2fr 2fr;
   }
-  .hero .swiper .vecteur_batiment .building {
+  .swiper .vecteur_batiment .building01 {
     position: absolute;
+    display: none;
   }
-  .hero .swiper .vecteur_batiment .building01 {
+  .swiper .vecteur_batiment .building02 {
     position: absolute;
-    -o-object-fit: contain;
-       object-fit: contain;
-    grid-row: 2/3;
+    display: none;
   }
-  .hero .swiper .vecteur_batiment .building02 {
+  .swiper .vecteur_batiment .building03 {
     position: absolute;
-    -o-object-fit: contain;
-       object-fit: contain;
-    transform: scale(1.5);
-    grid-row: 2/3;
+    display: none;
   }
-  .hero .swiper .vecteur_batiment .building03 {
-    position: absolute;
-    -o-object-fit: contain;
-       object-fit: contain;
-    transform: scale(1.5);
-    grid-row: 2/3;
-  }
-  .hero .swiper .vecteur_batiment .building04 {
-    position: relative;
-    -o-object-fit: contain;
-       object-fit: contain;
-    transform: scale(1.8);
-    grid-row: 2/3;
-  }
-  .hero .swiper-pagination {
-    position: absolute;
-    z-index: 2;
-  }
-  .hero .case_transparente {
+  .case_transparente {
     width: 100%;
-    height: 50%;
+    height: 35%;
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     bottom: 0;
-    padding: 10px;
-    padding-top: 10px;
-    padding-bottom: 0;
+    padding: 10px 20px;
   }
-  .hero .case_transparente .titre {
-    font-size: 130%;
+  .case_transparente .titre {
+    font-size: 22px;
     text-transform: uppercase;
+    margin-bottom: 4px;
   }
-  .hero .case_transparente .swiper02 {
-    width: 100%;
-  }
-  .hero .case_transparente .swiper02 .article_hero {
+  .case_transparente .swiper02 .article_hero {
     text-align: left;
     font-size: 12px;
   }
@@ -917,6 +915,7 @@ a {
     filter: brightness(0.45);
   }
   .donation button.membre {
+    display: block;
     width: 80%;
     font-size: 20px;
     text-transform: uppercase;
@@ -976,20 +975,26 @@ a {
   }
 }
 .actualites {
-  height: 140vh;
+  height: 100%;
+  background-image: url("./sources/medias/images/page_accueil/section_actualite/maison_desktop.svg");
+  background-position: center 5px;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  background-size: cover;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 25px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 25px;
   row-gap: 15px;
 }
-.actualites .titre_actualites {
-  width: 70%;
-  grid-row-start: 1;
-  margin: auto auto;
-}
-.actualites .maison {
+.actualites .empty {
+  height: 50px;
   width: 100%;
-  height: 60%;
+  grid-row-start: 1;
+}
+.actualites .titre_actualites {
+  width: 95%;
+  grid-column: span 3;
+  margin: auto auto;
 }
 
 .services {
@@ -1068,9 +1073,11 @@ a {
 }
 
 .infolettre {
+  height: 100%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
   max-width: 80vw;
   background-color: var(--blanc);
 }
@@ -1116,73 +1123,39 @@ a {
   body {
     margin: 0;
   }
-  .swiper {
-    z-index: 0;
-  }
   .swiper .vecteur_batiment {
-    margin-top: -714px;
+    bottom: 0;
     position: absolute;
-    width: 190%;
-    height: 100%;
+    width: 100%;
+    height: 70%;
     z-index: 1;
-    display: grid;
-    grid-template-rows: 2fr 2fr;
-  }
-  .swiper .vecteur_batiment .building {
-    position: absolute;
   }
   .swiper .vecteur_batiment .building01 {
     position: absolute;
-    -o-object-fit: contain;
-       object-fit: contain;
-    grid-row: 2/3;
   }
   .swiper .vecteur_batiment .building02 {
     position: absolute;
-    -o-object-fit: contain;
-       object-fit: contain;
-    transform: scale(1.5);
-    grid-row: 2/3;
   }
   .swiper .vecteur_batiment .building03 {
     position: absolute;
-    -o-object-fit: contain;
-       object-fit: contain;
-    transform: scale(1.5);
-    grid-row: 2/3;
-  }
-  .swiper .vecteur_batiment .building04 {
-    position: relative;
-    -o-object-fit: contain;
-       object-fit: contain;
-    transform: scale(1.8);
-    grid-row: 2/3;
-  }
-  .swiper-pagination {
-    position: absolute;
-    z-index: 2;
   }
   .case_transparente {
     width: 100%;
-    height: 30%;
+    height: 27%;
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     bottom: 0;
-    padding: 15px;
-    padding-top: 5px;
-    padding-bottom: 0;
+    padding: 10px 20px;
   }
   .case_transparente .titre {
-    font-size: 160%;
+    font-size: 22px;
     text-transform: uppercase;
-  }
-  .case_transparente .swiper02 {
-    width: 100%;
+    margin-bottom: 4px;
   }
   .case_transparente .swiper02 .article_hero {
     text-align: left;
-    font-size: 13px;
+    font-size: 12px;
   }
   .donation {
     background-color: #1c566d;
@@ -1220,6 +1193,7 @@ a {
     filter: brightness(0.45);
   }
   .donation button.membre {
+    display: block;
     width: 70%;
     font-size: 24px;
     text-transform: uppercase;
@@ -1229,7 +1203,8 @@ a {
     margin: 50px auto;
   }
   .temoignages {
-    width: 100vw;
+    width: 100%;
+    height: 100%;
     background-color: #1c566d;
     padding: 4vh 7vh 9vh 7vh;
   }
@@ -1271,6 +1246,7 @@ a {
   }
   .infolettre {
     background-color: #1c7293;
+    margin-bottom: 50px;
   }
   .services {
     display: grid;
@@ -1278,8 +1254,8 @@ a {
     grid-template-rows: repeat(4, 1fr);
     height: 100%;
     width: 100%;
-    grid-row-gap: 30px;
-    margin-bottom: 50px;
+    grid-row-gap: 10px;
+    margin-bottom: 10px;
   }
   .services .titre_services {
     margin: auto auto;
@@ -1289,7 +1265,8 @@ a {
   }
   .services .s_congres {
     text-align: center;
-    padding: 5%;
+    padding: 2%;
+    height: 75%;
     grid-column: 2/span 6;
     grid-row: 2/3;
     display: grid;
@@ -1305,7 +1282,8 @@ a {
   }
   .services .s_infolettre {
     text-align: center;
-    padding: 5%;
+    padding: 2%;
+    height: 75%;
     grid-column: 1/span 5;
     grid-row: 3/4;
     display: grid;
@@ -1321,7 +1299,8 @@ a {
   }
   .services .s_environnement {
     text-align: center;
-    padding: 5%;
+    padding: 2%;
+    height: 75%;
     grid-column: 1/span 5;
     grid-row: 4/5;
     display: grid;
@@ -1337,10 +1316,11 @@ a {
   }
   .services .s_comite {
     text-align: center;
-    padding: 5%;
+    padding: 2%;
     grid-column: 2/span 6;
     grid-row: 5/6;
     display: grid;
+    height: 75%;
     grid-template-rows: 1fr 2fr;
     padding-bottom: 20px;
   }
@@ -1353,28 +1333,33 @@ a {
     font-size: 18px;
   }
   .actualites {
-    background-color: var(--pomme-verte);
-    height: 100vh;
+    height: 100%;
+    background-image: url("./sources/medias/images/page_accueil/section_actualite/maison_desktop.svg");
+    background-position: center 5px;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 25px;
-    row-gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 25px;
+    row-gap: 15px;
+  }
+  .actualites .empty {
+    height: 50px;
+    width: 100%;
+    grid-row-start: 1;
   }
   .actualites .titre_actualites {
-    width: 100%;
-    grid-column: 2/3;
-    grid-row-start: 1;
+    width: 90%;
+    grid-column: span 3;
     margin: auto auto;
   }
-  .actualites .maison {
-    display: none;
-    width: 100%;
-    height: 60%;
-  }
   .infolettre {
+    height: 100%;
     background-color: var(--blanc);
     text-align: center;
     margin-left: auto;
+    margin-bottom: 20px;
     margin-right: auto;
     max-width: 80vw;
   }
@@ -1438,8 +1423,6 @@ a {
   }
   .swiper .vecteur_batiment .building01 {
     position: absolute;
-    -o-object-fit: contain;
-       object-fit: contain;
   }
   .swiper .vecteur_batiment .building02 {
     position: absolute;
@@ -1447,88 +1430,69 @@ a {
   .swiper .vecteur_batiment .building03 {
     position: absolute;
   }
-  .swiper .vecteur_batiment .building04 {
-    position: relative;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   .case_transparente {
     width: 100%;
-    height: 30%;
+    height: 27%;
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     bottom: 0;
-    padding: 20px;
-    padding-top: 10px;
-    padding-bottom: 0;
+    padding: 10px 15px;
   }
   .case_transparente .titre {
-    font-size: xx-large;
+    font-size: 30px;
     text-transform: uppercase;
-  }
-  .case_transparente .swiper02 {
-    width: 100%;
+    margin-bottom: 4px;
   }
   .case_transparente .swiper02 .article_hero {
     text-align: left;
-    font-size: 14px;
+    font-size: 16px;
   }
   .donation {
-    background-color: #1c566d;
-    width: 100%;
-    height: 80vh;
     position: relative;
     display: grid;
-    grid-template-rows: 1fr 1fr 2fr 1fr;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    grid-template-areas: "image titre titre titre" "image texte texte texte" "image texte texte texte" "image btn btn btn";
-    z-index: 4;
-  }
-  .donation .titre_joindre {
-    grid-area: titre;
-    margin: 2%;
-    padding-bottom: 18%;
-    grid-row: 1/4;
-    grid-column: 2/4;
-    transform: scale(2);
+    height: 90vh;
+    grid-template-columns: 3fr 2fr;
   }
   .donation .titre_joindre img {
-    width: 70%;
+    display: block;
+    width: 90%;
+    padding: 10px;
     -o-object-fit: contain;
        object-fit: contain;
   }
   .donation .descriptif_equipe {
-    grid-area: texte;
-    text-align: center;
     font-size: 16px;
-    padding: 4%;
-    margin-top: 10%;
-    grid-row: 3/4;
-    grid-column: 2/5;
+    padding: 10px 20px;
+    grid-column: 2/3;
   }
   .donation img {
-    grid-area: image;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 94%;
+    margin: 20px;
+    margin-right: 0;
     -o-object-fit: cover;
        object-fit: cover;
+    grid-row: 1/4;
   }
   .donation .titre_mobile {
     display: none;
   }
-  .donation button.membre {
+  .donation .btn_donation {
+    margin-top: -20px;
+  }
+  .donation .btn_donation button.membre {
+    display: block;
     width: 70%;
+    padding: 25px 5px;
     font-size: 20px;
     text-transform: uppercase;
     background-color: var(--pomme-verte);
     color: var(--blanc);
-    border-radius: 35px;
-    grid-column: 2/5;
-    grid-row: 4/4;
-    margin: 0 auto;
+    margin: auto;
   }
   .temoignages {
+    height: 100%;
     padding: 10vh;
     background-color: #1c566d;
   }
@@ -1574,8 +1538,8 @@ a {
     grid-template-rows: repeat(4, 1fr);
     height: 100%;
     width: 100%;
-    grid-row-gap: 30px;
-    margin-bottom: 50px;
+    grid-row-gap: 10px;
+    margin-bottom: 20px;
   }
   .services .titre_services {
     width: 100%;
@@ -1584,9 +1548,11 @@ a {
   }
   .services .s_congres {
     padding-left: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
+    text-align: left;
     grid-column: 2/span 8;
     grid-row: 2/3;
+    height: 75%;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 2fr;
@@ -1598,15 +1564,16 @@ a {
   }
   .services .s_congres .info {
     grid-column: 1/4;
-    grid-row: 2/3;
+    grid-row: 2/2;
     font-size: 18px;
   }
   .services .s_infolettre {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-right: 30px;
     grid-column: 1/span 7;
     grid-row: 3/4;
     display: grid;
+    height: 75%;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 2fr;
   }
@@ -1623,8 +1590,9 @@ a {
   }
   .services .s_environnement {
     padding-right: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
     grid-column: 1/span 6;
+    height: 75%;
     grid-row: 4/5;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -1643,7 +1611,9 @@ a {
   }
   .services .s_comite {
     padding-left: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
+    text-align: left;
+    height: 75%;
     grid-column: 2/span 8;
     grid-row: 5/6;
     display: grid;
@@ -1662,6 +1632,7 @@ a {
     font-size: 18px;
   }
   .actualites {
+    height: 100%;
     background-image: url("./sources/medias/images/page_accueil/section_actualite/maison_desktop.svg");
     background-position: center 5px;
     background-repeat: no-repeat;
@@ -1678,16 +1649,17 @@ a {
     grid-row-start: 1;
   }
   .actualites .titre_actualites {
-    padding-top: 200px;
     width: 90%;
     grid-column: 2/3;
     grid-row-start: 2;
     margin: auto auto;
   }
   .infolettre {
+    height: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     max-width: 80vw;
   }
   .infolettre .title {

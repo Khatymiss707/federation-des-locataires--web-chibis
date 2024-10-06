@@ -11,154 +11,116 @@
 @use "partials-scss/nav";
 @use "partials-scss/texte";
 @use "sass:color";
-
 * {
     box-sizing: border-box;
 }
-
 .pageblanche {
     width: 100vw;
     overflow: hidden;
 }
-
 .hero {
     position: relative;
     width: 100%;
     height: 100%;
-
     .swiper {
         position: relative;
-
         .swiper-slide {
             height: 90vh;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-
     .swiper-pagination-bullet-active {
         background: var(--bleu-calypso);
     }
 }
-
+.donation {
+    background-color: color.adjust(#1c7293, $blackness: 15%);
+    width: 100%;
+    height: 100%; 
+}
 .services {
     width: 100%;
     height: 100vh;
 }
-
 .actualites {
     width: 100%;
     height: 100%;
 }
-
-
 .infolettre {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    margin-bottom: 50px;
 }
 
-@media screen and (max-width: 375px) {
 
+@media screen and (max-width: 375px) {
     body {
         margin: 0;
     }
 
-    .hero {
-        position: relative;
-        width: 100%;
-        height: 100%;
+    .swiper {
 
-        .swiper {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-
-            .swiper-slide {
-                height: 75vh;
-            }
-
-            .vecteur_batiment {
-                margin-top: -560px;
-                position: absolute;
-                width: 200%;
-                height: 100%;
-                z-index: 1;
-                display: grid;
-                grid-template-rows: 2fr 2fr;
-
-                .building {
-                    position: absolute;
-
-                    &01 {
-                        position: absolute;
-                        object-fit: contain;
-                        grid-row: 2/3;
-                    }
-
-                    &02 {
-                        position: absolute;
-                        object-fit: contain;
-                        transform: scale(1.5);
-                        grid-row: 2/3;
-                    }
-
-                    &03 {
-                        position: absolute;
-                        object-fit: contain;
-                        transform: scale(1.5);
-                        grid-row: 2/3;
-                    }
-
-                    &04 {
-                        position: relative;
-                        object-fit: contain;
-                        transform: scale(1.8);
-                        grid-row: 2/3;
-                    }
-                }
-            }
-
+        .swiper-slide {
+            height: 80vh;
         }
 
-        .swiper-pagination {
-            position: absolute;
-            z-index: 2;
-        }
-
-        .case_transparente {
-            width: 100%;
-            height: 50%;
-            z-index: 3;
-            background-color: rgba($color: black, $alpha: 0.5);
-            position: absolute;
+        .vecteur_batiment {
             bottom: 0;
-            padding: 10px;
-            padding-top: 10px;
-            padding-bottom: 0;
+            position: absolute;
+            width: 100%;
+            height: 70%;
+            z-index: 1;
 
-            .titre {
-                font-size: 130%;
-                text-transform: uppercase;
-            }
+            .building {
 
-            .swiper02 {
-                width: 100%;
-
-                .article_hero {
-                    text-align: left;
-                    font-size: 12px;
+                &01 {
+                    position: absolute;
+                    display: none; 
                 }
+
+                &02 {
+                    position: absolute;
+                    display: none; 
+                }
+
+                &03 {
+                    position: absolute;
+                    display: none; 
+                }
+            }
+        }
+
+    }
+
+    .case_transparente {
+        width: 100%;
+        height: 35%;
+        z-index: 3;
+        background-color: rgba($color: black, $alpha: 0.5);
+        position: absolute;
+        bottom: 0;
+        padding: 10px 20px;
+
+        .titre {
+            font-size: 22px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .swiper02 {
+
+            .article_hero {
+                text-align: left;
+                font-size: 12px;
             }
         }
     }
 
     /*section donation*/
-
     .donation {
         background-color: color.adjust(#1c7293, $blackness: 15%);
         width: 100%;
@@ -167,12 +129,9 @@
         display: grid;
         grid-template-rows: 1fr 1fr;
         z-index: 4;
-
-
         .titre_joindre {
             display: none;
         }
-
         .descriptif_equipe {
             position: relative;
             text-align: center;
@@ -181,7 +140,6 @@
             margin-top: -240px;
             z-index: 5;
         }
-
         .titre_mobile {
             position: relative;
             font-size: 24px;
@@ -189,17 +147,15 @@
             margin-top: -330px;
             z-index: 5;
         }
-
         img {
             width: 100%;
             height: 90%;
             grid-row: 1/4;
             object-fit: cover;
             filter: brightness(0.45);
-
         }
-
         button.membre {
+            display: block; 
             width: 80%;
             font-size: 20px;
             text-transform: uppercase;
@@ -281,21 +237,25 @@
 }
 
 .actualites {
-    height: 140vh;
+    height: 100%;
+    background-image: url("./sources/medias/images/page_accueil/section_actualite/maison_desktop.svg"); 
+    background-position: center 5px;
+    background-repeat: no-repeat;
+    min-width: 100%; 
+    background-size: cover;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 25px;
     row-gap: 15px;
-
-    .titre_actualites {
-        width: 70%;
-        grid-row-start: 1;
-        margin: auto auto;
-    }
-
-    .maison {
+    .empty {
+        height: 50px;
         width: 100%;
-        height: 60%;
+        grid-row-start: 1;
+    }
+    .titre_actualites {
+        width: 95%; 
+        grid-column: span 3;
+        margin: auto auto;
     }
 }
 
@@ -390,9 +350,11 @@
 }
 
 .infolettre {
+    height: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     //padding: 5vh 3vh 5vh 3ch;
     max-width: 80vw;
     background-color: var(--blanc);
@@ -451,8 +413,6 @@
 }
 
 
-
-
 @media screen and (min-width: 375px) and (max-width: 768px) {
 
     body {
@@ -460,82 +420,55 @@
     }
 
     .swiper {
-        z-index: 0;
 
         .vecteur_batiment {
-            margin-top: -714px;
+            bottom: 0;
             position: absolute;
-            width: 190%;
-            height: 100%;
+            width: 100%;
+            height: 70%;
             z-index: 1;
-            display: grid;
-            grid-template-rows: 2fr 2fr;
 
             .building {
-                position: absolute;
 
                 &01 {
                     position: absolute;
-                    object-fit: contain;
-                    grid-row: 2/3;
                 }
 
                 &02 {
                     position: absolute;
-                    object-fit: contain;
-                    transform: scale(1.5);
-                    grid-row: 2/3;
                 }
 
                 &03 {
                     position: absolute;
-                    object-fit: contain;
-                    transform: scale(1.5);
-                    grid-row: 2/3;
-                }
-
-                &04 {
-                    position: relative;
-                    object-fit: contain;
-                    transform: scale(1.8);
-                    grid-row: 2/3;
                 }
             }
         }
 
-    }
-
-    .swiper-pagination {
-        position: absolute;
-        z-index: 2;
     }
 
     .case_transparente {
         width: 100%;
-        height: 30%;
+        height: 27%;
         z-index: 3;
         background-color: rgba($color: black, $alpha: 0.5);
         position: absolute;
         bottom: 0;
-        padding: 15px;
-        padding-top: 5px;
-        padding-bottom: 0;
+        padding: 10px 20px;
 
         .titre {
-            font-size: 160%;
+            font-size: 22px;
             text-transform: uppercase;
+            margin-bottom: 4px;
         }
 
         .swiper02 {
-            width: 100%;
 
             .article_hero {
                 text-align: left;
-                font-size: 13px;
+                font-size: 12px;
             }
         }
     }
-
 
     .donation {
         background-color: color.adjust(#1c7293, $blackness: 15%);
@@ -579,6 +512,7 @@
         }
 
         button.membre {
+            display: block; 
             width: 70%;
             font-size: 24px;
             text-transform: uppercase;
@@ -591,7 +525,8 @@
     }
 
     .temoignages {
-        width: 100vw;
+        width: 100%;
+        height: 100%; 
         background-color: color.adjust(#1c7293, $blackness: 15%);
         padding: 4vh 7vh 9vh 7vh;
 
@@ -645,6 +580,7 @@
 
     .infolettre {
         background-color: #1c7293;
+        margin-bottom: 50px;
     }
 
     .services {
@@ -653,8 +589,8 @@
         grid-template-rows: repeat(4, 1fr);
         height: 100%;
         width: 100%;
-        grid-row-gap: 30px;
-        margin-bottom: 50px;
+        grid-row-gap: 10px;
+        margin-bottom: 10px;
 
         .titre_services {
             margin: auto auto;
@@ -665,7 +601,8 @@
 
         .s_congres {
             text-align: center;
-            padding: 5%;
+            padding: 2%;
+            height: 75%;
             grid-column: 2/span 6;
             grid-row: 2/3;
             display: grid;
@@ -684,7 +621,8 @@
 
         .s_infolettre {
             text-align: center;
-            padding: 5%;
+            padding: 2%;
+            height: 75%;
             grid-column: 1/span 5;
             grid-row: 3/4;
             display: grid;
@@ -703,7 +641,8 @@
 
         .s_environnement {
             text-align: center;
-            padding: 5%;
+            padding: 2%;
+            height: 75%;
             grid-column: 1/span 5;
             grid-row: 4/5;
             display: grid;
@@ -722,10 +661,11 @@
 
         .s_comite {
             text-align: center;
-            padding: 5%;
+            padding: 2%;
             grid-column: 2/span 6;
             grid-row: 5/6;
             display: grid;
+            height: 75%;
             grid-template-rows: 1fr 2fr;
             padding-bottom: 20px;
 
@@ -742,31 +682,34 @@
     }
 
     .actualites {
-        background-color: var(--pomme-verte);
-        height: 100vh;
+        height: 100%;
+        background-image: url("./sources/medias/images/page_accueil/section_actualite/maison_desktop.svg"); 
+        background-position: center 5px;
+        background-repeat: no-repeat;
+        min-width: 100%; 
+        background-size: cover;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 25px;
-        row-gap: 5px;
-
-        .titre_actualites {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 25px;
+        row-gap: 15px;
+        .empty {
+            height: 50px;
             width: 100%;
-            grid-column: 2/3;
             grid-row-start: 1;
-            margin: auto auto;
         }
-
-        .maison {
-            display: none;
-            width: 100%;
-            height: 60%;
+        .titre_actualites {
+            width: 90%; 
+        grid-column: span 3;
+        margin: auto auto;
         }
     }
 
     .infolettre {
+        height: 100%;
         background-color: var(--blanc);
         text-align: center;
         margin-left: auto;
+        margin-bottom: 20px;
         margin-right: auto;
         //padding: 5vh 3vh 5vh 3ch;
         max-width: 80vw;
@@ -855,7 +798,6 @@
 
                 &01 {
                     position: absolute;
-                    object-fit: contain;
                 }
 
                 &02 {
@@ -865,11 +807,6 @@
                 &03 {
                     position: absolute;
                 }
-
-                &04 {
-                    position: relative;
-                    object-fit: cover;
-                }
             }
         }
 
@@ -877,106 +814,87 @@
 
     .case_transparente {
         width: 100%;
-        height: 30%;
+        height: 27%;
         z-index: 3;
         background-color: rgba($color: black, $alpha: 0.5);
         position: absolute;
         bottom: 0;
-        padding: 20px;
-        padding-top: 10px;
-        padding-bottom: 0;
+        padding: 10px 15px;
 
         .titre {
-            font-size: xx-large;
+            font-size: 30px;
             text-transform: uppercase;
+            margin-bottom: 4px;
         }
 
         .swiper02 {
-            width: 100%;
 
             .article_hero {
                 text-align: left;
-                font-size: 14px;
+                font-size: 16px;
             }
         }
-
-
     }
 
     .donation {
-        background-color: color.adjust(#1c7293, $blackness: 15%);
-        width: 100%;
-        height: 80vh;
         position: relative;
         display: grid;
-        grid-template-rows: 1fr 1fr 2fr 1fr;
-        grid-template-columns: 3fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "image titre titre titre"
-            "image texte texte texte"
-            "image texte texte texte"
-            "image btn btn btn";
-        z-index: 4;
+        height: 90vh;
+        grid-template-columns: 3fr 2fr;
 
         .titre_joindre {
-            grid-area: titre;
-            margin: 2%;
-            padding-bottom: 18%;
-            grid-row: 1/4;
-            grid-column: 2/4;
-            transform: scale(2);
-
             img {
-                width: 70%;
+                display: block;
+                width: 90%;
+                padding: 10px;
                 object-fit: contain;
             }
         }
 
         .descriptif_equipe {
-            grid-area: texte;
-            text-align: center;
             font-size: 16px;
-            padding: 4%;
-            margin-top: 10%;
-            grid-row: 3/4;
-            grid-column: 2/5;
+            padding: 10px 20px;
+            grid-column: 2/3;
         }
 
         img {
-            grid-area: image;
-            width: 100%;
-            height: 100%;
+            width: 95%;
+            height: 94%;
+            margin: 20px;
+            margin-right: 0;
             object-fit: cover;
+            grid-row: 1/4; 
         }
 
         .titre_mobile {
             display: none;
         }
 
-        button.membre {
-            width: 70%;
-            font-size: 20px;
-            text-transform: uppercase;
-            background-color: var(--pomme-verte);
-            color: var(--blanc);
-            border-radius: 35px;
-            grid-column: 2/5;
-            grid-row: 4/4;
-            margin: 0 auto; 
+        .btn_donation {
+            margin-top: -20px;
+            
+            button.membre {
+                display: block;
+                width: 70%; 
+                padding: 25px 5px;
+                font-size: 20px;
+                text-transform: uppercase;
+                background-color: var(--pomme-verte);
+                color: var(--blanc);
+                margin: auto;
+            }
         }
 
     }
 
     // section-accueil temoignage
     .temoignages {
+        height: 100%;
         padding: 10vh;
         background-color: color.adjust(#1c7293, $blackness: 15%);
-
         .entete {
             display: none;
         }
-
-
         .title {
             width: 70%;
             margin-left: 5%;
@@ -1028,111 +946,104 @@
         grid-template-rows: repeat(4, 1fr);
         height: 100%;
         width: 100%;
-        grid-row-gap: 30px;
-        margin-bottom: 50px;
-
+        grid-row-gap: 10px;
+        margin-bottom: 20px;
         .titre_services {
             width: 100%;
             grid-column: span 8;
             transform: scale(0.5);
         }
-
         .s_congres {
             padding-left: 30px;
-            padding-top: 20px;
+            padding-top: 10px;
+            text-align: left;
             grid-column: 2/span 8;
             grid-row: 2/3;
+            height: 75%;
             display: grid;
             grid-template-columns: 1fr 2fr;
             grid-template-rows: 1fr 2fr;
-
             & .titre {
                 grid-column: 1/3;
                 grid-row: 1/2;
                 font-size: 32px;
             }
-
             & .info {
                 grid-column: 1/4;
-                grid-row: 2/3;
+                grid-row: 2/2;
                 font-size: 18px;
             }
         }
-
         .s_infolettre {
-            padding-top: 20px;
+            padding-top: 10px;
             padding-right: 30px;
             grid-column: 1/span 7;
             grid-row: 3/4;
             display: grid;
+            height: 75%;
             grid-template-columns: 1fr 2fr;
             grid-template-rows: 1fr 2fr;
-
             & .titre {
                 padding-right: 30px;
                 grid-column: 3/4;
                 grid-row: 1/2;
                 font-size: 32px;
             }
-
             & .info {
                 grid-column: 1/4;
                 grid-row: 2/3;
                 font-size: 18px;
             }
         }
-
         .s_environnement {
             padding-right: 30px;
-            padding-top: 20px;
+            padding-top: 10px;
             grid-column: 1/span 6;
+            height: 75%;
             grid-row: 4/5;
             display: grid;
             grid-template-columns: 1fr 2fr;
             grid-template-rows: 1fr 2fr;
-
             & .titre {
                 padding-right: 20px;
                 grid-column: 3/4;
                 grid-row: 1/2;
                 font-size: 32px;
             }
-
             & .info {
                 grid-column: 1/4;
                 grid-row: 2/3;
                 font-size: 18px;
             }
         }
-
         .s_comite {  
             padding-left: 30px;
-            padding-top: 20px;
+            padding-top: 10px;
+            text-align: left;
+            height: 75%;
             grid-column: 2/span 8;
             grid-row: 5/6;
             display: grid;
             grid-template-columns: 1fr 2fr;
             grid-template-rows: 1fr 2fr;
             padding-bottom: 10px;
-          
-
             & .titre {
                 grid-column: 1/3;
                 grid-row: 1/2;
                 font-size: 32px;
             }
-
             & .info {
                 grid-column: 1/3;
                 grid-row: 2/3;
                 font-size: 18px;
             }
         }
-
     }
-  
+
+
     //section actualite
     .actualites {
+        height: 100%;
         background-image: url("./sources/medias/images/page_accueil/section_actualite/maison_desktop.svg"); 
         background-position: center 5px;
         background-repeat: no-repeat;
@@ -1142,39 +1053,34 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 25px;
         row-gap: 15px;
-
         .empty {
             height: 330px;
             width: 100%;
             grid-row-start: 1;
         }
-
         .titre_actualites {
-            padding-top: 200px; 
             width: 90%;
             grid-column: 2/3;
             grid-row-start: 2;
             margin: auto auto;
         }
-
     }
 
 
     //section infolettre
     .infolettre {
+        height: 100%;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 50px;
         //padding: 5vh 3vh 5vh 3ch;
         max-width: 80vw;
-
-
         .title {
             margin-left: -20%;
             padding: 3% 0;
             width: 70%;
         }
-
         .boite_question {
             background-color: color.adjust(#1c7293, $blackness: 15%);
             display: grid;
@@ -1186,25 +1092,20 @@
                 "answer"
                 "question"
                 "answer";
-
         }
-
         .join {
             margin-right: -20%;
             margin-top: 5%;
             width: 80%;
         }
-
         .question {
             padding: 1vh;
         }
-
         .answer {
             grid-area: description;
             background-color: #0E769E;
             padding: 1vh;
         }
-
         .input {
             margin-top: 5vh;
             background-color: #E6E6E6;
@@ -1212,7 +1113,6 @@
             width: 80vw;
             padding: 1vh;
         }
-
         .souris_icone {
             width: 3vw;
             position: absolute;
