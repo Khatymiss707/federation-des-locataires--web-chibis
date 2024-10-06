@@ -30,18 +30,19 @@ const swiper02 = new Swiper('.swiper02', {
   })
 
   document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-    hamburger.classList.remove(".active");
-    navMenu.classList.remove(".active");
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
   })); 
 
   //accordeon
 let title = document.querySelector(".accordion__item__title"); 
 let contenu = document.querySelector(".accordion__item__content--open"); 
 
-/*
-title.click(function () {
+var $title = $('.title');
+var content   = '.content';
+$title.click(function () {
   $(this).next(content).slideToggle();
   $(this).parent().siblings().children().next().slideUp();
   return false;
 });
-*/
+
