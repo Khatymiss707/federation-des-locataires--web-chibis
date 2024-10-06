@@ -28,9 +28,11 @@
       font-weight: 500;
 
       margin: 2vw;
-     &.nav-link{
+
+      &.nav-link{
         padding-bottom: 1vh;
       }
+
       &:hover {
         border-bottom: solid 3px white;
       }
