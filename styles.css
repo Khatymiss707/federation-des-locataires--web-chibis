@@ -627,85 +627,73 @@ a {
 }
 
 .nav .navbar {
-  max-width: 100vw;
   background-color: var(--bleu-paisible);
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5vw;
+  padding: 1vw;
 }
 .nav .nav_menu {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-around;
 }
-
-li {
+.nav .nav_menu li {
   list-style: none;
 }
-
-a {
-  color: var(--blanc);
+.nav .nav_menu li a {
   text-decoration: none;
-}
-
-.nav-link {
-  font-family: "merriweather";
+  color: white;
   text-transform: uppercase;
   font-size: 2vh;
   font-weight: 500;
-  text-align: center;
-  color: var(--blanc);
+  margin: 2vw;
 }
-.nav-link:hover {
+.nav .nav_menu li a.nav-link {
+  padding-bottom: 1vh;
+}
+.nav .nav_menu li a:hover {
   border-bottom: solid 3px white;
 }
-
-.hamburger {
+.nav .hamburger {
   display: none;
   cursor: pointer;
 }
-
-.bar {
+.nav .bar {
   display: block;
   width: 25px;
   height: 5px;
   margin: 5px auto;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease;
   background-color: white;
 }
 
-@media screen and (max-width: 768px) {
-  .nav .hamburger {
+@media screen and (max-width: 375px) {
+  .nav .navbar .hamburger {
     display: block;
   }
-  .nav .hamburger.active .bar:nth-child(2) {
+  .nav .navbar .hamburger.active .nav_menu {
+    display: flex;
+    flex-direction: column;
+    opacity: all 0.3s ease;
+  }
+  .nav .navbar .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  .nav .hamburger.active .bar:nth-child(1) {
+  .nav .navbar .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  .nav .hamburger.active .bar:nth-child(3) {
+  .nav .navbar .hamburger.active .bar:nth-child(3) {
     transform: translateY(-12px) rotate(-45deg);
   }
-  .nav .navbar {
-    max-width: 100vw;
-    background-color: var(--bleu-paisible);
-    justify-content: space-between;
-    align-items: center;
+  .nav .navbar .nav_menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
-  .nav-item {
-    margin: 2vh 0;
-  }
-  .nav-menu.active {
+  .nav .navbar .nav_menu.active {
     display: flex;
-    align-items: center;
-    gap: 0;
     flex-direction: column;
-    background-color: var(--bleu-paisible);
-    max-width: 100%;
-    text-align: center;
-    transition: 0.3s;
+    opacity: 1;
   }
 }
 * {
