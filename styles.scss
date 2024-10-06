@@ -307,7 +307,7 @@
     display: grid;
 
     grid-template-rows: repeat(4, 1fr);
-    height: 100vh;
+    height: 100%;
     width: 100%;
     grid-row-gap: 30px;
     margin-bottom: 50px;
@@ -655,7 +655,7 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        height: 100vh;
+        height: 100%;
         width: 100%;
         grid-row-gap: 30px;
         margin-bottom: 50px;
