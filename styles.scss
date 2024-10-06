@@ -141,8 +141,8 @@
             background-color: rgba($color: black, $alpha: 0.5);
             position: absolute;
             bottom: 0;
-            padding: 2%;
-            padding-top: 4%;
+            padding: 10px;
+            padding-top: 10px;
             padding-bottom: 0;
 
             .titre {
@@ -154,7 +154,6 @@
                 width: 100%;
 
                 .article_hero {
-                    padding-top: 3%;
                     text-align: left;
                     font-size: 12px;
                 }
@@ -522,8 +521,8 @@
         background-color: rgba($color: black, $alpha: 0.5);
         position: absolute;
         bottom: 0;
-        padding: 2%;
-        padding-top: 2%;
+        padding: 15px;
+        padding-top: 5px;
         padding-bottom: 0;
 
         .titre {
@@ -535,7 +534,6 @@
             width: 100%;
 
             .article_hero {
-                padding-top: 1%;
                 text-align: left;
                 font-size: 13px;
             }
@@ -909,8 +907,8 @@
         background-color: rgba($color: black, $alpha: 0.5);
         position: absolute;
         bottom: 0;
-        padding: 2%;
-        padding-top: 1%;
+        padding: 20px;
+        padding-top: 10px;
         padding-bottom: 0;
 
         .titre {
@@ -922,7 +920,6 @@
             width: 100%;
 
             .article_hero {
-                padding-top: 1%;
                 text-align: left;
                 font-size: 14px;
             }
