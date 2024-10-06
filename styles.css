@@ -876,13 +876,13 @@ a {
     filter: brightness(0.45);
   }
   .donation button.membre {
-    width: 100%;
+    width: 80%;
     font-size: 20px;
+    text-transform: uppercase;
     background-color: var(--pomme-verte);
     color: var(--blanc);
     border-radius: 35px;
-    transform: scale(0.9, 1);
-    margin-bottom: 50px;
+    margin: 50px auto;
   }
   .temoignages {
     z-index: 10;
@@ -1179,15 +1179,13 @@ a {
     filter: brightness(0.45);
   }
   .donation button.membre {
-    width: 100%;
+    width: 70%;
     font-size: 24px;
     text-transform: uppercase;
     background-color: var(--pomme-verte);
     color: var(--blanc);
     border-radius: 35px;
-    transform: scale(0.9, 1);
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto;
   }
   .temoignages {
     width: 100vw;
@@ -1503,15 +1501,15 @@ a {
     display: none;
   }
   .donation button.membre {
-    width: 100%;
-    font-size: 32px;
+    width: 70%;
+    font-size: 20px;
     text-transform: uppercase;
     background-color: var(--pomme-verte);
     color: var(--blanc);
     border-radius: 35px;
-    transform: scale(0.6, 0.5);
     grid-column: 2/5;
     grid-row: 4/4;
+    margin: 0 auto;
   }
   .temoignages {
     padding: 10vh;
