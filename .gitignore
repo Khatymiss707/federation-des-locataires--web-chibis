@@ -1,3 +1,5 @@
-# wp-admin/
-# wp-includes/
-# /*.php
+wp-admin/
+wp-includes/
+/*.php
+license.txt
+readme.html
