@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <header>
   <div class="banniere">
     <p>
@@ -25,46 +24,52 @@
 
 <body>
   <div class="pageblanche">
-
     <section class="hero">
-
       <section class="nav">
         <nav class="navbar">
-          
           <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
           </div>
-        
 
           <ul class="nav_menu">
-            <li class="nav-item">
-              <a href="#" class="nav-link">équipe</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">services</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">nouvelles</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">à propos</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">faq</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">nous joindre</a>
-            </li>
+            
+              <li class="nav-item">
+                <a href="#" class="nav-link">équipe</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">nouvelles</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">à propos</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">faq</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">nous joindre</a>
+              </li>
+            
+
+            <li class="nav-item autre">
+              <img class="loupe" src="./sources/medias/images/page_accueil/icones/loupe.svg" alt="loupe">
+             </li> 
+
+              <li class="nav-item  autre">
+                <select>
+                  <option value="fr">FRA</option>
+                  <option value="eng">ENG</option>
+                </select>
+              </li>
+            
+
           </ul>
-
-          </nav>
-
+        </nav>
       </section>
-        
-     
-
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -78,7 +83,6 @@
           </div>
         </div>
         <div class="swiper-pagination"></div>
-
         <div class="vecteur_batiment">
           <img class="building01"
             src="./sources/medias/images/page_accueil/section_hero/batiments_vectors/arriere_building_01.svg" alt="" />
@@ -87,10 +91,7 @@
           <img class="building03"
             src="./sources/medias/images/page_accueil/section_hero/batiments_vectors/arriere_building_03.svg" alt="" />
         </div>
-
       </div>
-
-
       <div class="case_transparente">
         <h1 class="titre">
           La Fédération des locataire d’ habitation à loyer modique du Québec
@@ -116,9 +117,7 @@
           </div>
         </div>
       </div>
-
     </section>
-
     <section class="donation">
       <img class="donation_img" src="./sources/medias/images/page_accueil/section_donation/yan_krukov.jpg" alt="">
       <div class="titre_joindre">
@@ -128,9 +127,10 @@
       <h3 class="descriptif_equipe">En versant votre cotisation pour être membre de la FLHLMQ, vous nous permettez
         d’être représentatif des locataires de partout au Québec et de rester en contact avec vous pour vous aider en
         tout temps. Dans le cas des CCR, vous pouvez demander à l’office de payer votre cotisation à la FLHLMQ</h3>
-      <button class="membre">Devenir Membre</button>
+        <div class="btn_donation">
+          <button class="membre">Devenir Membre</button>
+        </div>
     </section>
-
     <section class="services">
       <img class="titre_services" src="./sources/medias/images/page_accueil/section_services/titre_services.svg" alt="">
       <div class="s_congres">
@@ -153,7 +153,6 @@
         <p class="info">Représenter les locataires auprès des instances politiques et administratives.</p>
       </div>
     </section>
-
     <section class="actualites">
       <div class="empty"></div>
       <img class="titre_actualites" src="./sources/medias/images/page_accueil/section_actualite/titre_actualite.svg"
@@ -179,21 +178,14 @@
           nationale.</p>
       </div>
     </section>
-
-
     <section class="temoignages">
       <img class="title" src="./sources/medias/images/page_accueil/temoingnage/titre_temoin.svg" alt="title">
       <div class="entete">
-
         <h1>TÉMOIGNAGES</h1>
         <img class="icone_box" src="./sources/medias/images/page_accueil/temoingnage/mobile_icon.svg" alt="coeur">
-
         <div class="rectangle"></div>
-
       </div>
       <img class="destop_icon" src="./sources/medias/images/page_accueil/temoingnage/icon_desktop.svg" alt="icon">
-
-
       <div class="box">
         <div class="utilisateur">
           <h3>Utilisateur 01</h3>
@@ -219,46 +211,35 @@
         </div>
       </div>
     </section>
-
     <section class="infolettre">
       <img class="title" src="./sources/medias/images/page_accueil/section_infolettre/titre_infolettre.svg" alt="title">
-
       <div class="boite_question">
         <div class="item">
           <h2 class="question"> Question 01 - Comment puis-je m'inscrire ?</h2>
           <p class="answer">Pour vous inscrire, cliquez sur le bouton "S'inscrire" en haut à droite de la page
             d'accueil et suivez les instructions.</p>
         </div>
-
         <div class="item">
           <h2 class="question"> Question 02 - Est-ce que mes informations personnelles sont sécurisées ?</h2>
           <p class="answer">Oui, nous prenons la sécurité de vos données très au sérieux. Consultez notre politique
             de confidentialité pour plus d'informations.
           </p>
         </div>
-
         <div class="item">
           <h2 class="question"> Question 03 - Les services sont-ils payants ?</h2>
           <p class="answer">Oui, certains services sont payants. Vous trouverez des informations sur les tarifs dans la
             section "Tarifs" de notre site.</p>
         </div>
-
       </div>
-
-
       <img class="join" src="./sources/medias/images/page_accueil/section_infolettre/titre_joindre_maintenant.svg"
         alt="join">
-
       <form>
         <input type="email" id="email" class="input" placeholder="exemple707@gmail.com">
       </form>
-
       <img class="souris_icone" src="./sources/medias/images/page_accueil/icones/cursor.svg" alt="souris">
     </section>
   </div>
-
 </body>
-
 <footer class="footer">
   <div class="column1">
     <div class="titre_footer">
@@ -282,7 +263,6 @@
       </div>
     </div>
   </div>
-
   <div class="column2">
     <div class="partners">
       <p class="partenaires">Nos Partenaires</p>
@@ -306,7 +286,6 @@
   </div>
   <p class="credit">&copy 2024, FLHLMQ, WEB CHIBIS</p>
 </footer>
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script type="module" src="./main.js"></script>
 
