@@ -7,6 +7,7 @@
     ul {
       padding: 0;
       margin: 0;
+      justify-content: space-evenly;
     }
 
     background-color: var(--bleu-paisible);
@@ -27,15 +28,14 @@
 
 
       .loupe {
-        width: 35px;
-        margin-right: 5px;
+        margin-right: 25px;
       }
 
       select {
-        width: 75px;
-        font-size: 18px;
         font-weight: 500;
         padding: 5px;
+        font-size: 100%;
+        padding-right: 20px;
         color: var(--blanc);
         border: 2px var(--blanc) solid;
         background-color: transparent;
@@ -46,12 +46,11 @@
       list-style: none;
 
       a {
+        font-size: 100%; 
         text-decoration: none;
         color: white;
         text-transform: uppercase;
-        font-size: 20px;
         font-weight: 500;
-        margin: 0 20px;
 
         &.nav-link {
           padding-bottom: 1vh;
@@ -61,6 +60,12 @@
           border-bottom: solid 3px white;
         }
       }
+    }
+
+    .right_side_nav {
+    display: flex; 
+    justify-content: end;
+
     }
   }
 
@@ -77,6 +82,7 @@
     transition: all 1s ease;
     background-color: white;
   }
+
 }
 
 
@@ -101,7 +107,6 @@
 
       .autre {
         .loupe {
-          width: 20px;
           margin-left: 12vw;
         }
 
