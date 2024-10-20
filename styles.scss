@@ -175,6 +175,7 @@
 
     }
 
+    /*section temoignage*/
     .temoignages {
         z-index: 10;
         background-color: var(--blanc);
@@ -235,18 +236,11 @@
         }
     }
 
-    .title {
-        display: none;
-    }
-
-    .destop_icon {
-        display: none;
-    }
 }
 
 .actualites {
     height: 100%;
-    background-image: url("./sources/medias/images/page_accueil/section_actualite/maison_desktop.svg"); 
+    background-image: url("./medias/images/page_accueil/section_actualite/maison_desktop.svg"); 
     background-position: center 5px;
     background-repeat: no-repeat;
     min-width: 100%; 
@@ -652,7 +646,7 @@
 
     .actualites {
         height: 100%;
-        background-image: url("./sources/medias/images/page_accueil/section_actualite/maison_desktop.svg"); 
+        background-image: url("./medias/images/page_accueil/section_actualite/maison_desktop.svg"); 
         background-position: center 5px;
         background-repeat: no-repeat;
         min-width: 100%; 
@@ -741,7 +735,7 @@
 @media screen and (min-width: 768px) {
     body {
         background-color: var(--vert-menthe);
-        background-image: url(./sources/medias/images/page_accueil/section_hero/decoration_logo.svg);
+        background-image: url(./medias/images/page_accueil/section_hero/decoration_logo.svg);
         background-size: cover;
         background-repeat: repeat-y;
         margin: 0px;
@@ -993,7 +987,7 @@
     //section actualite
     .actualites {
         height: 100%;
-        background-image: url("./sources/medias/images/page_accueil/section_actualite/maison_desktop.svg"); 
+        background-image: url("./medias/images/page_accueil/section_actualite/maison_desktop.svg"); 
         background-position: center 5px;
         background-repeat: no-repeat;
         min-width: 100%; 
