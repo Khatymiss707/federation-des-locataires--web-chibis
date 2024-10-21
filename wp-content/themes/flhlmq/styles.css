@@ -830,10 +830,37 @@ a {
   height: 100%;
 }
 
+.equipe {
+  width: 100%;
+  height: 100%;
+}
+
 .infolettre {
   width: 100%;
   height: 100%;
   margin-bottom: 50px;
+}
+
+.a_propos {
+  display: flex;
+  flex-direction: column;
+}
+.a_propos h1 {
+  color: #0E769E;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-inline: auto auto;
+  font-size: 200%;
+  justify-self: center;
+}
+.a_propos h4.description {
+  color: var(--noir);
+  font-family: montserrat;
+  width: 75%;
+  text-align: justify;
+  margin-inline: auto auto;
+  margin-bottom: 5%;
+  font-size: 120%;
 }
 
 @media screen and (max-width: 375px) {
@@ -989,6 +1016,29 @@ a {
   grid-row-start: 1;
 }
 .actualites .titre_actualites {
+  width: 95%;
+  grid-column: span 3;
+  margin: auto auto;
+}
+
+.equipe {
+  height: 100%;
+  background-image: url("./medias/images/page_accueil/section_actualite/maison_desktop.svg");
+  background-position: center 5px;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 25px;
+  row-gap: 15px;
+}
+.equipe .empty {
+  height: 50px;
+  width: 100%;
+  grid-row-start: 1;
+}
+.equipe .titre_equipe {
   width: 95%;
   grid-column: span 3;
   margin: auto auto;
