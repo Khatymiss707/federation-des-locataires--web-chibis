@@ -72,12 +72,14 @@
 .a_propos{
     display: flex;
     flex-direction: column;
+
     
-    h1{
-        color: #0E769E;margin-top: 5%;
+    img{
+        
+        margin-top: 5%;
         margin-bottom: 5%;
         margin-inline: auto auto;
-        font-size: 200%;
+        width: 80%;
         justify-self: center;
     }
 
