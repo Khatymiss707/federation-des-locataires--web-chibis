@@ -604,11 +604,11 @@ a {
 }
 
 @font-face {
-  src: url("/medias/font/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  src: url("../medias/font/Montserrat/Montserrat.ttf") format("truetype");
   font-family: "montserrat";
 }
 @font-face {
-  src: url("/medias/font/Merriweather_Sans/MerriweatherSans-VariableFont_wght.ttf") format("truetype");
+  src: url("../medias/font/Merriweather_Sans/MerriweatherSans.ttf") format("truetype");
   font-family: "merriweather";
 }
 h1 {
