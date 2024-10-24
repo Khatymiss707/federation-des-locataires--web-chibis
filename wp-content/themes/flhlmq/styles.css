@@ -603,6 +603,10 @@ a {
   background-color: var(--blue-calypso);
 }
 
+.titre__service--liste {
+  font-size: 90px;
+}
+
 @font-face {
   src: url("../medias/font/Montserrat/Montserrat.ttf") format("truetype");
   font-family: "montserrat";
