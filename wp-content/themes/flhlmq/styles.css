@@ -1167,6 +1167,11 @@ a {
   right: 10%;
 }
 
+.joindre img.titre {
+  width: 30%;
+  border: red 2px solid;
+}
+
 @media screen and (min-width: 375px) and (max-width: 768px) {
   body {
     margin: 0;
