@@ -232,7 +232,8 @@
             }
         
             .s_congres {
-                padding: 10px 3vw; 
+                padding-top: 10px;
+                padding-bottom: 10px;
                 margin-bottom: 20px;
                 text-align: center;
         
@@ -249,7 +250,9 @@
             }
         
             .s_infolettre {
-                padding: 10px 3vw; 
+                padding-top: 10px;
+                ;
+                padding-bottom: 10px;
                 margin-bottom: 20px;
                 text-align: center;
         
@@ -263,7 +266,8 @@
             }
         
             .s_environnement {
-                padding: 10px 3vw; 
+                padding-top: 10px;
+                padding-bottom: 10px;
                 margin-bottom: 20px;
                 text-align: center;
         
@@ -277,14 +281,16 @@
             }
         
             .s_comite {
-                padding: 10px 3vw; 
+                padding-top: 10px;
                 text-align: center;
+                padding-bottom: 10px;
         
                 & .titre {
                     font-size: 32px;
                 }
         
                 & .info {
+        
                     font-size: 18px;
                 }
             }
@@ -300,7 +306,7 @@
             background-size: cover;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 80px 1fr 1fr 1fr 1fr 25px;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 25px;
             row-gap: 15px;
         
             .empty {
@@ -310,7 +316,7 @@
             }
         
             .titre_actualites {
-                width: 80%;
+                width: 95%;
                 grid-column: span 3;
                 margin: auto auto;
             }
@@ -664,82 +670,6 @@
             padding: 1%;
             font-size: 200%;
 
-        }
-    }
-
-    //PAGE SERVICES
-    .liste_services_page {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-
-        .titre_services {
-            width: 100%;
-            transform: scale(0.5);
-        }
-
-        .s_congres {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            text-align: center;
-
-            & .titre {
-                grid-column: 1/3;
-                font-size: 32px;
-            }
-
-            & .info {
-                grid-column: 1/4;
-
-                font-size: 18px;
-            }
-        }
-
-        .s_infolettre {
-            padding-top: 10px;
-            ;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            text-align: center;
-
-            & .titre {
-                font-size: 32px;
-            }
-
-            & .info {
-                font-size: 18px;
-            }
-        }
-
-        .s_environnement {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            text-align: center;
-
-            & .titre {
-                font-size: 32px;
-            }
-
-            & .info {
-                font-size: 18px;
-            }
-        }
-
-        .s_comite {
-            padding-top: 10px;
-            text-align: center;
-            padding-bottom: 10px;
-
-            & .titre {
-                font-size: 32px;
-            }
-
-            & .info {
-
-                font-size: 18px;
-            }
         }
     }
     
@@ -1415,6 +1345,185 @@
         }
     }
 
+    @media screen and (max-width: 375px) {
+
+        body {
+            margin: 0;
+        }
+
+        .swiper {
+
+            .swiper-slide {
+                height: 80vh;
+            }
+
+            .vecteur_batiment {
+                bottom: 0;
+                position: absolute;
+                width: 100%;
+                height: 70%;
+                z-index: 1;
+
+                .building {
+
+                    &01 {
+                        position: absolute;
+                        display: none;
+                    }
+
+                    &02 {
+                        position: absolute;
+                        display: none;
+                    }
+
+                    &03 {
+                        position: absolute;
+                        display: none;
+                    }
+                }
+            }
+
+        }
+
+        .case_transparente {
+            width: 100%;
+            height: 35%;
+            z-index: 3;
+            background-color: rgba($color: black, $alpha: 0.5);
+            position: absolute;
+            bottom: 0;
+            padding: 10px 20px;
+
+            .titre {
+                font-size: 22px;
+                text-transform: uppercase;
+                margin-bottom: 4px;
+            }
+
+            .swiper02 {
+
+                .article_hero {
+                    text-align: left;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        /*section donation*/
+        .donation {
+            background-color: color.adjust(#1c7293, $blackness: 15%);
+            width: 100%;
+            height: 70vh;
+            position: relative;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            z-index: 4;
+
+            .titre_joindre {
+                display: none;
+            }
+
+            .descriptif_equipe {
+                position: relative;
+                text-align: center;
+                font-size: 12px;
+                padding: 4%;
+                margin-top: -240px;
+                z-index: 5;
+            }
+
+            .titre_mobile {
+                position: relative;
+                font-size: 24px;
+                text-align: center;
+                margin-top: -330px;
+                z-index: 5;
+            }
+
+            img {
+                width: 100%;
+                height: 90%;
+                grid-row: 1/4;
+                object-fit: cover;
+                filter: brightness(0.45);
+            }
+
+            button.membre {
+                display: block;
+                width: 80%;
+                font-size: 20px;
+                text-transform: uppercase;
+                background-color: var(--pomme-verte);
+                color: var(--blanc);
+                border-radius: 35px;
+                margin: 50px auto;
+            }
+
+        }
+
+        /*section temoignage*/
+        .temoignages {
+            z-index: 10;
+            background-color: var(--blanc);
+
+            .entete {
+                background-color: color.adjust(#1c7293, $blackness: 15%);
+                padding: 2vh 0 2vh 0;
+
+                h1 {
+                    position: relative;
+                    text-align: center;
+                    font-size: 2.5vh;
+                    z-index: 1;
+                    width: 100vw;
+
+                }
+
+                .rectangle {
+                    display: none;
+                }
+
+
+                .icone_box {
+                    z-index: 2;
+                    max-width: 40%;
+                    margin-top: 2vh;
+                    margin-left: 30vw;
+
+                }
+
+            }
+
+
+
+        }
+
+        .box {
+            min-width: 100vw;
+            background-color: var(--blanc);
+            padding: 1vh 3vh;
+
+
+            .utilisateur {
+                padding: 0.5vh;
+            }
+
+            h3 {
+                font-size: 1vh;
+                color: var(--noir);
+                margin-bottom: 0.3vh;
+            }
+
+            .description {
+                font-size: 0.5vh;
+                background-color: var(--gris-souris);
+                padding: 0.5vh;
+                text-align: left;
+            }
+        }
+
+    }
+
     //section actualite
     .actualites {
         height: 100%;
@@ -1467,7 +1576,7 @@
         }
     }
 
-    .services {
+    .liste_service_page {
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
@@ -1484,7 +1593,6 @@
             text-align: left;
 
             .liste_service_titre_description {
-
                 font-size: 32px;
             }
 
