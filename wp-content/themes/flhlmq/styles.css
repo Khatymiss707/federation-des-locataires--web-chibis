@@ -1285,54 +1285,70 @@ a {
     background-color: var(--bleu-calypso);
     padding: 2%;
   }
-  .joindre_page .formulaire {
+  .formulaire {
+    height: 75vh;
+    display: flex;
     flex-direction: column;
-    height: 100vh;
   }
-  .joindre_page .formulaire input {
-    height: 70%;
+  .formulaire img {
+    width: 90%;
+    align-self: center;
   }
-  .joindre_page .formulaire label {
+  .formulaire button {
+    grid-area: 5/1/6/3;
+    width: 20%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
     font-size: 150%;
+    background-color: #0E769E;
   }
-  .joindre_page .formulaire form {
+  .formulaire form {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 15%;
+    grid-row-gap: 10%;
+    width: 70%;
+    align-self: center;
+    margin-top: 5%;
   }
-  .joindre_page .formulaire .label_prenom {
+  .formulaire form .label_prenom {
     grid-area: 1/1/2/2;
   }
-  .joindre_page .formulaire .input_prenom {
+  .formulaire form .input_prenom {
+    grid-area: 1/2/2/3;
+  }
+  .formulaire form .label_nom {
     grid-area: 2/1/3/2;
   }
-  .joindre_page .formulaire .label_nom {
+  .formulaire form .input_nom {
+    grid-area: 2/2/3/3;
+  }
+  .formulaire form .label_adress {
     grid-area: 3/1/4/2;
   }
-  .joindre_page .formulaire .input_nom {
+  .formulaire form .input_adress {
+    grid-area: 3/2/4/3;
+  }
+  .formulaire form .label_mail {
     grid-area: 4/1/5/2;
   }
-  .joindre_page .formulaire .label_adress {
-    grid-area: 5/1/6/2;
+  .formulaire form .input_mail {
+    grid-area: 4/2/5/3;
   }
-  .joindre_page .formulaire .input_adress {
-    grid-area: 6/1/7/2;
+  .formulaire form label {
+    font-size: 300%;
+    font-family: "montserrat";
   }
-  .joindre_page .formulaire .label_mail {
-    grid-area: 7/1/8/2;
-  }
-  .joindre_page .formulaire .input_mail {
-    grid-area: 8/1/9/2;
-  }
-  .joindre_page .formulaire button {
-    grid-area: 9/1/10/2;
+  .formulaire form input {
+    height: 90%;
     width: 100%;
+    padding: 1%;
+    font-size: 200%;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 375px) and (min-width: 375px) and (max-width: 768px) {
   body {
     margin: 0;
   }
@@ -1607,7 +1623,7 @@ a {
     right: 10%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 375px) and (min-width: 768px) {
   body {
     background-color: var(--vert-menthe);
     background-image: url(./medias/images/page_accueil/section_hero/decoration_logo.svg);
@@ -1842,7 +1858,7 @@ a {
     font-size: 18px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 375px) {
+@media screen and (max-width: 375px) and (min-width: 768px) and (max-width: 375px) {
   body {
     margin: 0;
   }
@@ -1977,7 +1993,7 @@ a {
     text-align: left;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 375px) and (min-width: 768px) {
   .actualites {
     height: 100%;
     background-image: url("./medias/images/page_accueil/section_actualite/maison_desktop.svg");
