@@ -1125,10 +1125,26 @@
         bottom: 0;
         padding: 10px 15px;
 
+        &.nouvelle {
+            height: auto;
+            padding: 0 15px;
+            bottom: 0.5vh; 
+        }
+
         .titre {
             font-size: 30px;
             text-transform: uppercase;
             margin-bottom: 4px;
+        }
+
+        .date {
+            margin-top: -9px;
+            font-size: 16px;
+        }
+
+        .categorie {
+            text-transform: uppercase;
+            font-size: 16px;
         }
 
         .swiper02 {
@@ -1143,6 +1159,11 @@
     .contexte_nouvelle {
         color: var(--noir); 
         padding: 20px;
+    }
+
+    .nouvelle_lien {
+        color: var(--noir);
+        font-weight: 600;
     }
 
     .donation {

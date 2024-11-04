@@ -1694,10 +1694,23 @@ a {
     bottom: 0;
     padding: 10px 15px;
   }
+  .case_transparente.nouvelle {
+    height: auto;
+    padding: 0 15px;
+    bottom: 0.5vh;
+  }
   .case_transparente .titre {
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 4px;
+  }
+  .case_transparente .date {
+    margin-top: -9px;
+    font-size: 16px;
+  }
+  .case_transparente .categorie {
+    text-transform: uppercase;
+    font-size: 16px;
   }
   .case_transparente .swiper02 .article_hero {
     text-align: left;
@@ -1706,6 +1719,10 @@ a {
   .contexte_nouvelle {
     color: var(--noir);
     padding: 20px;
+  }
+  .nouvelle_lien {
+    color: var(--noir);
+    font-weight: 600;
   }
   .donation {
     position: relative;
