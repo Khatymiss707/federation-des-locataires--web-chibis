@@ -26,6 +26,12 @@
     width: 100%;
     height: 100%;
 
+    .image_nouvelle {
+        width: 100%;
+        object-fit: cover;
+        height: 40vh; 
+    }
+
     .swiper {
         position: relative;
 
@@ -1068,11 +1074,21 @@
     }
 
     .pageblanche {
+        margin-top: 10px;
         width: 90vw;
         background-color: white;
         margin: 0 auto;
     }
 
+    .hero {
+
+        .image_nouvelle {
+            width: 100%;
+            object-fit: cover;
+            height: 65vh; 
+        }
+    
+    }
     .swiper {
 
         .vecteur_batiment {
