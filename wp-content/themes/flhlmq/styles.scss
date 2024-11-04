@@ -32,7 +32,7 @@
     .image_nouvelle {
         width: 100%;
         object-fit: cover;
-        height: 40vh; 
+        height: 40vh;
     }
 
     .swiper {
@@ -531,115 +531,140 @@
     //PAGE JOINDRE
     .joindre_page {
 
-            display: flex;
-            flex-direction: column;
-        
-            img.titre {
-                width: 70%;
-                justify-self: center;
-                align-self: center;
-                margin-block: 4%;
-        
-        
-            }
-        
-            .information {
-                height: 100vh;
-                position: relative;
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                grid-column-gap: 0;
-                grid-row-gap: 15%;
-            }
-        
-            .poste {
-                grid-area: 1 / 1 / 2 / 5;
-                background-color: var(--bleu-calypso);
-                height: 60%;
-                padding: 2%;
-            }
-        
-            .courriel {
-                grid-area: 2 / 2 / 3 / 6;
-                background-color: var(--gris-souris);
-                padding: 2%;
-                height: 60%;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-        
-                .contenu {
-                    margin-right: 3%;
-                }
-        
-            }
-        
-            .copieur {
-                height: 60%;
-                grid-area: 3 / 1 / 4 / 5;
-                background-color: var(--bleu-calypso);
-                padding: 2%;
-            }
-    
-            .formulaire {
-                flex-direction: column;
-                height: 100vh;
-    
-                input {
-                    height: 70%;
-                }
-    
-                label {
-                    font-size: 150%;
-                }
-    
-                form {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: repeat(9, 1fr);
-                    grid-column-gap: 0px;
-                    grid-row-gap: 0;
-                    align-items: center;
-                }
-    
-                .label_prenom {
-                    grid-area: 1 / 1 / 2 / 2;
-                }
-    
-                .input_prenom {
-                    grid-area: 2 / 1 / 3 / 2;
-                }
-    
-                .label_nom {
-                    grid-area: 3 / 1 / 4 / 2;
-                }
-    
-                .input_nom {
-                    grid-area: 4 / 1 / 5 / 2;
-                }
-    
-                .label_adress {
-                    grid-area: 5 / 1 / 6 / 2;
-                }
-    
-                .input_adress {
-                    grid-area: 6 / 1 / 7 / 2;
-                }
-    
-                .label_mail {
-                    grid-area: 7 / 1 / 8 / 2;
-                }
-    
-                .input_mail {
-                    grid-area: 8 / 1 / 9 / 2;
-                }
-    
-                button {
-                    grid-area: 9 / 1 / 10 / 2;
-                    width: 100%;
-                }
-            }
+    display: flex;
+    flex-direction: column;
+
+    img.titre {
+        width: 70%;
+        justify-self: center;
+        align-self: center;
+        margin-block: 4%;
+
+
+    }
+
+    .information {
+        height: 100vh;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 15%;
+    }
+
+    .poste {
+        grid-area: 1 / 1 / 2 / 5;
+        background-color: var(--bleu-calypso);
+        height: 60%;
+        padding: 2%;
+    }
+
+    .courriel {
+        grid-area: 2 / 2 / 3 / 6;
+        background-color: var(--gris-souris);
+        padding: 2%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .contenu {
+            margin-right: 3%;
+        }
+
+    }
+
+    .copieur {
+        height: 60%;
+        grid-area: 3 / 1 / 4 / 5;
+        background-color: var(--bleu-calypso);
+        padding: 2%;
+    }
+
+
+}
+
+.formulaire {
+
+    height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 90%;
+        align-self: center;
+    }
+
+
+
+
+
+    button {
+        grid-area: 5 / 1 / 6 / 3;
+        width: 20%;
+        align-self: center;
+        justify-self: center;
+        border-radius: 10px;
+        font-size: 150%;
+        background-color: #0E769E;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 15%;
+        grid-row-gap: 10%;
+        width: 70%;
+        align-self: center;
+        margin-top: 5%;
+
+        .label_prenom {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .input_prenom {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .label_nom {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .input_nom {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .label_adress {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+
+        .input_adress {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+
+        .label_mail {
+            grid-area: 4 / 1 / 5 / 2;
+        }
+
+        .input_mail {
+            grid-area: 4 / 2 / 5 / 3;
+        }
+
+        label {
+            font-size: 300%;
+            font-family: "montserrat";
+        }
+
+        input {
+            height: 90%;
+            width: 100%;
+            padding: 1%;
+            font-size: 200%;
+
+        }
     }
 
     //PAGE SERVICES
@@ -986,10 +1011,10 @@
         }
     }
 
-    .joindre_page{
-        .formulaire{
-            form{
-                button{
+    .joindre_page {
+        .formulaire {
+            form {
+                button {
                     width: 40%;
                 }
             }
@@ -1107,10 +1132,11 @@
         .image_nouvelle {
             width: 100%;
             object-fit: cover;
-            height: 65vh; 
+            height: 65vh;
         }
-    
+
     }
+
     .swiper {
 
         .vecteur_batiment {
@@ -1150,7 +1176,7 @@
         &.nouvelle {
             height: auto;
             padding: 0 15px;
-            bottom: 0.5vh; 
+            bottom: 0.5vh;
         }
 
         .titre {
@@ -1179,7 +1205,7 @@
     }
 
     .contexte_nouvelle {
-        color: var(--noir); 
+        color: var(--noir);
         padding: 20px;
     }
 
@@ -1451,68 +1477,89 @@
             transform: scale(0.5);
         }
 
-        .s_congres {
+        .s_description {
+            background-color: var(--bleu-calypso);
             padding-top: 10px;
-            padding-bottom: 10px;
             margin-bottom: 20px;
-            text-align: center;
+            text-align: left;
 
-            & .titre {
-                grid-column: 1/3;
+            .liste_service_titre_description {
+
                 font-size: 32px;
             }
 
-            & .info {
-                grid-column: 1/4;
+            & .contenu {
+                padding: 4%;
 
                 font-size: 18px;
             }
         }
 
-        .s_infolettre {
-            padding-top: 10px;
-            ;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            text-align: center;
+        .listes_services_defile {
+            justify-self: flex-end;
+            background-color: #92C096;
+            width: 80%;
+            overflow: hidden;
 
-            & .titre {
-                font-size: 32px;
-            }
+            .swiper-container {
+                padding: 10%;
+                  width: 90%;
+                  max-width: 800px;
+                  margin-block: 20% auto;
+              }
+              
+              .card {
+                display: flex;
+                flex-direction: column;
+                  background-color: #0E769E;
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+                  text-align: right;
+                margin-left: 10%;
+                
+              }
+              
+              .card-image {
+                  width: 100%;
+                  height: auto;
+              }
+              
+              .card-content {
+                  padding: 15px;
+              }
+              
+              .card-title { 
+                text-decoration: underline;
+                color: white;
+                text-align: left;
+                  font-size: 1.5em;
+                  margin: 10px 0;
+              }
+              
+              .card-description {
+                text-align: left;
+                  color: white;
+              }
+              
+              .card-button {
+                margin-top:2em;
+                width: 15vh;
+                  background-color: #8AE190;
+                  color: white;
+                  padding: 10px;
+                  border-radius: 8px;
+                  cursor: pointer;
+                  font-weight: bold;
+                border: none;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+              }
+              
+              .card-button:hover {
+                  background-color: #1C7293;
+              }
 
-            & .info {
-                font-size: 18px;
-            }
-        }
 
-        .s_environnement {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            text-align: center;
 
-            & .titre {
-                font-size: 32px;
-            }
-
-            & .info {
-                font-size: 18px;
-            }
-        }
-
-        .s_comite {
-            padding-top: 10px;
-            text-align: center;
-            padding-bottom: 10px;
-
-            & .titre {
-                font-size: 32px;
-            }
-
-            & .info {
-
-                font-size: 18px;
-            }
         }
     }
 
@@ -1576,4 +1623,6 @@
             right: 10%;
         }
     }
-}
+
+
+}}
