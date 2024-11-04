@@ -849,6 +849,12 @@ a {
   width: 100%;
   height: 100%;
 }
+.hero .image_nouvelle {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 40vh;
+}
 .hero .swiper {
   position: relative;
 }
@@ -1652,9 +1658,16 @@ a {
     margin: 0px;
   }
   .pageblanche {
+    margin-top: 10px;
     width: 90vw;
     background-color: white;
     margin: 0 auto;
+  }
+  .hero .image_nouvelle {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 65vh;
   }
   .swiper .vecteur_batiment {
     bottom: 0;
@@ -1681,14 +1694,35 @@ a {
     bottom: 0;
     padding: 10px 15px;
   }
+  .case_transparente.nouvelle {
+    height: auto;
+    padding: 0 15px;
+    bottom: 0.5vh;
+  }
   .case_transparente .titre {
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 4px;
   }
+  .case_transparente .date {
+    margin-top: -9px;
+    font-size: 16px;
+  }
+  .case_transparente .categorie {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
   .case_transparente .swiper02 .article_hero {
     text-align: left;
     font-size: 16px;
+  }
+  .contexte_nouvelle {
+    color: var(--noir);
+    padding: 20px;
+  }
+  .nouvelle_lien {
+    color: var(--noir);
+    font-weight: 600;
   }
   .donation {
     position: relative;
