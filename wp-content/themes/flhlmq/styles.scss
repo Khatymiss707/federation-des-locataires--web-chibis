@@ -19,7 +19,7 @@
 }
 
 .pageblanche {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -238,7 +238,7 @@
         
                 & .titre {
                     grid-column: 1/3;
-                    font-size: 32px;
+                    font-size: 24px;
                 }
         
                 & .info {
@@ -254,7 +254,7 @@
                 text-align: center;
         
                 & .titre {
-                    font-size: 32px;
+                    font-size: 24px;
                 }
         
                 & .info {
@@ -268,7 +268,7 @@
                 text-align: center;
         
                 & .titre {
-                    font-size: 32px;
+                    font-size: 24px;
                 }
         
                 & .info {
@@ -281,7 +281,7 @@
                 text-align: center;
         
                 & .titre {
-                    font-size: 32px;
+                    font-size: 24px;
                 }
         
                 & .info {
@@ -393,8 +393,6 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 50px;
-        //padding: 5vh 3vh 5vh 3ch;
-        max-width: 80vw;
         background-color: var(--blanc);
 
         .formulaire {
@@ -475,11 +473,11 @@
         
         }
     
-    
         .title {
-            margin-left: -20%;
-            padding: 3% 0;
-            width: 70%;
+            margin-top: 20px;
+            width: 96%;
+            object-fit: contain;
+            max-width: 350px;
         }
     
         .boite_question {
@@ -493,13 +491,12 @@
                 "answer"
                 "question"
                 "answer";
-    
         }
     
-        .join {
-            margin-right: -20%;
-            margin-top: 5%;
-            width: 80%;
+        .join_titre {
+            width: 92%;
+            margin-top: 30px;
+            max-width: 350px;
         }
     
         .question {
@@ -513,10 +510,10 @@
         }
     
         .input {
-            margin-top: 5vh;
+            margin-top: 3vh;
             background-color: #E6E6E6;
             border: var(--bleu-calypso) 0.3vh solid;
-            width: 80vw;
+            width: 90vw;
             padding: 1vh;
         }
     
@@ -583,88 +580,85 @@
     }
 
 
-}
-
-.formulaire {
-
-    height: 75vh;
-
-    display: flex;
-    flex-direction: column;
-
-    img {
-        width: 90%;
-        align-self: center;
     }
 
+    .formulaire {
 
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
 
+        img {
+            width: 90%;
+            align-self: center;
+        }
 
+        button {
+            grid-area: 5 / 1 / 6 / 3;
+            width: 20%;
+            align-self: center;
+            justify-self: center;
+            border-radius: 10px;
+            font-size: 150%;
+            background-color: #0E769E;
+        }
 
-    button {
-        grid-area: 5 / 1 / 6 / 3;
-        width: 20%;
-        align-self: center;
-        justify-self: center;
-        border-radius: 10px;
-        font-size: 150%;
-        background-color: #0E769E;
+        form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 15%;
+            grid-row-gap: 10%;
+            width: 70%;
+            align-self: center;
+            margin-top: 5%;
+
+            .label_prenom {
+                grid-area: 1 / 1 / 2 / 2;
+            }
+
+            .input_prenom {
+                grid-area: 1 / 2 / 2 / 3;
+            }
+
+            .label_nom {
+                grid-area: 2 / 1 / 3 / 2;
+            }
+
+            .input_nom {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+
+            .label_adress {
+                grid-area: 3 / 1 / 4 / 2;
+            }
+
+            .input_adress {
+                grid-area: 3 / 2 / 4 / 3;
+            }
+
+            .label_mail {
+                grid-area: 4 / 1 / 5 / 2;
+            }
+
+            .input_mail {
+                grid-area: 4 / 2 / 5 / 3;
+            }
+
+            label {
+                font-size: 300%;
+                font-family: "montserrat";
+            }
+
+            input {
+                height: 90%;
+                width: 100%;
+                padding: 1%;
+                font-size: 200%;
+
+            }
     }
-
-    form {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 15%;
-        grid-row-gap: 10%;
-        width: 70%;
-        align-self: center;
-        margin-top: 5%;
-
-        .label_prenom {
-            grid-area: 1 / 1 / 2 / 2;
-        }
-
-        .input_prenom {
-            grid-area: 1 / 2 / 2 / 3;
-        }
-
-        .label_nom {
-            grid-area: 2 / 1 / 3 / 2;
-        }
-
-        .input_nom {
-            grid-area: 2 / 2 / 3 / 3;
-        }
-
-        .label_adress {
-            grid-area: 3 / 1 / 4 / 2;
-        }
-
-        .input_adress {
-            grid-area: 3 / 2 / 4 / 3;
-        }
-
-        .label_mail {
-            grid-area: 4 / 1 / 5 / 2;
-        }
-
-        .input_mail {
-            grid-area: 4 / 2 / 5 / 3;
-        }
-
-        label {
-            font-size: 300%;
-            font-family: "montserrat";
-        }
-
-        input {
-            height: 90%;
-            width: 100%;
-            padding: 1%;
-            font-size: 200%;
-
-        }
+    
     }
 
     //PAGE SERVICES
@@ -742,8 +736,6 @@
             }
         }
     }
-    
-}
 
 // VERSION TABLETTE -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 @media screen and (min-width: 375px) and (max-width: 768px) {

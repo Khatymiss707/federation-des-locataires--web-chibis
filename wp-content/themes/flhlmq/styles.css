@@ -841,7 +841,7 @@ a {
 }
 
 .pageblanche {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -1015,7 +1015,7 @@ a {
   }
   .services .s_congres .titre {
     grid-column: 1/3;
-    font-size: 32px;
+    font-size: 24px;
   }
   .services .s_congres .info {
     grid-column: 1/4;
@@ -1027,7 +1027,7 @@ a {
     text-align: center;
   }
   .services .s_infolettre .titre {
-    font-size: 32px;
+    font-size: 24px;
   }
   .services .s_infolettre .info {
     font-size: 18px;
@@ -1038,7 +1038,7 @@ a {
     text-align: center;
   }
   .services .s_environnement .titre {
-    font-size: 32px;
+    font-size: 24px;
   }
   .services .s_environnement .info {
     font-size: 18px;
@@ -1048,7 +1048,7 @@ a {
     text-align: center;
   }
   .services .s_comite .titre {
-    font-size: 32px;
+    font-size: 24px;
   }
   .services .s_comite .info {
     font-size: 18px;
@@ -1136,7 +1136,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    max-width: 80vw;
     background-color: var(--blanc);
   }
   .infolettre .formulaire {
@@ -1202,9 +1201,11 @@ a {
     font-size: 200%;
   }
   .infolettre .title {
-    margin-left: -20%;
-    padding: 3% 0;
-    width: 70%;
+    margin-top: 20px;
+    width: 96%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-width: 350px;
   }
   .infolettre .boite_question {
     background-color: #1c566d;
@@ -1212,10 +1213,10 @@ a {
     text-align: left;
     grid-template-areas: "question" "answer" "question" "answer" "question" "answer";
   }
-  .infolettre .join {
-    margin-right: -20%;
-    margin-top: 5%;
-    width: 80%;
+  .infolettre .join_titre {
+    width: 92%;
+    margin-top: 30px;
+    max-width: 350px;
   }
   .infolettre .question {
     padding: 1vh;
@@ -1226,10 +1227,10 @@ a {
     padding: 1vh;
   }
   .infolettre .input {
-    margin-top: 5vh;
+    margin-top: 3vh;
     background-color: #E6E6E6;
     border: var(--bleu-calypso) 0.3vh solid;
-    width: 80vw;
+    width: 90vw;
     padding: 1vh;
   }
   .infolettre .souris_icone {
@@ -1281,51 +1282,67 @@ a {
     background-color: var(--bleu-calypso);
     padding: 2%;
   }
-  .joindre_page .formulaire {
+  .formulaire {
+    height: 75vh;
+    display: flex;
     flex-direction: column;
-    height: 100vh;
   }
-  .joindre_page .formulaire input {
-    height: 70%;
+  .formulaire img {
+    width: 90%;
+    align-self: center;
   }
-  .joindre_page .formulaire label {
+  .formulaire button {
+    grid-area: 5/1/6/3;
+    width: 20%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
     font-size: 150%;
+    background-color: #0E769E;
   }
-  .joindre_page .formulaire form {
+  .formulaire form {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 15%;
+    grid-row-gap: 10%;
+    width: 70%;
+    align-self: center;
+    margin-top: 5%;
   }
-  .joindre_page .formulaire .label_prenom {
+  .formulaire form .label_prenom {
     grid-area: 1/1/2/2;
   }
-  .joindre_page .formulaire .input_prenom {
+  .formulaire form .input_prenom {
+    grid-area: 1/2/2/3;
+  }
+  .formulaire form .label_nom {
     grid-area: 2/1/3/2;
   }
-  .joindre_page .formulaire .label_nom {
+  .formulaire form .input_nom {
+    grid-area: 2/2/3/3;
+  }
+  .formulaire form .label_adress {
     grid-area: 3/1/4/2;
   }
-  .joindre_page .formulaire .input_nom {
+  .formulaire form .input_adress {
+    grid-area: 3/2/4/3;
+  }
+  .formulaire form .label_mail {
     grid-area: 4/1/5/2;
   }
-  .joindre_page .formulaire .label_adress {
-    grid-area: 5/1/6/2;
+  .formulaire form .input_mail {
+    grid-area: 4/2/5/3;
   }
-  .joindre_page .formulaire .input_adress {
-    grid-area: 6/1/7/2;
+  .formulaire form label {
+    font-size: 300%;
+    font-family: "montserrat";
   }
-  .joindre_page .formulaire .label_mail {
-    grid-area: 7/1/8/2;
-  }
-  .joindre_page .formulaire .input_mail {
-    grid-area: 8/1/9/2;
-  }
-  .joindre_page .formulaire button {
-    grid-area: 9/1/10/2;
+  .formulaire form input {
+    height: 90%;
     width: 100%;
+    padding: 1%;
+    font-size: 200%;
   }
   .liste_services_page {
     width: 100%;
@@ -1386,7 +1403,7 @@ a {
     font-size: 18px;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 375px) and (min-width: 375px) and (max-width: 768px) {
   body {
     margin: 0;
   }
@@ -1661,7 +1678,7 @@ a {
     right: 10%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 375px) and (min-width: 768px) {
   body {
     background-color: var(--vert-menthe);
     background-image: url(./medias/images/page_accueil/section_hero/decoration_logo.svg);
@@ -1949,54 +1966,72 @@ a {
     width: 100%;
     transform: scale(0.5);
   }
-  .services .s_congres {
+  .services .s_description {
+    background-color: var(--bleu-calypso);
     padding-top: 10px;
-    padding-bottom: 10px;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
   }
-  .services .s_congres .titre {
-    grid-column: 1/3;
+  .services .s_description .liste_service_titre_description {
     font-size: 32px;
   }
-  .services .s_congres .info {
-    grid-column: 1/4;
+  .services .s_description .contenu {
+    padding: 4%;
     font-size: 18px;
   }
-  .services .s_infolettre {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    text-align: center;
+  .services .listes_services_defile {
+    justify-self: flex-end;
+    background-color: #92C096;
+    width: 80%;
+    overflow: hidden;
   }
-  .services .s_infolettre .titre {
-    font-size: 32px;
+  .services .listes_services_defile .swiper-container {
+    padding: 10%;
+    width: 90%;
+    max-width: 800px;
+    margin-block: 20% auto;
   }
-  .services .s_infolettre .info {
-    font-size: 18px;
+  .services .listes_services_defile .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #0E769E;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: right;
+    margin-left: 10%;
   }
-  .services .s_environnement {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    text-align: center;
+  .services .listes_services_defile .card-image {
+    width: 100%;
+    height: auto;
   }
-  .services .s_environnement .titre {
-    font-size: 32px;
+  .services .listes_services_defile .card-content {
+    padding: 15px;
   }
-  .services .s_environnement .info {
-    font-size: 18px;
+  .services .listes_services_defile .card-title {
+    text-decoration: underline;
+    color: white;
+    text-align: left;
+    font-size: 1.5em;
+    margin: 10px 0;
   }
-  .services .s_comite {
-    padding-top: 10px;
-    text-align: center;
-    padding-bottom: 10px;
+  .services .listes_services_defile .card-description {
+    text-align: left;
+    color: white;
   }
-  .services .s_comite .titre {
-    font-size: 32px;
+  .services .listes_services_defile .card-button {
+    margin-top: 2em;
+    width: 15vh;
+    background-color: #8AE190;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
-  .services .s_comite .info {
-    font-size: 18px;
+  .services .listes_services_defile .card-button:hover {
+    background-color: #1C7293;
   }
   .infolettre {
     height: 100%;
