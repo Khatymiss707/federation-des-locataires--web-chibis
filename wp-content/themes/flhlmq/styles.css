@@ -1347,6 +1347,31 @@ a {
     padding: 1%;
     font-size: 200%;
   }
+  .liste_service_page {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+    display: grid;
+  }
+  .liste_service_page .titre_services {
+    max-width: 12%;
+  }
+  .liste_service_page .s_description {
+    background-color: var(--bleu-calypso);
+    width: 100%;
+    margin-top: 7%;
+    padding-top: 30px;
+    margin-bottom: 10%;
+    text-align: left;
+  }
+  .liste_service_page .s_description .liste_service_titre_description {
+    max-width: 12%;
+  }
+  .liste_service_page .s_description .contenu {
+    width: 15%;
+    padding: 2%;
+    font-size: 15px;
+  }
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
   body {

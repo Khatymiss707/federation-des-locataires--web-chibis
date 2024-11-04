@@ -675,6 +675,39 @@
         }
 
     }
+
+    //section page liste
+    .liste_service_page {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+        display: grid;
+
+        .titre_services {
+            max-width: 12%;
+        }
+
+        .s_description {
+            background-color: var(--bleu-calypso);
+            width: 100%;
+            margin-top: 7%;
+            padding-top: 30px;
+            margin-bottom: 10%;
+            text-align: left;
+
+            .liste_service_titre_description {
+                max-width: 12%;
+            }
+
+            & .contenu {
+                width: 15%;
+                padding: 2%;
+                font-size: 15px;
+            }
+        }
+
+        
+    }
 }
 
 // VERSION TABLETTE -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
