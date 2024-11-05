@@ -1938,6 +1938,27 @@ a {
   .a_propos h4.description:nth-child(3) {
     margin-bottom: 10%;
   }
+  .service_comite .service_titre_comite {
+    max-width: 60%;
+  }
+  .service_comite .contexte_service_comite {
+    max-width: 75%;
+    font-size: 12px;
+  }
+  .service_comite .comite_pdf {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+  }
+  .service_comite .comite_pdf a.document_agir {
+    font-size: 15px;
+    align-self: center;
+  }
+  .service_comite .comite_pdf a.document_association {
+    font-size: 15px;
+    align-self: center;
+    padding: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   body {

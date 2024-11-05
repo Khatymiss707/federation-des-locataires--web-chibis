@@ -1427,6 +1427,40 @@
         }
 
     }
+
+    //service_comité
+    .service_comite{
+        .service_titre_comite {
+            max-width: 60%;
+        }
+    
+        .contexte_service_comite {
+            max-width: 75%;
+            font-size: 12px;
+        }
+    
+        .comite_pdf {
+            display: flex;
+            flex-direction: column;
+            
+            padding: 3%;
+            a.document {
+                &_agir {
+                    font-size: 15px;
+                    align-self: center;
+                    
+                }
+    
+                &_association {
+                    font-size: 15px;
+                    align-self: center;
+                    padding: 0;
+                    
+                }
+            }
+    
+        }
+    }
 }
 
 // VERSION DESKTOP -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
