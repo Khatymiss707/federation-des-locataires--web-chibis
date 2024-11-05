@@ -952,7 +952,7 @@
         background-size: cover;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 25px;
+        grid-template-rows: 100px 300px 1fr 1fr 1fr 25px;
         row-gap: 15px;
 
         .empty {
@@ -962,7 +962,7 @@
         }
 
         .titre_actualites {
-            width: 90%;
+            width: 55%;
             grid-column: span 3;
             margin: auto auto;
         }
@@ -1535,8 +1535,9 @@
         }
 
         .titre_actualites {
-            max-width: 600px;
+            max-width: 500px;
             margin: 50px auto;
+            padding-bottom: 40px;
         }
     }
 
