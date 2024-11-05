@@ -109,6 +109,50 @@
     //description dernier extra classe pour margin-bottom plus grand
 }
 
+
+//service_comité
+.service_comite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .service_titre_comite {
+        margin-top: 3%;
+        max-width: 70%;
+    }
+
+    .contexte_service_comite {
+        color: var(--noir);
+        max-width: 85%;
+        text-align: justify;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 3%;
+    }
+
+    .comite_pdf {
+        align-self: flex-end;
+        padding: 2%;
+        a.document {
+            &_agir {
+                color: var(--noir);
+                font-size: 22px;
+                font-weight: 700;
+            }
+
+            &_association {
+                margin-top: 3%;
+                color: var(--noir);
+                font-size: 22px;
+                font-weight: 700;
+            }
+        }
+
+    }
+
+
+}
+
 // VERSION MOBILE -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 @media screen and (max-width: 375px) {
 
