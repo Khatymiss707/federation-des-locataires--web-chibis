@@ -153,7 +153,7 @@
 
     .case_transparente {
         width: 100%;
-        height: 30%;
+        height: 35%;
         z-index: 3;
         background-color: rgba($color: black, $alpha: 0.5);
         position: absolute;
@@ -161,7 +161,7 @@
         padding: 10px 20px;
 
         .titre {
-            font-size: 20px;
+            font-size: 6vw;
             text-transform: uppercase;
             margin-bottom: 4px;
         }
@@ -170,7 +170,8 @@
 
             .article_hero {
                 text-align: left;
-                font-size: 12px;
+                font-size: 70%; 
+                padding: 0 0.3vw; 
             }
         }
     }
@@ -190,10 +191,10 @@
         .descriptif_equipe {
             position: absolute;
             text-align: center;
-            font-size: 14px;
+            font-size: 80%;
             padding: 5vw;
             z-index: 5;
-            top: 50px;
+            top: 30px;
         }
 
         img {
@@ -224,7 +225,7 @@
         margin-bottom: 20px;
 
         .titre_services {
-            margin: 10vw;
+            margin-top: 10vw;
             width: 100%;
             object-fit: contain;
             max-width: 300px;
