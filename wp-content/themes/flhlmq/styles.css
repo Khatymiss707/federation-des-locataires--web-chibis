@@ -1458,15 +1458,28 @@ a {
     padding-bottom: 10px;
   }
   .donation .titre_joindre {
-    display: none;
+    position: absolute;
+    width: 100%;
+    top: -15%;
+    margin: 0 5px;
+    z-index: 14;
+    display: flex;
+    justify-content: center;
+  }
+  .donation .titre_joindre .joindre {
+    width: 100%;
+    max-width: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    filter: brightness(1);
   }
   .donation .descriptif_equipe {
     position: absolute;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     padding: 5vw;
     z-index: 5;
-    top: 15vh;
+    top: 22vh;
   }
   .donation img {
     width: 100%;
@@ -1484,48 +1497,6 @@ a {
     color: var(--blanc);
     border-radius: 35px;
     margin: 20px auto;
-  }
-  .temoignages {
-    width: 100%;
-    height: 100%;
-    background-color: #1c566d;
-    padding: 4vh 7vh 9vh 7vh;
-  }
-  .temoignages .entete h1 {
-    font-size: 2.5vh;
-    margin-left: 5%;
-  }
-  .temoignages .icone_box {
-    display: none;
-  }
-  .temoignages .title {
-    display: none;
-  }
-  .temoignages .destop_icon {
-    width: 20%;
-    transform: translateY(17vh) translateX(55vw);
-  }
-  .temoignages .box {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -19%;
-    max-width: 90%;
-    background-color: var(--blanc);
-    padding: 1vh 3vh;
-  }
-  .temoignages .box .utilisateur {
-    padding: 0.5vh;
-  }
-  .temoignages .box h3 {
-    font-size: 1vh;
-    color: var(--noir);
-    margin-bottom: 0.3vh;
-  }
-  .temoignages .box .description {
-    font-size: 0.5vh;
-    background-color: var(--gris-souris);
-    padding: 0.5vh;
-    text-align: left;
   }
   .services {
     height: 100%;
@@ -1601,9 +1572,6 @@ a {
   .services .s_comite .info {
     font-size: 18px;
   }
-  .joindre_page .formulaire form button {
-    width: 40%;
-  }
   .actualites {
     height: 100%;
     background-image: url("./medias/images/page_accueil/section_actualite/maison_desktop.svg");
@@ -1625,6 +1593,48 @@ a {
     width: 90%;
     grid-column: span 3;
     margin: auto auto;
+  }
+  .temoignages {
+    width: 100%;
+    height: 100%;
+    background-color: #1c566d;
+    padding: 4vh 7vh 9vh 7vh;
+  }
+  .temoignages .entete h1 {
+    font-size: 2.5vh;
+    margin-left: 5%;
+  }
+  .temoignages .icone_box {
+    display: none;
+  }
+  .temoignages .title {
+    display: none;
+  }
+  .temoignages .destop_icon {
+    width: 20%;
+    transform: translateY(17vh) translateX(55vw);
+  }
+  .temoignages .box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -19%;
+    max-width: 90%;
+    background-color: var(--blanc);
+    padding: 1vh 3vh;
+  }
+  .temoignages .box .utilisateur {
+    padding: 0.5vh;
+  }
+  .temoignages .box h3 {
+    font-size: 1vh;
+    color: var(--noir);
+    margin-bottom: 0.3vh;
+  }
+  .temoignages .box .description {
+    font-size: 0.5vh;
+    background-color: var(--gris-souris);
+    padding: 0.5vh;
+    text-align: left;
   }
   .infolettre {
     height: 100%;
@@ -1671,6 +1681,9 @@ a {
     position: absolute;
     transform: translateY(-45%);
     right: 10%;
+  }
+  .joindre_page .formulaire form button {
+    width: 40%;
   }
   .liste_service_page {
     width: 100%;
@@ -1895,7 +1908,6 @@ a {
     position: absolute;
     top: 100px;
     left: 50%;
-    transform: translateX(-50%);
   }
   .donation .titre_joindre .joindre {
     width: 100%;

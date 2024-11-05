@@ -170,8 +170,8 @@
 
             .article_hero {
                 text-align: left;
-                font-size: 70%; 
-                padding: 0 0.3vw; 
+                font-size: 70%;
+                padding: 0 0.3vw;
             }
         }
     }
@@ -808,16 +808,29 @@
         padding-bottom: 10px;
 
         .titre_joindre {
-            display: none;
+            position: absolute;
+            width: 100%;
+            top: -15%;
+            margin: 0 5px;
+            z-index: 14;
+            display: flex;
+            justify-content: center;
+
+            .joindre {
+                width: 100%;
+                max-width: 400px;
+                object-fit: contain;
+                filter: brightness(1);
+            }
         }
 
         .descriptif_equipe {
             position: absolute;
             text-align: center;
-            font-size: 14px;
+            font-size: 16px;
             padding: 5vw;
             z-index: 5;
-            top: 15vh;
+            top: 22vh;
         }
 
         img {
@@ -838,61 +851,6 @@
             margin: 20px auto;
         }
 
-    }
-
-    //SECTION TEMOIGNAGES
-    .temoignages {
-        width: 100%;
-        height: 100%;
-        background-color: color.adjust(#1c7293, $blackness: 15%);
-        padding: 4vh 7vh 9vh 7vh;
-
-        .entete {
-            h1 {
-                font-size: 2.5vh;
-                margin-left: 5%;
-            }
-        }
-
-        .icone_box {
-            display: none;
-        }
-
-        .title {
-            display: none;
-        }
-
-        .destop_icon {
-            width: 20%;
-            transform: translateY(17vh) translateX(55vw);
-        }
-
-        .box {
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: -19%;
-            max-width: 90%;
-            background-color: var(--blanc);
-            padding: 1vh 3vh;
-
-
-            .utilisateur {
-                padding: 0.5vh;
-            }
-
-            h3 {
-                font-size: 1vh;
-                color: var(--noir);
-                margin-bottom: 0.3vh;
-            }
-
-            .description {
-                font-size: 0.5vh;
-                background-color: var(--gris-souris);
-                padding: 0.5vh;
-                text-align: left;
-            }
-        }
     }
 
     //SECTION SERVICES
@@ -991,17 +949,6 @@
         }
     }
 
-    //PAGE JOINDRE
-    .joindre_page {
-        .formulaire {
-            form {
-                button {
-                    width: 40%;
-                }
-            }
-        }
-    }
-
     //SECTION ACTUALITÉS
     .actualites {
         height: 100%;
@@ -1025,6 +972,61 @@
             width: 90%;
             grid-column: span 3;
             margin: auto auto;
+        }
+    }
+
+    //SECTION TEMOIGNAGES
+    .temoignages {
+        width: 100%;
+        height: 100%;
+        background-color: color.adjust(#1c7293, $blackness: 15%);
+        padding: 4vh 7vh 9vh 7vh;
+
+        .entete {
+            h1 {
+                font-size: 2.5vh;
+                margin-left: 5%;
+            }
+        }
+
+        .icone_box {
+            display: none;
+        }
+
+        .title {
+            display: none;
+        }
+
+        .destop_icon {
+            width: 20%;
+            transform: translateY(17vh) translateX(55vw);
+        }
+
+        .box {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -19%;
+            max-width: 90%;
+            background-color: var(--blanc);
+            padding: 1vh 3vh;
+
+
+            .utilisateur {
+                padding: 0.5vh;
+            }
+
+            h3 {
+                font-size: 1vh;
+                color: var(--noir);
+                margin-bottom: 0.3vh;
+            }
+
+            .description {
+                font-size: 0.5vh;
+                background-color: var(--gris-souris);
+                padding: 0.5vh;
+                text-align: left;
+            }
         }
     }
 
@@ -1091,7 +1093,18 @@
         }
     }
 
-    //section page liste
+    //PAGE JOINDRE
+    .joindre_page {
+        .formulaire {
+            form {
+                button {
+                    width: 40%;
+                }
+            }
+        }
+    }
+
+    //PAGE LISTE SERVICES
     .liste_service_page {
         width: 100%;
         text-align: center;
@@ -1219,7 +1232,7 @@
         }
     }
 
-    //a_propos
+    //PAGE A PROPOS
     .a_propos {
         padding-inline: 1vw;
 
@@ -1245,7 +1258,7 @@
 
     }
 
-    //service_comité
+    //PAGE SERVICE COMITÉ
     .service_comite {
         .service_titre_comite {
             max-width: 60%;
@@ -1387,7 +1400,6 @@
             position: absolute;
             top: 100px;
             left: 50%;
-            transform: translateX(-50%);
 
             .joindre {
                 width: 100%;
@@ -1755,7 +1767,7 @@
         }
     }
 
-    //PAGE NOUVELLE
+    //PAGE NOUVELLE 01
     .contexte_nouvelle {
         color: var(--noir);
         padding: 20px;
