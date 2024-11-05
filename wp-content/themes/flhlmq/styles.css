@@ -952,13 +952,13 @@ a {
     padding: 10px 20px;
   }
   .case_transparente .titre {
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 4px;
   }
   .case_transparente .swiper02 .article_hero {
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
   }
   .donation {
     background-color: #1c566d;
@@ -976,7 +976,7 @@ a {
     font-size: 14px;
     padding: 5vw;
     z-index: 5;
-    top: 90px;
+    top: 50px;
   }
   .donation img {
     width: 100%;
@@ -1403,15 +1403,15 @@ a {
     font-size: 18px;
   }
 }
-@media screen and (max-width: 375px) and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   body {
     margin: 0;
   }
   .swiper .vecteur_batiment {
     bottom: 0;
     position: absolute;
-    width: 100%;
-    height: 70%;
+    width: 190%;
+    height: 75%;
     z-index: 1;
   }
   .swiper .vecteur_batiment .building01 {
@@ -1433,58 +1433,48 @@ a {
     padding: 10px 20px;
   }
   .case_transparente .titre {
-    font-size: 22px;
+    font-size: 4vw;
     text-transform: uppercase;
     margin-bottom: 4px;
   }
   .case_transparente .swiper02 .article_hero {
     text-align: left;
-    font-size: 12px;
+    font-size: 14px;
   }
   .donation {
     background-color: #1c566d;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     position: relative;
-    display: grid;
-    grid-template-rows: 3fr 1fr;
-    z-index: 4;
+    padding-bottom: 10px;
   }
   .donation .titre_joindre {
     display: none;
   }
   .donation .descriptif_equipe {
-    position: relative;
+    position: absolute;
     text-align: center;
-    font-size: 16px;
-    padding: 4%;
-    margin-top: -210px;
+    font-size: 14px;
+    padding: 5vw;
     z-index: 5;
-  }
-  .donation .titre_mobile {
-    position: relative;
-    font-size: 40px;
-    text-align: center;
-    margin-top: -300px;
-    z-index: 5;
+    top: 15vh;
   }
   .donation img {
     width: 100%;
-    height: 100%;
-    grid-row: 1/4;
+    height: 50vh;
     -o-object-fit: cover;
        object-fit: cover;
     filter: brightness(0.45);
   }
   .donation button.membre {
     display: block;
-    width: 70%;
-    font-size: 24px;
+    width: 80%;
+    font-size: 20px;
     text-transform: uppercase;
     background-color: var(--pomme-verte);
     color: var(--blanc);
     border-radius: 35px;
-    margin: 50px auto;
+    margin: 20px auto;
   }
   .temoignages {
     width: 100%;
@@ -1527,10 +1517,6 @@ a {
     background-color: var(--gris-souris);
     padding: 0.5vh;
     text-align: left;
-  }
-  .infolettre {
-    background-color: #1c7293;
-    margin-bottom: 50px;
   }
   .services {
     height: 100%;
@@ -1678,7 +1664,7 @@ a {
     right: 10%;
   }
 }
-@media screen and (max-width: 375px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   body {
     background-color: var(--vert-menthe);
     background-image: url(./medias/images/page_accueil/section_hero/decoration_logo.svg);
