@@ -1016,6 +1016,7 @@ a {
     -o-object-fit: contain;
        object-fit: contain;
     max-width: 300px;
+    padding: 0 15px;
   }
   .services .s_congres {
     padding: 10px 3vw;
@@ -1501,22 +1502,21 @@ a {
   .services {
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
   }
   .services .titre_services {
     width: 100%;
-    transform: scale(0.5);
-  }
-  .services .c_contenu {
-    padding-left: 10%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 0 20px;
   }
   .services .s_congres {
-    padding-left: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 30px;
     margin-bottom: 20px;
     text-align: left;
-    margin-left: 15%;
+    margin-left: 10%;
   }
   .services .s_congres .titre {
     grid-column: 1/3;
@@ -1527,12 +1527,10 @@ a {
     font-size: 18px;
   }
   .services .s_infolettre {
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-bottom: 10px;
+    padding: 10px 30px;
     margin-bottom: 20px;
     display: grid;
-    margin-right: 15%;
+    margin-right: 10%;
   }
   .services .s_infolettre .titre {
     text-align: right;
@@ -1542,12 +1540,10 @@ a {
     font-size: 18px;
   }
   .services .s_environnement {
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 30px;
     margin-bottom: 20px;
     text-align: right;
-    margin-right: 15%;
+    margin-right: 10%;
   }
   .services .s_environnement .titre {
     padding-right: 20px;
@@ -1560,11 +1556,9 @@ a {
     padding-left: 10%;
   }
   .services .s_comite {
-    padding-left: 30px;
-    padding-top: 10px;
+    padding: 10px 30px;
     text-align: left;
-    padding-bottom: 10px;
-    margin-left: 25%;
+    margin-left: 10%;
   }
   .services .s_comite .titre {
     font-size: 32px;
@@ -1595,60 +1589,56 @@ a {
     margin: auto auto;
   }
   .temoignages {
-    width: 100%;
     height: 100%;
+    padding: 7vh;
     background-color: #1c566d;
-    padding: 4vh 7vh 9vh 7vh;
+    display: flex;
+    flex-direction: column;
   }
-  .temoignages .entete h1 {
-    font-size: 2.5vh;
-    margin-left: 5%;
-  }
-  .temoignages .icone_box {
+  .temoignages .entete {
     display: none;
   }
-  .temoignages .title {
+  .temoignages .titre {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    z-index: 15;
+  }
+  .temoignages .desktop_icones {
     display: none;
   }
-  .temoignages .destop_icon {
-    width: 20%;
-    transform: translateY(17vh) translateX(55vw);
-  }
-  .temoignages .box {
+  .temoignages .contenant_temoignages {
     margin-left: auto;
     margin-right: auto;
-    margin-top: -19%;
-    max-width: 90%;
+    margin-top: -55px;
+    width: 100%;
     background-color: var(--blanc);
-    padding: 1vh 3vh;
+    padding: 2vh 5vh;
   }
-  .temoignages .box .utilisateur {
+  .temoignages .contenant_temoignages .utilisateur {
     padding: 0.5vh;
   }
-  .temoignages .box h3 {
-    font-size: 1vh;
+  .temoignages .contenant_temoignages h3 {
+    font-size: 24px;
     color: var(--noir);
-    margin-bottom: 0.3vh;
+    margin-bottom: 0;
   }
-  .temoignages .box .description {
-    font-size: 0.5vh;
+  .temoignages .contenant_temoignages .description {
+    font-size: 18px;
     background-color: var(--gris-souris);
-    padding: 0.5vh;
-    text-align: left;
+    padding: 1vw;
   }
   .infolettre {
     height: 100%;
-    background-color: var(--blanc);
-    text-align: center;
     margin-left: auto;
-    margin-bottom: 20px;
     margin-right: auto;
-    max-width: 80vw;
+    margin-bottom: 50px;
+    max-width: 90vw;
   }
   .infolettre .title {
-    margin-left: -20%;
-    padding: 3% 0;
-    width: 70%;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
   }
   .infolettre .boite_question {
     background-color: #1c566d;
@@ -1656,10 +1646,11 @@ a {
     text-align: left;
     grid-template-areas: "question" "answer" "question" "answer" "question" "answer";
   }
-  .infolettre .join {
-    margin-right: -20%;
-    margin-top: 5%;
-    width: 80%;
+  .infolettre .join_titre {
+    width: 100%;
+    max-width: 700px;
+    float: right;
+    margin-top: 30px;
   }
   .infolettre .question {
     padding: 1vh;
@@ -1673,7 +1664,7 @@ a {
     margin-top: 5vh;
     background-color: #E6E6E6;
     border: var(--bleu-calypso) 0.3vh solid;
-    width: 80vw;
+    width: 90vw;
     padding: 1vh;
   }
   .infolettre .souris_icone {
@@ -1952,6 +1943,7 @@ a {
     width: 100%;
     max-width: 700px;
     margin: 30px auto;
+    padding: 0 20px;
   }
   .services .c_contenu {
     padding-left: 10%;
