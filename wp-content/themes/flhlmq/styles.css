@@ -2194,9 +2194,14 @@ a {
   .contexte_nouvelle {
     color: var(--noir);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .nouvelle_lien {
-    color: var(--noir);
-    font-weight: 600;
+    color: var(--bleu-calypso);
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */
