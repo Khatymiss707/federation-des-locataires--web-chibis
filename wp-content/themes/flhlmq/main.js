@@ -35,7 +35,7 @@ const swiper02 = new Swiper('.swiper02', {
   })); 
 
   //accordeon
-let title = document.querySelector(".accordion__item__title"); 
+/*let title = document.querySelector(".accordion__item__title"); 
 let contenu = document.querySelector(".accordion__item__content--open"); 
 
 var $title = $('.title');
@@ -44,11 +44,17 @@ $title.click(function () {
   $(this).next(content).slideToggle();
   $(this).parent().siblings().children().next().slideUp();
   return false;
-});
+});*/
 
 
 //liste_service
-const swiper03 = new Swiper('.swiper-container', {
-  loop: true,
-});
 
+var swiper03 = new Swiper(".swiper03", {
+  //spaceBetween: 0, // Optional: space between slides
+  slidesPerView: 1, // Show 1 card at a time
+  centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination", 
+    type: "progressbar", 
+  },
+});
