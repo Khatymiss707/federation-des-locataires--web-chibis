@@ -2027,14 +2027,6 @@ a {
     text-align: left;
     font-size: 16px;
   }
-  .contexte_nouvelle {
-    color: var(--noir);
-    padding: 20px;
-  }
-  .nouvelle_lien {
-    color: var(--noir);
-    font-weight: 600;
-  }
   .donation {
     position: relative;
     display: grid;
@@ -2079,63 +2071,23 @@ a {
     color: var(--blanc);
     margin: auto;
   }
-  .temoignages {
-    height: 100%;
-    padding: 10vh;
-    background-color: #1c566d;
-  }
-  .temoignages .entete {
-    display: none;
-  }
-  .temoignages .title {
-    width: 70%;
-    margin-left: 5%;
-    margin-right: auto;
-  }
-  .temoignages .icone_box {
-    display: none;
-  }
-  .temoignages .destop_icon {
-    display: none;
-  }
-  .temoignages .box {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -3%;
-    max-width: 90%;
-    background-color: var(--blanc);
-    padding: 1vh 3vh;
-  }
-  .temoignages .box .utilisateur {
-    padding: 0.5vh;
-  }
-  .temoignages .box h3 {
-    font-size: 2vh;
-    color: var(--noir);
-    margin-bottom: 0.3vh;
-  }
-  .temoignages .box .description {
-    font-size: 85%;
-    background-color: var(--gris-souris);
-    padding: 0.5vh;
-    text-align: left;
-  }
   .services {
     height: 100%;
     width: 100%;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
   }
   .services .titre_services {
     width: 100%;
-    transform: scale(0.5);
+    max-width: 700px;
+    margin: 30px auto;
   }
   .services .c_contenu {
     padding-left: 10%;
   }
   .services .s_congres {
-    padding-left: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 30px;
     margin-bottom: 20px;
     text-align: left;
     margin-left: 15%;
@@ -2149,9 +2101,7 @@ a {
     font-size: 18px;
   }
   .services .s_infolettre {
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-bottom: 10px;
+    padding: 10px 30px;
     margin-bottom: 20px;
     display: grid;
     margin-right: 15%;
@@ -2164,11 +2114,8 @@ a {
     font-size: 18px;
   }
   .services .s_environnement {
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 30px;
     margin-bottom: 20px;
-    text-align: right;
     margin-right: 35%;
   }
   .services .s_environnement .titre {
@@ -2182,11 +2129,10 @@ a {
     padding-left: 10%;
   }
   .services .s_comite {
-    padding-left: 30px;
-    padding-top: 10px;
+    padding: 10px 30px;
     text-align: left;
-    padding-bottom: 10px;
     margin-left: 25%;
+    margin-bottom: 100px;
   }
   .services .s_comite .titre {
     font-size: 32px;
@@ -2201,132 +2147,68 @@ a {
     background-repeat: no-repeat;
     min-width: 100%;
     background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 25px;
-    row-gap: 15px;
+    display: flex;
+    flex-direction: column;
   }
   .actualites .empty {
     height: 330px;
     width: 100%;
-    grid-row-start: 1;
   }
   .actualites .titre_actualites {
-    width: 90%;
-    grid-column: 2/3;
-    grid-row-start: 2;
-    margin: auto auto;
+    max-width: 600px;
+    margin: 50px auto;
   }
-  .equipe {
+  .temoignages {
     height: 100%;
-    background-image: url("./medias/images/page_accueil/section_actualite/maison_desktop.svg");
-    background-position: center 5px;
-    background-repeat: no-repeat;
-    min-width: 100%;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 25px;
-    row-gap: 15px;
-  }
-  .equipe .empty {
-    height: 50px;
-    width: 100%;
-    grid-row-start: 1;
-  }
-  .equipe .titre_equipe {
-    width: 95%;
-    grid-column: span 3;
-    margin: auto auto;
-  }
-  .services {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .services .titre_services {
-    width: 100%;
-    transform: scale(0.5);
-  }
-  .services .s_description {
-    background-color: var(--bleu-calypso);
-    padding-top: 10px;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  .services .s_description .liste_service_titre_description {
-    font-size: 32px;
-  }
-  .services .s_description .contenu {
-    padding: 4%;
-    font-size: 18px;
-  }
-  .services .listes_services_defile {
-    justify-self: flex-end;
-    background-color: #92C096;
-    width: 80%;
-    overflow: hidden;
-  }
-  .services .listes_services_defile .swiper-container {
-    padding: 10%;
-    width: 90%;
-    max-width: 800px;
-    margin-block: 20% auto;
-  }
-  .services .listes_services_defile .card {
+    padding: 10vh;
+    background-color: #1c566d;
     display: flex;
     flex-direction: column;
-    background-color: #0E769E;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: right;
-    margin-left: 10%;
   }
-  .services .listes_services_defile .card-image {
+  .temoignages .entete {
+    display: none;
+  }
+  .temoignages .titre {
     width: 100%;
-    height: auto;
+    max-width: 700px;
+    margin: 0 auto;
+    z-index: 15;
   }
-  .services .listes_services_defile .card-content {
-    padding: 15px;
+  .temoignages .desktop_icones {
+    display: none;
   }
-  .services .listes_services_defile .card-title {
-    text-decoration: underline;
-    color: white;
-    text-align: left;
-    font-size: 1.5em;
-    margin: 10px 0;
+  .temoignages .contenant_temoignages {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -55px;
+    max-width: 95%;
+    background-color: var(--blanc);
+    padding: 2vh 5vh;
   }
-  .services .listes_services_defile .card-description {
-    text-align: left;
-    color: white;
+  .temoignages .contenant_temoignages .utilisateur {
+    padding: 0.5vh;
   }
-  .services .listes_services_defile .card-button {
-    margin-top: 2em;
-    width: 15vh;
-    background-color: #8AE190;
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    border: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  .temoignages .contenant_temoignages h3 {
+    font-size: 24px;
+    color: var(--noir);
+    margin-bottom: 0;
   }
-  .services .listes_services_defile .card-button:hover {
-    background-color: #1C7293;
+  .temoignages .contenant_temoignages .description {
+    font-size: 18px;
+    background-color: var(--gris-souris);
+    padding: 1vw;
   }
   .infolettre {
     height: 100%;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
     max-width: 80vw;
   }
   .infolettre .title {
-    margin-left: -20%;
-    padding: 3% 0;
-    width: 70%;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
   }
   .infolettre .boite_question {
     background-color: #1c566d;
@@ -2334,10 +2216,11 @@ a {
     text-align: left;
     grid-template-areas: "question" "answer" "question" "answer" "question" "answer";
   }
-  .infolettre .join {
-    margin-right: -20%;
-    margin-top: 5%;
-    width: 80%;
+  .infolettre .join_titre {
+    width: 100%;
+    max-width: 700px;
+    float: right;
+    margin-top: 70px;
   }
   .infolettre .question {
     padding: 1vh;
@@ -2371,85 +2254,66 @@ a {
     justify-self: center;
     margin-top: 10%;
   }
-  .liste_service_page .services_description {
+  .liste_service_page .s_description {
     background-color: var(--bleu-calypso);
-    width: 80vw;
+    width: 80%;
     margin-top: 7%;
     padding-top: 30px;
     margin-bottom: 10%;
     text-align: left;
   }
-  .liste_service_page .services_description .liste_service_titre_description {
-    width: 80%;
+  .liste_service_page .s_description .liste_service_titre_description {
+    font-size: 32px;
   }
-  .liste_service_page .services_description .contenu {
+  .liste_service_page .s_description .contenu {
     padding: 4%;
     font-size: 18px;
   }
   .liste_service_page .listes_services_caroussel {
-    flex-direction: column;
-    display: flex;
+    display: grid;
     justify-self: flex-end;
-    align-items: flex-end;
     background-color: #92C096;
     width: 80%;
     overflow: hidden;
     margin-bottom: 3%;
   }
   .liste_service_page .listes_services_caroussel .titre_liste_services {
-    display: flex;
     justify-self: flex-end;
     margin-top: 5%;
-    width: 80%;
   }
-  .liste_service_page .listes_services_caroussel .swiper03 {
+  .liste_service_page .listes_services_caroussel .swiper-container {
     width: 90%;
     max-width: 800px;
     margin-block: 5%;
   }
-  .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card {
-    max-width: 700px;
-    height: auto;
+  .liste_service_page .listes_services_caroussel .card {
     display: flex;
     flex-direction: column;
     background-color: #0E769E;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     text-align: right;
+    margin-left: 10%;
   }
-  .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card:nth-child(1) {
-    margin-left: -10%;
-    margin-right: 5%;
-  }
-  .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card:nth-child(2) {
-    margin-right: 5%;
-  }
-  .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card:nth-child(3) {
-    margin-right: 5%;
-  }
-  .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card:nth-child(4) {
-    margin-right: 5%;
-  }
-  .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-image {
+  .liste_service_page .listes_services_caroussel .card-image {
     width: 100%;
-    max-height: 400px;
-    background-size: cover;
+    height: auto;
   }
-  .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-content {
+  .liste_service_page .listes_services_caroussel .card-content {
     padding: 15px;
-    max-height: 400px;
   }
-  .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-title {
+  .liste_service_page .listes_services_caroussel .card-title {
     text-decoration: underline;
     color: white;
     text-align: left;
     font-size: 1.5em;
     margin: 10px 0;
   }
-  .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-description {
+  .liste_service_page .listes_services_caroussel .card-description {
     text-align: left;
     color: white;
   }
-  .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-button {
+  .liste_service_page .listes_services_caroussel .card-button {
     margin-top: 2em;
     width: 15vh;
     background-color: #8AE190;
@@ -2461,7 +2325,15 @@ a {
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
-  .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-button:hover {
+  .liste_service_page .listes_services_caroussel .card-button:hover {
     background-color: #1C7293;
+  }
+  .contexte_nouvelle {
+    color: var(--noir);
+    padding: 20px;
+  }
+  .nouvelle_lien {
+    color: var(--noir);
+    font-weight: 600;
   }
 }/*# sourceMappingURL=styles.css.map */
