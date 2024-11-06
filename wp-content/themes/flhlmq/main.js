@@ -50,7 +50,7 @@ $title.click(function () {
 //liste_service
 
 var swiper03 = new Swiper(".swiper03", {
-  //spaceBetween: 0, // Optional: space between slides
+  spaceBetween: 0,
   slidesPerView: 1, // Show 1 card at a time
   centeredSlides: true,
   pagination: {

@@ -109,6 +109,136 @@
     //description dernier extra classe pour margin-bottom plus grand
 }
 
+//PAGE LISTE DES SERVICES
+.liste_service_page {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    display: grid;
+
+    .titre_services {
+        max-width: 50%;
+        justify-self: center;
+        margin-top: 10%;
+    }
+
+    .services_description {
+        background-color: var(--bleu-calypso);
+        width: 80vw;
+        margin-top: 7%;
+        padding-top: 30px;
+        margin-bottom: 10%;
+        text-align: left;
+
+        .liste_service_titre_description {
+            width: 80%;
+        }
+
+        & .contenu {
+            padding: 4%;
+            font-size: 18px;
+        }
+    }
+
+    .listes_services_caroussel {
+        flex-direction: column;
+        display: flex;
+        justify-self: flex-end;
+        align-items: flex-end;
+        background-color: #92C096;
+        width: 80%;
+        overflow: hidden;
+        margin-bottom: 3%;
+
+        .titre_liste_services {
+            display: flex;
+            justify-self: flex-end;
+            margin-top: 5%;
+            width: 80%;
+        }
+
+        .swiper03 {
+            width: 80%;
+            max-width: 95vw;
+            margin-block: 5%;
+
+
+            .swiper-wrapper {
+                .card {
+                    max-width: 700px;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #0E769E;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    //overflow: hidden;
+                    text-align: right;
+
+                    &:nth-child(1) {
+                        margin-left: -20%;
+                        margin-right: 5%;
+
+                    }
+                    &:nth-child(2) {
+                        margin-right: 5%;
+                    }
+                    &:nth-child(3) {
+                        margin-right: 5%;
+                    }
+                    &:nth-child(4) {
+                        margin-right: 10%;
+                    }
+
+                    .card-image {
+                        width: 100%;
+                        max-height: 400px;
+                        background-size: cover;
+                    }
+
+                    .card-content {
+                        padding: 15px;
+                        max-height: 400px;
+                    }
+
+                    .card-title {
+                        text-decoration: underline;
+                        color: white;
+                        text-align: left;
+                        font-size: 1.5em;
+                        margin: 10px 0;
+                    }
+
+                    .card-description {
+                        text-align: left;
+                        color: white;
+                    }
+
+                    .card-button {
+                        margin-top: 2em;
+                        width: 15vh;
+                        background-color: #8AE190;
+                        color: white;
+                        padding: 10px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        font-weight: bold;
+                        border: none;
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                    }
+
+                    .card-button:hover {
+                        background-color: #1C7293;
+                    }
+
+                }
+            }
+
+            
+        }
+
+    }
+} 
+
 // VERSION MOBILE -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 @media screen and (max-width: 375px) {
 
@@ -663,80 +793,109 @@
 
     }
 
-    //PAGE SERVICES
-    .liste_services_page {
+    //PAGE LISTES SERVICES
+    .liste_service_page {
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
-
+        display: grid;
+    
         .titre_services {
+            max-width: 70%;
+        }
+    
+        .services_description {
             width: 100%;
-            transform: scale(0.5);
-        }
-
-        .s_congres {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            text-align: center;
-
-            & .titre {
-                grid-column: 1/3;
-                font-size: 32px;
+    
+            .liste_service_titre_description {
+                width: 80%;
             }
-
-            & .info {
-                grid-column: 1/4;
-
-                font-size: 18px;
+    
+            & .contenu {
+                font-size: 8px;
             }
         }
+    
+        .listes_services_caroussel {
+           
+            width: 100%;
+            padding-bottom: 3%;
 
-        .s_infolettre {
-            padding-top: 10px;
-            ;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            text-align: center;
+    
+            .swiper03 {
+                width: 100%;
+                max-width: 100%;
+                margin-block: 5%;
+    
+    
+                .swiper-wrapper {
+                    .card {
+                        max-width: 90%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #0E769E;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                        //overflow: hidden;
+                        text-align: right;
+                        margin:0;
 
-            & .titre {
-                font-size: 32px;
+                        &:nth-child(1) {
+                            margin-left: 5%;
+                            margin-right: 10%;
+    
+                        }
+                        &:nth-child(2) {
+                            margin-right: 10%;                        }
+                        &:nth-child(3) {
+                            margin-right: 10%;                        }
+                        &:nth-child(4) {
+                            margin-right: 3%;
+                        }
+    
+                        .card-image {
+                            width: 100%;
+                            max-height: 400px;
+                            background-size: cover;
+                        }
+    
+                        .card-content {
+                            padding: 15px;
+                            max-height: 400px;
+                        }
+    
+                        .card-title {
+                            text-decoration: underline;
+                            color: white;
+                            text-align: left;
+                            font-size: 0.8em;
+                            margin: 10px 0;
+                        }
+    
+                        .card-description {
+                            text-align: left;
+                            color: white;
+                            font-size: 0.5em;
+
+                        }
+    
+                        .card-button {
+                            width: 50vw;
+                            font-size: 0.5em;
+                           
+                        }
+    
+                        
+    
+                    }
+                }
             }
-
-            & .info {
-                font-size: 18px;
-            }
+    
         }
-
-        .s_environnement {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            text-align: center;
-
-            & .titre {
-                font-size: 32px;
-            }
-
-            & .info {
-                font-size: 18px;
-            }
-        }
-
-        .s_comite {
-            padding-top: 10px;
-            text-align: center;
-            padding-bottom: 10px;
-
-            & .titre {
-                font-size: 32px;
-            }
-
-            & .info {
-
-                font-size: 18px;
-            }
-        }
+        
+            
+    
+        
     }
 
 }
@@ -1096,57 +1255,38 @@
         text-align: center;
         margin-bottom: 20px;
         display: grid;
-
+    
         .titre_services {
             max-width: 50%;
-            justify-self: center;
-            margin-top: 10%;
         }
-
+    
         .services_description {
-            background-color: var(--bleu-calypso);
-            margin-top: 7%;
-            padding-top: 30px;
-            margin-bottom: 10%;
-            text-align: left;
-
+            width: 100%;
+    
             .liste_service_titre_description {
                 width: 80%;
             }
-
+    
             & .contenu {
-                padding: 4%;
-                font-size: 18px;
+                font-size: 12px;
             }
         }
-
+    
         .listes_services_caroussel {
-            flex-direction: column;
-            display: flex;
-            justify-self: flex-end;
-            align-items: flex-end;
-            background-color: #92C096;
+           
             width: 100%;
-            overflow: hidden;
-            margin-bottom: 3%;
             padding-bottom: 3%;
 
-            .titre_liste_services {
-                display: flex;
-                justify-self: flex-end;
-                margin-top: 5%;
-                width: 80%;
-            }
-
+    
             .swiper03 {
                 width: 100%;
                 max-width: 100%;
                 margin-block: 5%;
-
-
+    
+    
                 .swiper-wrapper {
                     .card {
-                        max-width: 100%;
+                        max-width: 90%;
                         height: auto;
                         display: flex;
                         flex-direction: column;
@@ -1154,33 +1294,32 @@
                         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
                         //overflow: hidden;
                         text-align: right;
+                        margin:0;
 
-                        /*&:nth-child(1) {
-                        //margin-left: -10%;
-                        margin-right: 5%;
-
-                    }
-                    &:nth-child(2) {
-                        margin-right: 5%;
-                    }
-                    &:nth-child(3) {
-                        margin-right: 5%;
-                    }
-                    &:nth-child(4) {
-                        margin-right: 5%;
-                    }*/
-
+                        &:nth-child(1) {
+                            margin-left: 5%;
+                            margin-right: 10%;
+    
+                        }
+                        &:nth-child(2) {
+                            margin-right: 10%;                        }
+                        &:nth-child(3) {
+                            margin-right: 10%;                        }
+                        &:nth-child(4) {
+                            margin-right: 3%;
+                        }
+    
                         .card-image {
                             width: 100%;
                             max-height: 400px;
                             background-size: cover;
                         }
-
+    
                         .card-content {
                             padding: 15px;
                             max-height: 400px;
                         }
-
+    
                         .card-title {
                             text-decoration: underline;
                             color: white;
@@ -1188,33 +1327,23 @@
                             font-size: 1.5em;
                             margin: 10px 0;
                         }
-
+    
                         .card-description {
                             text-align: left;
                             color: white;
                         }
-
+    
                         .card-button {
-                            margin-top: 2em;
-                            width: 15vh;
-                            background-color: #8AE190;
-                            color: white;
-                            padding: 10px;
-                            border-radius: 8px;
-                            cursor: pointer;
-                            font-weight: bold;
-                            border: none;
-                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                            width: 13vh;
+                           
                         }
-
-                        .card-button:hover {
-                            background-color: #1C7293;
-                        }
-
+    
+                        
+    
                     }
                 }
             }
-
+    
         }
     }
 
@@ -1653,107 +1782,134 @@
     }
 
     //PAGE LISTE SERVICES
+    
     .liste_service_page {
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
         display: grid;
-
+    
         .titre_services {
-            max-width: 50%;
-            justify-self: center;
-            margin-top: 10%;
+            max-width: 70%;
         }
-
-        .s_description {
+    
+        .services_description {
             background-color: var(--bleu-calypso);
-            width: 80%;
+            width: 80vw;
             margin-top: 7%;
             padding-top: 30px;
             margin-bottom: 10%;
             text-align: left;
-
+    
             .liste_service_titre_description {
-                font-size: 32px;
+                width: 80%;
             }
-
+    
             & .contenu {
                 padding: 4%;
                 font-size: 18px;
             }
         }
-
+    
         .listes_services_caroussel {
-            display: grid;
+            flex-direction: column;
+            display: flex;
             justify-self: flex-end;
+            align-items: flex-end;
             background-color: #92C096;
             width: 80%;
             overflow: hidden;
             margin-bottom: 3%;
-
+    
             .titre_liste_services {
+                display: flex;
                 justify-self: flex-end;
                 margin-top: 5%;
+                width: 80%;
             }
-
-            .swiper-container {
+    
+            .swiper03 {
                 width: 90%;
                 max-width: 800px;
                 margin-block: 5%;
+    
+    
+                .swiper-wrapper {
+                    .card {
+                        max-width: 700px;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #0E769E;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                        //overflow: hidden;
+                        text-align: right;
+    
+                        &:nth-child(1) {
+                            margin-left: -25%;
+                            margin-right: 5%;
+    
+                        }
+                        &:nth-child(2) {
+                            margin-right: 5%;
+                        }
+                        &:nth-child(3) {
+                            margin-right: 5%;
+                        }
+                        &:nth-child(4) {
+                            margin-right: 5%;
+                        }
+    
+                        .card-image {
+                            width: 100%;
+                            max-height: 400px;
+                            background-size: cover;
+                        }
+    
+                        .card-content {
+                            padding: 15px;
+                            max-height: 400px;
+                        }
+    
+                        .card-title {
+                            text-decoration: underline;
+                            color: white;
+                            text-align: left;
+                            font-size: 1.5em;
+                            margin: 10px 0;
+                        }
+    
+                        .card-description {
+                            text-align: left;
+                            color: white;
+                        }
+    
+                        .card-button {
+                            margin-top: 2em;
+                            width: 15vh;
+                            background-color: #8AE190;
+                            color: white;
+                            padding: 10px;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            font-weight: bold;
+                            border: none;
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                        }
+    
+                        .card-button:hover {
+                            background-color: #1C7293;
+                        }
+    
+                    }
+                }
+    
+                
             }
-
-            .card {
-                display: flex;
-                flex-direction: column;
-                background-color: #0E769E;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-                overflow: hidden;
-                text-align: right;
-                margin-left: 10%;
-
-            }
-
-            .card-image {
-                width: 100%;
-                height: auto;
-            }
-
-            .card-content {
-                padding: 15px;
-            }
-
-            .card-title {
-                text-decoration: underline;
-                color: white;
-                text-align: left;
-                font-size: 1.5em;
-                margin: 10px 0;
-            }
-
-            .card-description {
-                text-align: left;
-                color: white;
-            }
-
-            .card-button {
-                margin-top: 2em;
-                width: 15vh;
-                background-color: #8AE190;
-                color: white;
-                padding: 10px;
-                border-radius: 8px;
-                cursor: pointer;
-                font-weight: bold;
-                border: none;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            }
-
-            .card-button:hover {
-                background-color: #1C7293;
-            }
-
+    
         }
-    }
+    } 
+    
 
     //PAGE NOUVELLE 01
 
