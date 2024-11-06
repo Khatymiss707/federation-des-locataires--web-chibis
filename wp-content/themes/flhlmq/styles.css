@@ -2211,9 +2211,12 @@ a {
     text-align: center;
   }
   .prochaine_nouvelle {
-    width: 100%;
+    width: 80%;
     height: 100%;
     background-color: var(--bleu-calypso);
+    display: block;
+    float: right;
+    margin-bottom: 50px;
   }
   .prochaine_nouvelle p {
     color: var(--noir);
