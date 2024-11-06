@@ -2210,4 +2210,14 @@ a {
     width: 100%;
     text-align: center;
   }
+  .prochaine_nouvelle {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bleu-calypso);
+  }
+  .prochaine_nouvelle p {
+    color: var(--noir);
+    font-size: 20px;
+    font-weight: 800;
+  }
 }/*# sourceMappingURL=styles.css.map */
