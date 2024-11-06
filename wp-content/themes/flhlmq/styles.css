@@ -905,14 +905,12 @@ a {
 .a_propos {
   display: flex;
   flex-direction: column;
+  padding-inline: 1vw;
 }
 .a_propos img {
-  margin-top: 100px;
-  margin-inline: auto auto;
-  max-width: 800px;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  margin-block: 10% 4%;
+  max-width: 60%;
+  align-self: center;
 }
 .a_propos h4.description {
   color: var(--noir);
@@ -921,7 +919,10 @@ a {
   text-align: justify;
   margin-inline: auto auto;
   margin-bottom: 5%;
-  font-size: 120%;
+  font-size: 1.5em;
+}
+.a_propos h4.description:nth-child(3) {
+  margin-bottom: 15%;
 }
 
 .liste_service_page {
@@ -1027,6 +1028,55 @@ a {
 }
 .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-button:hover {
   background-color: #1C7293;
+}
+
+.service_comite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service_comite .service_titre_comite {
+  margin-top: 3%;
+  max-width: 70%;
+}
+.service_comite .contexte_service_comite {
+  color: var(--noir);
+  max-width: 85%;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 3%;
+}
+.service_comite a {
+  display: flex;
+  color: var(--bleu-calypso);
+  font-size: 22px;
+  font-weight: 700;
+}
+.service_comite a.document_agir {
+  margin-bottom: 3%;
+}
+.service_comite .page_comite_suivant {
+  background-color: var(--bleu-calypso);
+  padding: 5%;
+  max-width: 80vw;
+  margin-bottom: 10%;
+  text-align: right;
+  align-self: flex-end;
+}
+.service_comite .page_comite_suivant h2.suivant_titre {
+  text-decoration: underline;
+  font-size: 30px;
+  text-align: left;
+}
+.service_comite .page_comite_suivant .liste_service_titre_description {
+  width: 80%;
+}
+.service_comite .page_comite_suivant .service_suivant_infolettre_titre {
+  font-size: 22px;
+}
+.service_comite .page_comite_suivant .service_suivant_infolettre_para {
+  font-size: 18px;
 }
 
 @media screen and (max-width: 375px) {
@@ -1534,6 +1584,58 @@ a {
     width: 50vw;
     font-size: 0.5em;
   }
+  .service_comite .service_titre_comite {
+    max-width: 60%;
+    margin-top: 8%;
+  }
+  .service_comite .contexte_service_comite {
+    max-width: 75%;
+    font-size: 10px;
+    margin-top: 5%;
+  }
+  .service_comite .contexte_service_comite a {
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .service_comite .contexte_service_comite a.document_agir {
+    margin-bottom: 4%;
+  }
+  .service_comite .page_comite_suivant {
+    background-color: var(--bleu-calypso);
+    padding-inline: 12%;
+    max-width: 100%;
+    margin-bottom: 0;
+    text-align: justify;
+    align-self: center;
+  }
+  .service_comite .page_comite_suivant h2.suivant_titre {
+    font-size: 18px;
+  }
+  .service_comite .page_comite_suivant .service_suivant_infolettre {
+    width: 60%;
+  }
+  .service_comite .page_comite_suivant .service_suivant_infolettre_titre {
+    font-size: 15px;
+  }
+  .service_comite .page_comite_suivant .service_suivant_infolettre_para {
+    font-size: 12px;
+  }
+  .a_propos {
+    padding-inline: 1vw;
+  }
+  .a_propos img {
+    margin-top: 7%;
+    max-width: 60%;
+  }
+  .a_propos h4.description {
+    color: var(--noir);
+    font-family: "montserrat";
+    width: 75%;
+    text-align: justify;
+    margin-inline: auto auto;
+    margin-bottom: 5%;
+    font-size: 0.7em;
+  }
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
   body {
@@ -1885,10 +1987,7 @@ a {
     text-align: justify;
     margin-inline: auto auto;
     margin-bottom: 5%;
-    font-size: 100%;
-  }
-  .a_propos h4.description:nth-child(3) {
-    margin-bottom: 10%;
+    font-size: 1em;
   }
   .service_comite .service_titre_comite {
     max-width: 60%;
@@ -1897,19 +1996,32 @@ a {
     max-width: 75%;
     font-size: 12px;
   }
-  .service_comite .comite_pdf {
-    display: flex;
-    flex-direction: column;
-    padding: 3%;
+  .service_comite .contexte_service_comite a {
+    font-size: 18px;
+    font-weight: 700;
   }
-  .service_comite .comite_pdf a.document_agir {
-    font-size: 15px;
+  .service_comite .contexte_service_comite a.document_agir {
+    margin-bottom: 4%;
+  }
+  .service_comite .page_comite_suivant {
+    background-color: var(--bleu-calypso);
+    padding-inline: 12%;
+    max-width: 100%;
+    margin-bottom: 10%;
+    text-align: justify;
     align-self: center;
   }
-  .service_comite .comite_pdf a.document_association {
-    font-size: 15px;
-    align-self: center;
-    padding: 0;
+  .service_comite .page_comite_suivant h2.suivant_titre {
+    font-size: 18px;
+  }
+  .service_comite .page_comite_suivant .service_suivant_infolettre {
+    width: 60%;
+  }
+  .service_comite .page_comite_suivant .service_suivant_infolettre_titre {
+    font-size: 13px;
+  }
+  .service_comite .page_comite_suivant .service_suivant_infolettre_para {
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 768px) {
