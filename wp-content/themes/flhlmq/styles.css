@@ -2191,15 +2191,21 @@ a {
   .liste_service_page .listes_services_caroussel .card-button:hover {
     background-color: #1C7293;
   }
+  .categorie {
+    text-shadow: 3px 3px 3px rgb(36, 36, 36);
+  }
+  .categorie.communaute {
+    color: var(--pomme-verte);
+  }
   .contexte_nouvelle {
     color: var(--noir);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 3%;
+    width: 90%;
+    font-size: 20px;
   }
   .nouvelle_lien {
     color: var(--bleu-calypso);
+    font-size: 20px;
     font-weight: 800;
     width: 100%;
     text-align: center;
