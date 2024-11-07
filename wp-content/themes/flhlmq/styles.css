@@ -997,7 +997,8 @@ a {
 .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-image {
   width: 100%;
   max-height: 400px;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-content {
   padding: 15px;
@@ -1704,7 +1705,8 @@ a {
   .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-image {
     width: 100%;
     max-height: 400px;
-    background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-content {
     padding: 15px;
@@ -2413,7 +2415,8 @@ a {
   .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-image {
     width: 100%;
     max-height: 400px;
-    background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-content {
     padding: 15px;
@@ -3038,7 +3041,8 @@ a {
   .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-image {
     width: 100%;
     max-height: 400px;
-    background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card .card-content {
     padding: 15px;
