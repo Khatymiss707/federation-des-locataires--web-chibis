@@ -35,19 +35,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }));
 
 
-const toggleButton = document.querySelector(".affichage_plus_nvs");
-  toggleButton.addEventListener("click", myToggle);
-
-  function myToggle() {
-    var x = document.getElementById("liste_novs_deux");
-    
-    if (x.style.display === "none") {
-      x.style.display = "flex";
-    } else {
-      x.style.display = "none";
-    }
-  }
-
 //accordeon
 /*let title = document.querySelector(".accordion__item__title"); 
 let contenu = document.querySelector(".accordion__item__content--open"); 
@@ -73,6 +60,36 @@ var swiper03 = new Swiper(".swiper03", {
   },
 });
 
+
+//gsap background parrallax
+
+const logo = document.querySelector(".logo_lettre");
+
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  // gsap code here!
+  gsap.from(logo, {
+    repeat: -1,
+    yoyo: true,
+    y: '0.2%',
+  });
+
+ });
+
+
+
+ const toggleButton = document.querySelector(".affichage_plus_nvs");
+ toggleButton.addEventListener("click", myToggle);
+ 
+ function myToggle() {
+   var x = document.getElementById("liste_novs_deux");
+ 
+   if (x.style.display === "none") {
+     x.style.display = "flex";
+   } else {
+     x.style.display = "none";
+   }
+ }
 
 
 
