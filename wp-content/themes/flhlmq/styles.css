@@ -1198,6 +1198,12 @@ a {
   body {
     margin: 0;
   }
+  .hero .image_nouvelle {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 60vh;
+  }
   .swiper .swiper-slide {
     height: 70vh;
   }
@@ -1228,6 +1234,19 @@ a {
     position: absolute;
     bottom: 0;
     padding: 10px 20px;
+  }
+  .case_transparente.nouvelle {
+    height: auto;
+    padding: 0 15px;
+    bottom: 0.5vh;
+  }
+  .case_transparente .date {
+    margin-top: -9px;
+    font-size: 16px;
+  }
+  .case_transparente .categorie {
+    text-transform: uppercase;
+    font-size: 16px;
   }
   .case_transparente .titre {
     font-size: 6vw;
@@ -1752,10 +1771,61 @@ a {
     margin-bottom: 5%;
     font-size: 0.7em;
   }
+  .categorie {
+    text-shadow: 3px 3px 3px rgb(36, 36, 36);
+  }
+  .categorie.communaute {
+    color: var(--pomme-verte);
+  }
+  .contexte_nouvelle {
+    color: var(--noir);
+    padding: 5% 7%;
+    width: 100%;
+    font-size: 14px;
+  }
+  .nouvelle_lien {
+    color: var(--bleu-calypso);
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+  }
+  .prochaine_nouvelle {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bleu-calypso);
+    display: block;
+    float: right;
+    margin-bottom: 30px;
+    padding: 15px;
+    box-shadow: 5px 5px 15px var(--gris-souris);
+  }
+  .prochaine_nouvelle h2 {
+    color: var(--blanc);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .prochaine_nouvelle p {
+    color: var(--blanc);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .prochaine_nouvelle:hover {
+    transform: scale(1.01);
+    background-color: #1c566d;
+  }
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
   body {
     margin: 0;
+  }
+  .hero .image_nouvelle {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 65vh;
   }
   .swiper .vecteur_batiment {
     bottom: 0;
@@ -1781,6 +1851,19 @@ a {
     position: absolute;
     bottom: 0;
     padding: 10px 20px;
+  }
+  .case_transparente.nouvelle {
+    height: auto;
+    padding: 0 15px;
+    bottom: 0.5vh;
+  }
+  .case_transparente .date {
+    margin-top: -9px;
+    font-size: 16px;
+  }
+  .case_transparente .categorie {
+    text-transform: uppercase;
+    font-size: 16px;
   }
   .case_transparente .titre {
     font-size: 4vw;
@@ -2242,6 +2325,50 @@ a {
   .service_comite .page_comite_suivant .service_suivant_infolettre_para {
     font-size: 12px;
   }
+  .categorie {
+    text-shadow: 3px 3px 3px rgb(36, 36, 36);
+  }
+  .categorie.communaute {
+    color: var(--pomme-verte);
+  }
+  .contexte_nouvelle {
+    color: var(--noir);
+    padding: 7%;
+    width: 100%;
+    font-size: 16px;
+  }
+  .nouvelle_lien {
+    color: var(--bleu-calypso);
+    font-size: 16px;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+  }
+  .prochaine_nouvelle {
+    width: 80%;
+    height: 100%;
+    background-color: var(--bleu-calypso);
+    display: block;
+    float: right;
+    margin-bottom: 50px;
+    padding: 15px;
+    box-shadow: 5px 5px 15px var(--gris-souris);
+  }
+  .prochaine_nouvelle h2 {
+    color: var(--blanc);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .prochaine_nouvelle p {
+    color: var(--blanc);
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .prochaine_nouvelle:hover {
+    transform: scale(1.01);
+    background-color: #1c566d;
+  }
 }
 @media screen and (min-width: 768px) {
   body {
@@ -2649,16 +2776,28 @@ a {
     text-align: center;
   }
   .prochaine_nouvelle {
-    width: 80%;
+    width: 60%;
     height: 100%;
     background-color: var(--bleu-calypso);
     display: block;
     float: right;
     margin-bottom: 50px;
+    padding: 25px;
+    box-shadow: 5px 5px 15px var(--gris-souris);
+  }
+  .prochaine_nouvelle h2 {
+    color: var(--blanc);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
   .prochaine_nouvelle p {
-    color: var(--noir);
+    color: var(--blanc);
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 500;
+  }
+  .prochaine_nouvelle:hover {
+    transform: scale(1.01);
+    background-color: #1c566d;
   }
 }/*# sourceMappingURL=styles.css.map */
