@@ -1078,6 +1078,10 @@ a {
 .service_comite .page_comite_suivant .service_suivant_infolettre_para {
   font-size: 18px;
 }
+.service_comite .page_comite_suivant:hover {
+  transform: scale(1.01);
+  background-color: #1c566d;
+}
 
 .joindre_page {
   display: flex;
@@ -1146,7 +1150,7 @@ a {
 .joindre_page .formulaire form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 8fr 1fr;
   grid-column-gap: 15%;
   grid-row-gap: 10%;
   width: 80%;
@@ -1172,6 +1176,7 @@ a {
   grid-area: 3/2/4/3;
 }
 .joindre_page .formulaire form .label_mail {
+  align-self: flex-start;
   grid-area: 4/1/5/2;
 }
 .joindre_page .formulaire form .input_mail {
@@ -1458,7 +1463,7 @@ a {
   .infolettre .formulaire form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 8fr 1fr;
     grid-column-gap: 15%;
     grid-row-gap: 10%;
     width: 70%;
@@ -1484,6 +1489,7 @@ a {
     grid-area: 3/2/4/3;
   }
   .infolettre .formulaire form .label_mail {
+    align-self: flex-start;
     grid-area: 4/1/5/2;
   }
   .infolettre .formulaire form .input_mail {
@@ -1597,7 +1603,7 @@ a {
   .joindre_page .formulaire form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 12fr 1fr;
     grid-column-gap: 15%;
     grid-row-gap: 10%;
     width: 80%;
@@ -1623,6 +1629,7 @@ a {
     grid-area: 3/2/4/3;
   }
   .joindre_page .formulaire form .label_mail {
+    align-self: flex-start;
     grid-area: 4/1/5/2;
   }
   .joindre_page .formulaire form .input_mail {
@@ -2155,7 +2162,7 @@ a {
   .joindre_page .formulaire form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 12fr 1fr;
     grid-column-gap: 15%;
     grid-row-gap: 10%;
     width: 80%;
@@ -2181,6 +2188,7 @@ a {
     grid-area: 3/2/4/3;
   }
   .joindre_page .formulaire form .label_mail {
+    align-self: flex-start;
     grid-area: 4/1/5/2;
   }
   .joindre_page .formulaire form .input_mail {

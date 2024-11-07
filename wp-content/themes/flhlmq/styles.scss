@@ -304,6 +304,11 @@
             }
         }
 
+        &:hover {
+            transform: scale(1.01);
+            background-color: #1c566d;
+        }
+
 
     }
 
@@ -393,7 +398,7 @@
         form {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(5, 1fr);
+            grid-template-rows: 1fr 1fr 1fr 8fr 1fr;
 
             grid-column-gap: 15%;
             grid-row-gap: 10%;
@@ -428,6 +433,7 @@
             }
 
             .label_mail {
+                align-self: flex-start;
                 grid-area: 4 / 1 / 5 / 2;
             }
 
@@ -793,7 +799,7 @@
             form {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(5, 1fr);
+                grid-template-rows: 1fr 1fr 1fr 8fr 1fr;
                 grid-column-gap: 15%;
                 grid-row-gap: 10%;
                 width: 70%;
@@ -825,6 +831,7 @@
                 }
 
                 .label_mail {
+                    align-self: flex-start;
                     grid-area: 4 / 1 / 5 / 2;
                 }
 
@@ -975,7 +982,7 @@
             form {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(5, 1fr);
+                grid-template-rows: 1fr 1fr 1fr 12fr 1fr;
 
                 grid-column-gap: 15%;
                 grid-row-gap: 10%;
@@ -1010,6 +1017,7 @@
                 }
 
                 .label_mail {
+                    align-self: flex-start;
                     grid-area: 4 / 1 / 5 / 2;
                 }
 
@@ -1718,7 +1726,7 @@
             form {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(5, 1fr);
+                grid-template-rows: 1fr 1fr 1fr 12fr 1fr;
 
                 grid-column-gap: 15%;
                 grid-row-gap: 10%;
@@ -1753,6 +1761,7 @@
                 }
 
                 .label_mail {
+                    align-self: flex-start;
                     grid-area: 4 / 1 / 5 / 2;
                 }
 
