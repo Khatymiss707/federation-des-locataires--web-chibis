@@ -1,6 +1,7 @@
 @use "couleurs";
 @use "sass:color";
 
+
 @media screen and (max-width: 375px) {
     .banniere {
         background-color: var(--bleu-calypso);
