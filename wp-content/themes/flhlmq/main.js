@@ -1,10 +1,10 @@
 const swiper = new Swiper('.swiper', {
   loop: true,
   centeredSlides: true,
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -20,21 +20,21 @@ const swiper02 = new Swiper('.swiper02', {
   },
 });
 
-  //burger toggle
-  const hamburger = document.querySelector(".hamburger");
-  const navMenu = document.querySelector(".nav_menu");
+//burger toggle
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav_menu");
 
-  hamburger.addEventListener("click", () =>{
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-  })
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
 
-  document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-  })); 
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}));
 
-  //accordeon
+//accordeon
 /*let title = document.querySelector(".accordion__item__title"); 
 let contenu = document.querySelector(".accordion__item__content--open"); 
 
@@ -47,15 +47,17 @@ $title.click(function () {
 });*/
 
 
-//liste_service
-
+//Page_liste_service_swiper
 var swiper03 = new Swiper(".swiper03", {
   loop: true,
   spaceBetween: 0,
   slidesPerView: 1, // Show 1 card at a time
   centeredSlides: true,
   pagination: {
-    el: ".swiper-pagination", 
-    type: "progressbar", 
+    el: ".swiper-pagination",
+    type: "progressbar",
   },
 });
+
+
+
