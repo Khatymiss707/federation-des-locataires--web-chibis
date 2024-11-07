@@ -34,6 +34,20 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   navMenu.classList.remove("active");
 }));
 
+
+const toggleButton = document.querySelector(".affichage_plus_nvs");
+  toggleButton.addEventListener("click", myToggle);
+
+  function myToggle() {
+    var x = document.getElementById("liste_novs_deux");
+    
+    if (x.style.display === "none") {
+      x.style.display = "flex";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
 //accordeon
 /*let title = document.querySelector(".accordion__item__title"); 
 let contenu = document.querySelector(".accordion__item__content--open"); 
@@ -58,6 +72,7 @@ var swiper03 = new Swiper(".swiper03", {
     type: "progressbar",
   },
 });
+
 
 
 
