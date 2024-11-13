@@ -21,15 +21,17 @@
 ### PARTIALS: hero
 ### CUSTOM FIELDS: 
 #### title:text
+#### title-icon:image
 #### description:text
 
 # JOIN
 ## POST TYPE: page
 ## MODÈLE (TEMPLATE): join.php
 ## COMPOSANTE DE LA PAGE
-### PARTIALS: reuse hero
+### PARTIALS: hero
 ### CUSTOM FIELDS: 
 #### title:text
+#### title-icon:image
 #### description:text
 #### email:text
 #### input-name:text
@@ -43,6 +45,10 @@
 ## COMPOSANTE DE LA PAGE
 ### PARTIALS: hero
 ### CUSTOM FIELDS: 
+#### title:text
+#### title-icon:image
+#### filter-articles:select
+#### more-news-btn:text
 
 # NEWS
 ## POST TYPE: post
@@ -50,6 +56,12 @@
 ## COMPOSANTE DE LA PAGES
 ### PARTIALS: hero
 ### CUSTOM FIELDS: 
+#### title-news:text
+#### date:date
+#### category:text
+#### description-news:text
+#### news:text
+#### next-news-btn:text
 
 # SERVICES LIST
 ## POST TYPE: page
@@ -57,6 +69,11 @@
 ## COMPOSANTE DE LA PAGES
 ### PARTIALS: hero
 ### CUSTOM FIELDS:
+#### title-list-service : image
+#### title-list-service-description : text
+#### description-service : text
+#### title-list-service-caroussel : text
+#### caroussel-service : gallery
 
 # SERVICE
 ## POST TYPE: service
@@ -64,38 +81,15 @@
 ## COMPOSANTE DE LA PAGES
 ### PARTIALS: hero
 ### CUSTOM FIELDS:
+#### title-service-comite : image
+#### description-service-comite : text
+#### reference-association-1 : link
+#### reference-association-2 : link
+#### next-service : group
 
-
-
-
-
-
-
-
-
-
-## COMPOSANTE DE LA PAGES
-### NOM DU PARTIAL
-#### horizontal-card.php
 
 ### CHAMPS PERSONNALISÉS
 #### group -> card 
-
-
-# nouvelles
-## TYPE DE CONTENU (POST TYPE)
-### page 
-
-## MODÈLE (TEMPLATE)
-### nouvelles.php
-
-## COMPOSANTE DE LA PAGES
-### NOM DU PARTIAL
-#### horizontal-card.php
-
-### CHAMPS PERSONNALISÉS
-#### group -> card 
-
 
 # Liste des services
 ## TYPE DE CONTENU (POST TYPE)
@@ -111,8 +105,6 @@
 ### CHAMPS PERSONNALISÉS 
 #### gallery -> caroussel
 #### text-area -> description
-
-
 
 # services
 ## TYPE DE CONTENU (POST TYPE)
