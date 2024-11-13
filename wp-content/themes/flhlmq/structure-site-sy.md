@@ -1,114 +1,97 @@
+
+
 # Accueil
-
 ## TYPE DE CONTENU (POST TYPE)
-
 ### page
 
 ## MODÈLE (TEMPLATE)
-
-### page
+### accueil.php
 
 ## COMPOSANTE DE LA PAGES
 
-### NOM DU PARTIAL DU THÈME WP POUR CETTE COMPOSTANTE
+### NOM DU PARTIAL 
 ##### accueil.scss
 
-### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
-
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-
+### CHAMPS PERSONNALISÉS
+#### group -> joindre
+#### group -> service(card)
+#### flexible-content -> temoingnage
+#### accordion -> infolettre
+#### e-mail -> envoyer adresse electronique
 
 
 
 # À propos
-
 ## TYPE DE CONTENU (POST TYPE)
 ### page
 
 ## MODÈLE (TEMPLATE)
-### page
-
-## COMPOSANTE DE LA PAGES
-### NOM DU PARTIAL DU THÈME WP POUR CETTE COMPOSTANTE
-#### a-propos.scss
-
-### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
-
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-
-
+### a-propos.php
 
 
 # Joindre
-
 ## TYPE DE CONTENU (POST TYPE)
 ### page
 
 ## MODÈLE (TEMPLATE)
-### page
+### joindre.php
 
-## COMPOSANTE DE LA PAGES
-### NOM DU PARTIAL DU THÈME WP POUR CETTE COMPOSTANTE
-#### joindre.scss
+## COMPOSANTES
+### NOM DU PARTIAL
+#### form.scss
 
-### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
-
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-
+### CHAMPS PERSONNALISÉS
+#### text ->  nom
+#### text ->  prenom
+#### e-mail ->  adresse courriel
+#### text-area -> message
 
 
 
 # Liste des nouvelles
-
 ## TYPE DE CONTENU (POST TYPE)
 ### page
 
 ## MODÈLE (TEMPLATE)
-### page
+### liste-nouvelle.php
 
 ## COMPOSANTE DE LA PAGES
+### NOM DU PARTIAL
+#### horizontal-card.php
 
-### NOM DU PARTIAL DU THÈME WP POUR CETTE COMPOSTANTE
-#### liste-nouvelle.scss
-### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
-
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-
-
+### CHAMPS PERSONNALISÉS
+#### group -> card 
 
 
 # nouvelles
 ## TYPE DE CONTENU (POST TYPE)
-### post
+### page 
 
 ## MODÈLE (TEMPLATE)
-### product
+### nouvelles.php
 
 ## COMPOSANTE DE LA PAGES
+### NOM DU PARTIAL
+#### horizontal-card.php
 
-### NOM DU PARTIAL DU THÈME WP POUR CETTE COMPOSTANTE
-#### une-nouvelle
-### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
-
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-
+### CHAMPS PERSONNALISÉS
+#### group -> card 
 
 
 # Liste des services
-
 ## TYPE DE CONTENU (POST TYPE)
 ### page
 
 ## MODÈLE (TEMPLATE)
-### page
+### liste-services.php
 
 ## COMPOSANTE DE LA PAGES
-
-### NOM DU PARTIAL DU THÈME WP POUR CETTE COMPOSTANTE
+### NOM DU PARTIAL 
 #### liste-service.scss
-### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
 
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
+### CHAMPS PERSONNALISÉS 
+#### gallery -> caroussel
+#### text-area -> description
 
 
 
@@ -117,11 +100,14 @@
 ### post
 
 ## MODÈLE (TEMPLATE)
-### product
+### horizontal-card.php
 
 ## COMPOSANTE DE LA PAGES
-### NOM DU PARTIAL DU THÈME WP POUR CETTE COMPOSTANTE
-#### un-service.scss
-### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
+### NOM DU PARTIAL 
+#### service.scss
 
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
+### CHAMPS PERSONNALISÉS 
+#### text-area -> description
+#### description -> page suivante
+
+
