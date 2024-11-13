@@ -1,100 +1,62 @@
 
 # ACCUEIL
 
-## TYPE DE CONTENU (POST TYPE)
-### page nommé page
-
-## MODÈLE (TEMPLATE)
-### accueil.php
-
+## POST TYPE: page
+## MODÈLE (TEMPLATE): home.php
 ## COMPOSANTE DE LA PAGES
-### _index.scss
-### CUSTOM FIELDS
-####
-
-### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
+### PARTIALS: hero
+### CUSTOM FIELDS: newsletter:email, submit-btn:text
 
 
 # A PROPOS
 
-## TYPE DE CONTENU (POST TYPE)
-### page nommé page
-
-## MODÈLE (TEMPLATE)
-### apropos.php
-
+## POST TYPE: page 
+## MODÈLE (TEMPLATE): about.php
 ## COMPOSANTE DE LA PAGES
-### _apropos.scss
-### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
+### PARTIALS: reuse hero
+### CUSTOM FIELDS: title:text, description:text
 
 
 # JOINDRE
 
-## TYPE DE CONTENU (POST TYPE)
-### page nommé page
-
-## MODÈLE (TEMPLATE)
-### nousjoindre.php
-
+## POST TYPE: page
+## MODÈLE (TEMPLATE): join.php
 ## COMPOSANTE DE LA PAGES
-### _joindre.scss
-### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
+### PARTIALS: none
+### CUSTOM FIELDS: reuse title:text, reuse description:text, email:text, input-name:text, input-email:email, reuse submit-btn:text, message:textarea
 
 
 # LISTE SERVICES
 
-## TYPE DE CONTENU (POST TYPE)
-### post-type custom nommé liste
-
-## MODÈLE (TEMPLATE)
-### listeservices.php
-
+## POST TYPE: page
+## MODÈLE (TEMPLATE): listeservices.php
 ## COMPOSANTE DE LA PAGES
-### _listeservices.scss
-### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-
+### PARTIALS: reuse hero
+### CUSTOM FIELDS: etc
 
 # SERVICE (SOLO)
 
-## TYPE DE CONTENU (POST TYPE)
-### post-type custom nommé service
-
-## MODÈLE (TEMPLATE)
-### service.php
-
+## POST TYPE: service
+## MODÈLE (TEMPLATE): service.php
 ## COMPOSANTE DE LA PAGES
-### _service.scss
-### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
+### PARTIALS: reuse hero
+### CUSTOM FIELDS: Group x2 (service et prochain_service) etc
 
 
 # LISTE NOUVELLES
 
-## TYPE DE CONTENU (POST TYPE)
-### post-type custom nommé liste
-
-## MODÈLE (TEMPLATE)
-### listenouvelles.php
-
+## POST TYPE: page
+## MODÈLE (TEMPLATE): listenouvelles.php
 ## COMPOSANTE DE LA PAGES
-### _listenouvelles.scss
-### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
+### PARTIALS: reuse hero
+### CUSTOM FIELDS: Select et Group (réutiliser cartes_horizontales) etc
 
 
 # NOUVELLE (SOLO)
 
-## TYPE DE CONTENU (POST TYPE)
-### post nommé post
-
-## MODÈLE (TEMPLATE)
-### nouvelle.php
-
+## POST TYPE: post
+## MODÈLE (TEMPLATE): nouvelle.php
 ## COMPOSANTE DE LA PAGES
-### _nouvelle.scss
-### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
+### PARTIALS: reuse hero
+### CUSTOM FIELDS: Group (nouvelle) etc
+
