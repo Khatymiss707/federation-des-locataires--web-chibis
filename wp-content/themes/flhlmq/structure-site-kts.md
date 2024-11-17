@@ -32,7 +32,7 @@
 ## MODÈLE (TEMPLATE): listeservices.php
 ## COMPOSANTE DE LA PAGES
 ### PARTIALS: reuse hero
-### CUSTOM FIELDS: etc
+### CUSTOM FIELDS: reuse title:text
 
 # SERVICE (SOLO)
 
@@ -40,7 +40,7 @@
 ## MODÈLE (TEMPLATE): service.php
 ## COMPOSANTE DE LA PAGES
 ### PARTIALS: reuse hero
-### CUSTOM FIELDS: Group x2 (service et prochain_service) etc
+### CUSTOM FIELDS: reuse title:text, reuse description:text
 
 
 # LISTE NOUVELLES
@@ -49,7 +49,7 @@
 ## MODÈLE (TEMPLATE): listenouvelles.php
 ## COMPOSANTE DE LA PAGES
 ### PARTIALS: reuse hero
-### CUSTOM FIELDS: Select et Group (réutiliser cartes_horizontales) etc
+### CUSTOM FIELDS: filter: select
 
 
 # NOUVELLE (SOLO)
@@ -58,5 +58,5 @@
 ## MODÈLE (TEMPLATE): nouvelle.php
 ## COMPOSANTE DE LA PAGES
 ### PARTIALS: reuse hero
-### CUSTOM FIELDS: Group (nouvelle) etc
+### CUSTOM FIELDS: reuse description:text
 
