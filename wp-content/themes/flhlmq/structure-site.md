@@ -58,10 +58,10 @@
 ### CUSTOM FIELDS: 
 #### title-news:text
 #### date:date
-#### category:text
+#### category:select
 #### description-news:text
-#### news:text
-#### next-news-btn:text
+#### news:group
+
 
 # SERVICES LIST
 ## POST TYPE: page
@@ -73,7 +73,7 @@
 #### title-list-service-description : text
 #### description-service : text
 #### title-list-service-caroussel : text
-#### caroussel-service : gallery
+#### caroussel-service : group
 
 # SERVICE
 ## POST TYPE: service

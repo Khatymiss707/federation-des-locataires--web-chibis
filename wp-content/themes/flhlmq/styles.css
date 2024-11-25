@@ -1204,6 +1204,9 @@ a {
   body {
     margin: 0;
   }
+  .logo_lettre {
+    display: none;
+  }
   .hero .image_nouvelle {
     width: 100%;
     -o-object-fit: cover;
@@ -1979,6 +1982,9 @@ a {
 @media screen and (min-width: 375px) and (max-width: 768px) {
   body {
     margin: 0;
+  }
+  .logo_lettre {
+    display: none;
   }
   .hero .image_nouvelle {
     width: 100%;
