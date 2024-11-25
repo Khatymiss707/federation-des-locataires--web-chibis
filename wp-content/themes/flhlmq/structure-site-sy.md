@@ -1,23 +1,13 @@
-
-
-# Accueil
+# Home
 ## TYPE DE CONTENU (POST TYPE)
 ### page
 
 ## MODÈLE (TEMPLATE)
-### accueil.php
+### home.php
 
 ## COMPOSANTE DE LA PAGES
-
-### NOM DU PARTIAL 
-##### accueil.scss
-
 ### CHAMPS PERSONNALISÉS
-#### group -> joindre
-#### group -> service(card)
-#### flexible-content -> temoingnage
-#### accordion -> infolettre
-#### e-mail -> envoyer adresse electronique
+#### reviews:group
 
 
 
@@ -26,26 +16,26 @@
 ### page
 
 ## MODÈLE (TEMPLATE)
-### a-propos.php
+### about.php
 
 
-# Joindre
+# Join
 ## TYPE DE CONTENU (POST TYPE)
 ### page
 
 ## MODÈLE (TEMPLATE)
-### joindre.php
+### join.php
 
 ## COMPOSANTES
 ### NOM DU PARTIAL
-#### form.scss
+#### hero
 
 ### CHAMPS PERSONNALISÉS
-#### text ->  nom
-#### text ->  prenom
-#### e-mail ->  adresse courriel
-#### text-area -> message
-
+#### first-name : text
+#### last-name : text
+#### e-mail : email
+#### message : text-area 
+#### submit : button
 
 
 # Liste des nouvelles
@@ -53,22 +43,21 @@
 ### page
 
 ## MODÈLE (TEMPLATE)
-### liste-nouvelle.php
+### news-list.php
 
 ## COMPOSANTE DE LA PAGES
 ### NOM DU PARTIAL
-#### horizontal-card.php
+#### horizontal-card , hero
 
 ### CHAMPS PERSONNALISÉS
-#### group -> card 
-
+#### card : group
 
 # nouvelles
 ## TYPE DE CONTENU (POST TYPE)
 ### page 
 
 ## MODÈLE (TEMPLATE)
-### nouvelles.php
+### news.php
 
 ## COMPOSANTE DE LA PAGES
 ### NOM DU PARTIAL
@@ -83,7 +72,7 @@
 ### page
 
 ## MODÈLE (TEMPLATE)
-### liste-services.php
+### services-list.php
 
 ## COMPOSANTE DE LA PAGES
 ### NOM DU PARTIAL 
