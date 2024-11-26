@@ -1089,7 +1089,6 @@ a {
   padding: 5%;
 }
 .joindre_page .courriel {
-  background-color: var(--gris-souris);
   width: 75%;
   padding: 5%;
   margin-block: 10%;
@@ -1169,11 +1168,24 @@ a {
   font-family: "montserrat";
 }
 .joindre_page .formulaire form input {
+  background-color: #E6E6E6;
+  border: var(--bleu-calypso) 0.3vh solid;
   height: 80%;
   width: 100%;
   align-self: center;
   justify-self: center;
-  font-size: 24px;
+  font-size: 28px;
+  padding: 2.5vh;
+}
+.joindre_page .formulaire form textarea {
+  margin-block: 19vh;
+  background-color: #E6E6E6;
+  border: var(--bleu-calypso) 0.3vh solid;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  font-size: 28px;
+  padding: 2.5vh;
 }
 
 @media screen and (max-width: 375px) {
@@ -2946,6 +2958,7 @@ a {
     border: var(--bleu-calypso) 0.3vh solid;
     width: 80vw;
     padding: 1vh;
+    height: 7vh;
   }
   .infolettre .souris_icone {
     width: 3vw;
