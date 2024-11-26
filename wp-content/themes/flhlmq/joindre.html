@@ -10,13 +10,15 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <header>
-  <div class="banniere">
+  <div class="banniere" id="banniere">
     <p>
       Cette page n’est qu’un projet académique qui vise à transformer un site
       existant. Veuillez visiter le site actuel:
     </p>
     <div class="banniere_btn">
-      <button class="visiter">VISITER</button>
+      <a href="https://www.flhlmq.com/fr">
+        <button class="visiter">VISITER</button>
+      </a>
       <button class="fermer">FERMER</button>
     </div>
   </div>
@@ -166,7 +168,8 @@
           <input class="input_adress" type="email" name="mail" id="email" name="email"><br>
 
           <label class="label_mail" for="fname">Message</label>
-          <textarea class="input_mail" id="message" name="message" rows="10" cols="50" placeholder="Write your long message here..."></textarea><br><br>
+          <textarea class="input_mail" id="message" name="message" rows="10" cols="50"
+            placeholder="Write your long message here..."></textarea><br><br>
 
           <button class="joindre_btn" type="submit">Envoyez</button>
 

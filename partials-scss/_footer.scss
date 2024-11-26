@@ -181,14 +181,14 @@
         transform: scale(0.6);
     }
     .footer {
+        display: grid;
         width: 100%;
         padding:20px;
         background-color: color.adjust(#1C7293, $blackness: 15%);
         color: var(--blanc);
-        display: grid;
-        grid-template-columns: repeat(auto-fit);
-        grid-template-rows: repeat(auto-fit);
-        gap: 5px;
+        
+        gap: 15px;
+
         .column1 {
             grid-column: 1/2;
             padding-left: 5px;

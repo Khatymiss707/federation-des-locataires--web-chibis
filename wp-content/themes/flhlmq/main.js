@@ -34,6 +34,11 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   navMenu.classList.remove("active");
 }));
 
+const btnFermer = document.querySelector(".fermer");
+
+btnFermer.addEventListener("click", () => {
+  document.getElementById("banniere").style.display = "none";
+})
 
 //accordeon
 /*let title = document.querySelector(".accordion__item__title"); 
