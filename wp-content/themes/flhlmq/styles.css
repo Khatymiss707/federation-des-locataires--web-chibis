@@ -1516,12 +1516,14 @@ a {
     max-width: 350px;
   }
   .infolettre .question {
-    padding: 1vh;
+    padding: 0.5vh;
+    margin: 10px 15px;
+    font-size: 20px;
   }
   .infolettre .answer {
     grid-area: description;
     background-color: #0E769E;
-    padding: 1vh;
+    padding: 10px 15px;
   }
   .infolettre .input {
     margin-top: 3vh;
@@ -2228,13 +2230,10 @@ a {
     float: right;
     margin-top: 30px;
   }
-  .infolettre .question {
-    padding: 1vh;
-  }
   .infolettre .answer {
     grid-area: description;
     background-color: #0E769E;
-    padding: 1vh;
+    padding: 10px 15px;
   }
   .infolettre .input {
     margin-top: 5vh;
@@ -2925,7 +2924,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    max-width: 80vw;
+    max-width: 70vw;
   }
   .infolettre .title {
     width: 100%;
@@ -2941,30 +2940,32 @@ a {
   .infolettre .join_titre {
     width: 100%;
     max-width: 700px;
-    float: right;
-    margin-top: 70px;
+    margin-top: 40px;
   }
   .infolettre .question {
-    padding: 1vh;
+    padding: 0.5vh;
+    margin: 10px 15px;
+    font-size: 20px;
   }
   .infolettre .answer {
     grid-area: description;
     background-color: #0E769E;
-    padding: 1vh;
+    padding: 10px 15px;
   }
   .infolettre .input {
     margin-top: 5vh;
     background-color: #E6E6E6;
     border: var(--bleu-calypso) 0.3vh solid;
-    width: 80vw;
+    width: 100%;
+    max-width: 700px;
     padding: 1vh;
-    height: 7vh;
+    height: 4vh;
   }
   .infolettre .souris_icone {
-    width: 3vw;
+    width: 1.5vw;
     position: absolute;
     transform: translateY(-45%);
-    right: 10%;
+    left: 50%;
   }
   .liste_service_page {
     width: 100%;
@@ -3007,12 +3008,9 @@ a {
     width: 80%;
   }
   .liste_service_page .listes_services_caroussel .swiper03 {
-    width: 90%;
     max-width: 800px;
-    margin-block: 5%;
   }
   .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card {
-    max-width: 700px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -3021,7 +3019,6 @@ a {
     text-align: right;
   }
   .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card:nth-child(1) {
-    margin-left: -25%;
     margin-right: 5%;
   }
   .liste_service_page .listes_services_caroussel .swiper03 .swiper-wrapper .card:nth-child(2) {

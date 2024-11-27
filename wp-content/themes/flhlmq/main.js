@@ -56,13 +56,14 @@ $title.click(function () {
 //Page_liste_service_swiper
 var swiper03 = new Swiper(".swiper03", {
   loop: true,
-  spaceBetween: 0,
-  slidesPerView: 1, // Show 1 card at a time
+  slidesPerView: 1,
+  spaceBetween: 30,
+  grabCursor: true,
   centeredSlides: true,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "progressbar",
-  },
+  navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
 });
 
 
