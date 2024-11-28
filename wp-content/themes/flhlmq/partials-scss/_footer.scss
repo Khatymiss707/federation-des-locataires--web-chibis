@@ -68,7 +68,6 @@
         }
 
         p {
-            font-size: 14px;
             grid-column-start: 1;
             grid-column-end: 3;
             text-align: center;
@@ -165,18 +164,21 @@
                     grid-column-end: 3;
 
                     & img {
-                        width: 70%;
+                        width: 30%;
                     }
 
 
                 }
 
-                & .frapru {
+                & .frappu {
                     position: relative;
-                    transform: scale(0.7);
-                    text-align: center;
+                    justify-self: center;
                     grid-column-start: 1;
                     grid-column-end: 3;
+
+                    & img {
+                        width: 30%;
+                    }
                 }
 
                 & .cnl {
@@ -224,6 +226,14 @@
         grid-template-columns: repeat(auto-fit);
         grid-template-rows: repeat(auto-fit);
         gap: 5px;
+
+        p{
+            font-size: 32px;
+        }
+
+        a{
+            font-size: 32px;
+        }
 
         .column1 {
             display: grid;
@@ -273,30 +283,45 @@
                 .quebec {
                     grid-column: 1/2;
                     grid-row: 2/3;
-                    text-align: center;
+                    display: grid;
 
                     img {
-                        width: 70%;
+                        width: 35%;
+                        justify-self: center;
+                        align-self: center;
                     }
 
                 }
 
                 .frapru {
+                    text-align: center;
                     grid-column: 2/3;
                     grid-row: 2/3;
-                    text-align: center;
+
+                    img {
+                        width: 30%;
+                        justify-self: center;
+                    }
                 }
 
                 .cnl {
                     grid-column: 1/2;
                     grid-row: 3/4;
                     text-align: center;
+
+                    img {
+                        width: 30%;
+                    }
                 }
 
                 .rohq {
                     grid-column: 2/3;
                     grid-row: 3/4;
                     text-align: center;
+
+                    img {
+                        width: 30%;
+                    }
                 }
             }
 

@@ -411,7 +411,6 @@ a {
     width: 100%;
   }
   .footer p {
-    font-size: 14px;
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
@@ -490,14 +489,16 @@ a {
     grid-column-end: 3;
   }
   .footer .columns2 .partners .quebec img {
-    width: 70%;
+    width: 30%;
   }
-  .footer .columns2 .partners .frapru {
+  .footer .columns2 .partners .frappu {
     position: relative;
-    transform: scale(0.7);
-    text-align: center;
+    justify-self: center;
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+  .footer .columns2 .partners .frappu img {
+    width: 30%;
   }
   .footer .columns2 .partners .cnl {
     position: relative;
@@ -535,6 +536,12 @@ a {
     grid-template-columns: repeat(auto-fit);
     grid-template-rows: repeat(auto-fit);
     gap: 5px;
+  }
+  .footer p {
+    font-size: 32px;
+  }
+  .footer a {
+    font-size: 32px;
   }
   .footer .column1 {
     display: grid;
@@ -575,25 +582,37 @@ a {
   .footer .column2 .partners .quebec {
     grid-column: 1/2;
     grid-row: 2/3;
-    text-align: center;
+    display: grid;
   }
   .footer .column2 .partners .quebec img {
-    width: 70%;
+    width: 35%;
+    justify-self: center;
+    align-self: center;
   }
   .footer .column2 .partners .frapru {
+    text-align: center;
     grid-column: 2/3;
     grid-row: 2/3;
-    text-align: center;
+  }
+  .footer .column2 .partners .frapru img {
+    width: 30%;
+    justify-self: center;
   }
   .footer .column2 .partners .cnl {
     grid-column: 1/2;
     grid-row: 3/4;
     text-align: center;
   }
+  .footer .column2 .partners .cnl img {
+    width: 30%;
+  }
   .footer .column2 .partners .rohq {
     grid-column: 2/3;
     grid-row: 3/4;
     text-align: center;
+  }
+  .footer .column2 .partners .rohq img {
+    width: 30%;
   }
   .footer .column2 .joindre {
     text-align: center;
