@@ -4,7 +4,7 @@
 	/*-----------------------------------------------------------------------------------*/
 
 // Fermeture de la zone de contenu principale ?>
-</main>
+</div>
 
 <footer>
 	<p>Développement web - Collège Montmorency - 2021</p>

@@ -34,11 +34,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   navMenu.classList.remove("active");
 }));
 
-const btnFermer = document.querySelector(".fermer");
-
-btnFermer.addEventListener("click", () => {
-  document.getElementById("banniere").style.display = "none";
-})
 
 //accordeon
 /*let title = document.querySelector(".accordion__item__title"); 
@@ -56,14 +51,13 @@ $title.click(function () {
 //Page_liste_service_swiper
 var swiper03 = new Swiper(".swiper03", {
   loop: true,
-  slidesPerView: 1,
-  spaceBetween: 30,
-  grabCursor: true,
+  spaceBetween: 0,
+  slidesPerView: 1, // Show 1 card at a time
   centeredSlides: true,
-  navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
 });
 
 

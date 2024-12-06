@@ -50,4 +50,4 @@
 	?>
 </header>
 
-<main><!-- Débute le contenu principal de notre site -->
+<div class="pageblanche"><!-- Débute le contenu principal de notre site -->

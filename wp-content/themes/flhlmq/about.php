@@ -1,6 +1,6 @@
 <?php 
 /**
- * 	Template Name: À propos
+ * 	Template Name: about
  * 	Identique à page, mais avec une barre latérale
  */
 
@@ -11,15 +11,16 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	while ( have_posts() ) : the_post(); 
 ?>
 
-	<article>
-		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
-			<h2>
-				<?php the_title(); // Titre de la page ?>
-			</h2>
-		<?php endif; ?>
+		<section class="a_propos">
+		<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+
+            <div class="contenue">
+                <h4 class="description">
+				<?php the_content(); ?>
+</h4>
+            </div>
+        </section>
 		
-		<?php the_content(); // Contenu principal de la page ?>
-	</article>
 <?php endwhile; // Fermeture de la boucle
 
 else : // Si aucune page n'a été trouvée
