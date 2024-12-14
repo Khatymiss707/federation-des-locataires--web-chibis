@@ -1,7 +1,7 @@
 <?php 
 /**
  * 	Template Name: list services
- * 	Template Post Type : page, article, service-list
+ * 	Template Post Type : page, article, service-list, service
  */
 
 get_header(); // Affiche header.php
@@ -11,73 +11,58 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	while ( have_posts() ) : the_post(); 
 ?>
 
-    <section class="liste_service_page">
-        <img class="titre_services" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+<section class="liste_service_page">
+    <img class="titre_services" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
 
-        <div class="services_description">
-            <img class="liste_service_titre_description" src="<?php the_field('services_description.title_image'); ?>">
-            <p class="contenu">
-                <?php the_field('services_description.full_services_description'); ?>
-            </p>
-        </div>
+    <div class="services_description">
+        <img class="liste_service_titre_description" src="<?php the_field('services_description_title_image'); ?>">
+        <p class="contenu">
+            <?php the_content(); ?>
+        </p>
+    </div>
 
-        <div class="listes_services_caroussel">
-            <img class="titre_liste_services" src="./medias/images/liste_service/titre_liste_services.svg" alt="">
 
-            <div class="swiper03">
+    <div class="listes_services_caroussel">
+        <img class="titre_liste_services" src="<?php the_field("caroussel_titre")?>" alt="">
+
+        <div class="swiper03">
             <div class="swiper-wrapper">
-                <div class="swiper-slide card">
-                <img src="./medias/images/liste_service/caroussel/locataireCA.jpg" alt="Card 1" class="card-image">
-                <div class="card-content">
 
-                    <h2 class="card-title">Service 01 - Le Congrès</h2>
-                    <p class="card-description">
-                    “Échanger, voter les grandes orientations de la fédération et élire le conseil d'administration.”
-                    </p>
-                    <button class="card-button">En savoir plus</button>
-                </div>
-                </div>
+                <?php
+                    $arguments = array( // 👈 Tableau d'arguments
+                        'post_type' => 'service',
+                        'posts_per_page' => 4
+                    );
+                    $projects = new WP_Query($arguments); // 👈 Utilisation
+                    while ($projects->have_posts()) : $projects->the_post(); 
+                ?>
 
                 <div class="swiper-slide card">
-                <img src="./medias/images/liste_service/caroussel/infolettre.jpeg" alt="Card 2" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Service 02 - L’Infolettre</h2>
-                    <p class="card-description">
-                    “Rester à jour en vous inscrivant à l'infolettre!”
-                    </p>
-                    <button class="card-button">En savoir plus</button>
-                </div>
-                </div>
-
-                <div class="swiper-slide card">
-                <img src="./medias/images/liste_service/caroussel/environnemnt_saint.png" alt="Card 3" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Service 03 - Environnement sain</h2>
-                    <p class="card-description">
-                    “Rejoignez-nous pour un environnement sain, solidaire et engagé pour la défense de vos droits de
-                    locataire.”
-
-                    </p>
-                    <button class="card-button">En savoir plus</button>
-                </div>
+                    <img src="<?php the_field("caroussel_img")?>" alt="Card 1" class="card-image">
+                    <div class="card-content">
+                        <a href="<?php the_field("next-news_url")?>">
+                            <h2 class="card-title">
+                                <?php the_field("next_news")?>
+                            </h2>
+                        </a>
+                        <p class="card-description">
+                            <?php the_field("next-news-description")?>
+                        </p>
+                        <button class="card-button">
+                            <?php the_field("label_next_service")?>
+                        </button>
+                    </div>
                 </div>
 
-                <div class="swiper-slide card">
-                <img src="./medias/images/liste_service/caroussel/comité_consultatif.jpg" alt="Card 4" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Service 04 - Comité consultatif</h2>
-                    <p class="card-description">
-                    “Échanger, voter les grandes orientations de la fédération et élire le conseil d'administration.”
-                    </p>
-                    <button onclick="window.location.href='service_comite_consultatif.html'" class="card-button">En savoir
-                    plus</button>
-                </div>
-                </div>
-            </div>
+                <?php
+                    endwhile; 
+                    wp_reset_postdata(); 
+                ?>
             </div>
         </div>
+    </div>
 
-    </section>
+</section>
 <?php endwhile; // Fermeture de la boucle
 
 else : // Si aucune page n'a été trouvée
