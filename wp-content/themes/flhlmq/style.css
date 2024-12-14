@@ -546,7 +546,6 @@ a {
   }
   .footer .column1 .logo {
     width: 100%;
-    transform: scale(0.9);
   }
   .footer .column1 .logo img {
     width: 100%;
@@ -554,12 +553,14 @@ a {
   .footer .column1 .navigation {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-block: 4%;
   }
   .footer .column1 .icones_reseaux {
     display: grid;
     grid-template-columns: 60px 60px;
     grid-template-rows: auto;
+    margin-block: 4%;
   }
   .footer .column1 .icones_reseaux .youtube {
     grid-column: 1/1;
@@ -591,6 +592,7 @@ a {
     grid-column: 2/3;
     grid-row: 2/3;
     text-align: center;
+    align-self: center;
   }
   .footer .column2 .partners .cnl {
     grid-column: 1/2;

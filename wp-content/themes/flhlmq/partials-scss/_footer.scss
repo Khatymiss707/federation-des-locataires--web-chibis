@@ -223,7 +223,6 @@
 
             & .logo {
                 width: 100%;
-                transform: scale(0.9);
 
                 img {
                     width: 100%;
@@ -233,13 +232,15 @@
             .navigation {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-evenly;
+                justify-content: space-between;
+                margin-block: 4%;
             }
 
             .icones_reseaux {
                 display: grid;
                 grid-template-columns: 60px 60px;
                 grid-template-rows: auto;
+                margin-block: 4%;
 
                 .youtube {
                     grid-column: 1/1;
@@ -277,6 +278,9 @@
                     grid-column: 2/3;
                     grid-row: 2/3;
                     text-align: center;
+
+                    align-self: center;
+
                 }
 
                 .cnl {
