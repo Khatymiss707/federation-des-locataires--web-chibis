@@ -529,9 +529,6 @@ a {
   }
 }
 @media screen and (min-width: 768px) {
-  .logo {
-    transform: scale(0.6);
-  }
   .footer {
     width: 100%;
     padding: 20px;
@@ -553,6 +550,11 @@ a {
   }
   .footer .column1 .logo img {
     width: 100%;
+  }
+  .footer .column1 .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   .footer .column1 .icones_reseaux {
     display: grid;
