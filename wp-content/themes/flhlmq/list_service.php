@@ -38,7 +38,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 ?>
 
                 <div class="swiper-slide card">
-                    <img src="<?php the_field("caroussel_img")?>" alt="Card 1" class="card-image">
+                    <img src="<?php the_field("next-news-img")?>" alt="Card 1" class="card-image">
                     <div class="card-content">
                         <a href="<?php the_field("next-news_url")?>">
                             <h2 class="card-title">
@@ -49,7 +49,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                             <?php the_field("next-news-description")?>
                         </p>
                         <button class="card-button">
-                            <?php the_field("label_next_service")?>
+                            <?php the_field("next-news-btn-label")?>
                         </button>
                     </div>
                 </div>
