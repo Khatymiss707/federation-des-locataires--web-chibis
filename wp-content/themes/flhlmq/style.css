@@ -1023,7 +1023,7 @@ a {
   align-items: center;
 }
 .service_comite p {
-  color: var(--noir);
+  color: var(--blanc);
   max-width: 85%;
   text-align: justify;
   font-size: 18px;
@@ -1052,6 +1052,8 @@ a {
   margin-bottom: 3%;
 }
 .service_comite .page_comite_suivant {
+  display: flex;
+  flex-direction: column;
   background-color: var(--bleu-calypso);
   padding: 5%;
   max-width: 80vw;
@@ -1068,9 +1070,11 @@ a {
   width: 80%;
 }
 .service_comite .page_comite_suivant .service_suivant_infolettre_titre {
+  align-self: flex-end;
   font-size: 22px;
 }
 .service_comite .page_comite_suivant .service_suivant_infolettre_para {
+  align-self: flex-end;
   font-size: 18px;
 }
 .service_comite .page_comite_suivant:hover {

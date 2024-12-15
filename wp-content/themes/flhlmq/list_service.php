@@ -1,7 +1,7 @@
 <?php 
 /**
  * 	Template Name: list services
- * 	Template Post Type : page, article, service-list, service, hero
+ * 	Template Post Type : page, article, service-list, service
  */
 
 get_header(); // Affiche header.php
@@ -13,6 +13,14 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 <div class="pageblanche">
     <section class="hero">
+        <?php
+             $arguments = array( // 👈 Tableau d'arguments
+             'post_type' => 'service',
+            'posts_per_page' => 4
+              );
+             $projects = new WP_Query($arguments); // 👈 Utilisation
+             while ($projects->have_posts()) : $projects->the_post(); 
+         ?>
 
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -58,6 +66,10 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 </div>
             </div>
         </div>
+        <?php
+            endwhile; 
+            wp_reset_postdata(); 
+                ?>
 
     </section>
 
@@ -73,7 +85,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 
         <div class="listes_services_caroussel">
-            <img class="titre_liste_services" src="<?php the_field("caroussel_titre")?>" alt="">
+            <img class="titre_liste_services" src="<?php the_field("title_image")?>" alt="">
 
             <div class="swiper03">
                 <div class="swiper-wrapper">

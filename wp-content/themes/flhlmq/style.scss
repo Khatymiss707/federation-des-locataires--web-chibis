@@ -14,8 +14,8 @@ Version: 2.0
 @use "partials-scss/cartes";
 @use "partials-scss/couleurs";
 @use "partials-scss/description-articles";
-@use "partials-scss//description-services";
-@use "partials-scss/footer";
+@use "partials-scss/description-services";
+@use "partials-scss/footer_new";
 @use "partials-scss/liste-service";
 @use "partials-scss/nav";
 @use "partials-scss/texte";
@@ -265,7 +265,7 @@ Version: 2.0
     align-items: center;
 
     p {
-        color: var(--noir);
+        color: var(--blanc);
         max-width: 85%;
         text-align: justify;
         font-size: 18px;
@@ -301,6 +301,8 @@ Version: 2.0
     }
 
     .page_comite_suivant {
+        display: flex;
+        flex-direction: column;
         background-color: var(--bleu-calypso);
         padding: 5%;
         max-width: 80vw;
@@ -320,10 +322,12 @@ Version: 2.0
 
         .service_suivant_infolettre {
             &_titre {
+                align-self: flex-end;
                 font-size: 22px;
             }
 
             &_para {
+                align-self: flex-end;
                 font-size: 18px;
 
             }

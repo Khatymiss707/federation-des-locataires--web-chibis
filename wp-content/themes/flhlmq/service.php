@@ -1,7 +1,7 @@
 <?php 
 /**
  * 	Template Name: services
- * 	Post Type : service 
+ * 	Post Type : service, post, page 
  */
 
 get_header(); // Affiche header.php
@@ -45,7 +45,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               <?php
                 $arguments = array( // 👈 Tableau d'arguments
                   'post_type' => 'new',
-                  'posts_per_page' => 3, 
+                  'posts_per_page' => 4, 
                   'orderby' => 'date',
                 );
                 $projects = new WP_Query($arguments); // 👈 Utilisation
